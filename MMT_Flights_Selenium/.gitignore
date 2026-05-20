@@ -1,0 +1,4 @@
+# .gitignore
+downloaded_files/
+latest_logs/
+archived_logs/
