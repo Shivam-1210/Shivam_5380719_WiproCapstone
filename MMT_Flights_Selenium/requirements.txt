@@ -6,4 +6,5 @@ pytest-metadata
 allure-pytest
 webdriver-manager
 openpyxl
+pandas
 allure-python-commons

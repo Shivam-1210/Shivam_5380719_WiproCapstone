@@ -1,0 +1,18 @@
+2026-05-21 13:27:03,687 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 13:27:07,302 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 13:27:15,722 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 13:27:15,737 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 13:27:15,746 - MMT_Flights - INFO - ========== STARTING NEGATIVE TEST: xyz to Mumbai ==========
+2026-05-21 13:27:44,657 - MMT_Flights - INFO - UI Error Captured: No error message found
+2026-05-21 13:27:45,256 - MMT_Flights - ERROR - TEST FAILED - CAPTURING SCREENSHOT
+2026-05-21 13:27:45,562 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 13:27:48,558 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY
+2026-05-21 13:27:48,563 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 13:27:52,118 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 13:28:00,540 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 13:28:00,542 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 13:28:00,542 - MMT_Flights - INFO - ========== STARTING NEGATIVE TEST: Mumbai to Mumbai ==========
+2026-05-21 13:28:29,268 - MMT_Flights - INFO - UI Error Captured: No error message found
+2026-05-21 13:28:29,278 - MMT_Flights - ERROR - TEST FAILED - CAPTURING SCREENSHOT
+2026-05-21 13:28:29,622 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 13:28:32,468 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY

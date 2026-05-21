@@ -80,13 +80,16 @@ from pages.booking_page import BookingPage
 
 # Commented out to prevent crash shown in logs
 # from utils.screenshot_util import ScreenshotUtil
-from utils.excel_reader import ExcelReader
+from utils.excel_reader import read_excel_data
 from utils.logger import LogGen
 
 logger = LogGen.loggen()
+#
+# booking_data = read_excel_data("test_data/passenger_data.xlsx", "BookingData")
+# passenger_data = read_excel_data("test_data/passenger_data.xlsx", "PassengerData")
 
-booking_data = ExcelReader.read_excel("test_data/passenger_data.xlsx", "BookingData")
-passenger_data = ExcelReader.read_excel("test_data/passenger_data.xlsx", "PassengerData")
+booking_data = read_excel_data("BookingData")
+passenger_data = read_excel_data("PassengerData")
 
 @allure.feature("E2E Flight Booking")
 def test_complete_flight_booking_flow(driver):
@@ -148,3 +151,5 @@ def test_complete_flight_booking_flow(driver):
     assert booking_page.is_contact_section_completed(), "Contact details were not accepted or next section did not appear"
 
     logger.info("E2E FLIGHT BOOKING FLOW COMPLETED UP TO FINAL CONFIRMATION STEP")
+
+

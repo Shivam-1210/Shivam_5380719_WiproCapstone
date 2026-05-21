@@ -1,0 +1,65 @@
+2026-05-21 14:41:59,552 - MMT_Flights - INFO - Reading Excel: C:\wipro_training_work\python_coding\Capstone_Project\MMT_Flights_Selenium\test_data/passenger_data.xlsx | Sheet: BookingData
+2026-05-21 14:41:59,802 - MMT_Flights - INFO - Reading Excel: C:\wipro_training_work\python_coding\Capstone_Project\MMT_Flights_Selenium\test_data/passenger_data.xlsx | Sheet: PassengerData
+2026-05-21 14:41:59,822 - MMT_Flights - INFO - Reading Excel: C:\wipro_training_work\python_coding\Capstone_Project\MMT_Flights_Selenium\test_data/passenger_data.xlsx | Sheet: PositiveFlights
+2026-05-21 14:41:59,846 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 14:42:03,557 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 14:42:12,968 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 14:42:12,970 - MMT_Flights - INFO - STARTING E2E FLIGHT BOOKING FLOW
+2026-05-21 14:42:12,971 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 14:42:12,971 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 14:42:12,972 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 14:42:13,820 - MMT_Flights - ERROR - TEST FAILED - CAPTURING SCREENSHOT
+2026-05-21 14:42:14,107 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 14:42:16,858 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY
+2026-05-21 14:42:16,861 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 14:42:20,613 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 14:42:30,455 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 14:42:30,457 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 14:42:30,458 - MMT_Flights - INFO - ========== STARTING NEGATIVE TEST ==========
+2026-05-21 14:42:53,189 - MMT_Flights - INFO - Captured UI Text: From & To airports cannot be the same
+2026-05-21 14:42:53,190 - MMT_Flights - INFO - ========== TEST PASSED ==========
+2026-05-21 14:42:53,191 - MMT_Flights - INFO - TEST PASSED - CAPTURING SCREENSHOT
+2026-05-21 14:42:53,416 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 14:42:56,339 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY
+2026-05-21 14:42:56,343 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 14:43:00,091 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 14:43:08,116 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 14:43:08,122 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 14:43:08,126 - MMT_Flights - INFO - ========== STARTING NEGATIVE TEST ==========
+2026-05-21 14:43:30,815 - MMT_Flights - INFO - Captured UI Text: Number of infants cannot be more than adults
+2026-05-21 14:43:30,816 - MMT_Flights - INFO - ========== TEST PASSED ==========
+2026-05-21 14:43:30,817 - MMT_Flights - INFO - TEST PASSED - CAPTURING SCREENSHOT
+2026-05-21 14:43:31,017 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 14:43:33,869 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY
+2026-05-21 14:43:33,872 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 14:43:37,566 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 14:43:46,831 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 14:43:46,837 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 14:43:46,837 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 14:43:46,844 - MMT_Flights - ERROR - TEST FAILED - CAPTURING SCREENSHOT
+2026-05-21 14:43:47,094 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 14:43:49,928 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY
+2026-05-21 14:43:49,932 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 14:43:53,558 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 14:44:02,353 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 14:44:02,356 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 14:44:02,372 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 14:44:02,412 - MMT_Flights - ERROR - TEST FAILED - CAPTURING SCREENSHOT
+2026-05-21 14:44:02,734 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 14:44:05,575 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY
+2026-05-21 14:44:05,579 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 14:44:09,265 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 14:44:18,433 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 14:44:18,435 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 14:44:18,436 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 14:44:18,447 - MMT_Flights - ERROR - TEST FAILED - CAPTURING SCREENSHOT
+2026-05-21 14:44:18,802 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 14:44:21,638 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY
+2026-05-21 14:44:21,642 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 14:44:25,360 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 14:44:34,148 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 14:44:34,150 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 14:44:34,151 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 14:44:34,157 - MMT_Flights - ERROR - TEST FAILED - CAPTURING SCREENSHOT
+2026-05-21 14:44:34,482 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 14:44:37,372 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY

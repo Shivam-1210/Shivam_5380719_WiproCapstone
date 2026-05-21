@@ -1,0 +1,37 @@
+2026-05-21 02:45:52,818 - MMT_Flights - INFO - Reading Excel: C:\wipro_training_work\python_coding\Capstone_Project\MMT_Flights_Selenium\test_data/passenger_data.xlsx | Sheet: PositiveFlights
+2026-05-21 02:45:52,974 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 02:45:56,173 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 02:46:04,551 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 02:46:04,555 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 02:46:04,556 - MMT_Flights - INFO - Opening website: https://www.makemytrip.com
+2026-05-21 02:46:15,633 - MMT_Flights - INFO - CLICKED LABEL: fromCity
+2026-05-21 02:46:27,677 - MMT_Flights - ERROR - TEST FAILED - CAPTURING SCREENSHOT
+2026-05-21 02:46:27,869 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 02:46:30,350 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY
+2026-05-21 02:46:30,353 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 02:46:33,520 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 02:46:42,321 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 02:46:42,324 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 02:46:42,324 - MMT_Flights - INFO - Opening website: https://www.makemytrip.com
+2026-05-21 02:46:53,341 - MMT_Flights - INFO - CLICKED LABEL: fromCity
+2026-05-21 02:47:04,955 - MMT_Flights - ERROR - TEST FAILED - CAPTURING SCREENSHOT
+2026-05-21 02:47:05,135 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 02:47:07,630 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY
+2026-05-21 02:47:07,633 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 02:47:10,810 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 02:47:19,044 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 02:47:19,045 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 02:47:19,045 - MMT_Flights - INFO - Opening website: https://www.makemytrip.com
+2026-05-21 02:47:30,074 - MMT_Flights - INFO - CLICKED LABEL: fromCity
+2026-05-21 02:47:41,654 - MMT_Flights - ERROR - TEST FAILED - CAPTURING SCREENSHOT
+2026-05-21 02:47:41,869 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 02:47:44,335 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY
+2026-05-21 02:47:44,337 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 02:47:47,446 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 02:47:54,583 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 02:47:54,584 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 02:47:54,585 - MMT_Flights - INFO - Opening website: https://www.makemytrip.com
+2026-05-21 02:48:05,495 - MMT_Flights - INFO - CLICKED LABEL: fromCity
+2026-05-21 02:48:17,120 - MMT_Flights - ERROR - TEST FAILED - CAPTURING SCREENSHOT
+2026-05-21 02:48:17,298 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 02:48:19,733 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY

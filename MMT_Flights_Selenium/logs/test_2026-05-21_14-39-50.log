@@ -1,0 +1,20 @@
+2026-05-21 14:39:50,939 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 14:39:54,675 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 14:40:04,135 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 14:40:04,139 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 14:40:04,140 - MMT_Flights - INFO - ========== STARTING NEGATIVE TEST ==========
+2026-05-21 14:40:29,120 - MMT_Flights - INFO - Captured UI Text: From & To airports cannot be the same
+2026-05-21 14:40:29,120 - MMT_Flights - INFO - ========== TEST PASSED ==========
+2026-05-21 14:40:29,122 - MMT_Flights - INFO - TEST PASSED - CAPTURING SCREENSHOT
+2026-05-21 14:40:29,404 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 14:40:32,350 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY
+2026-05-21 14:40:32,353 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 14:40:36,138 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 14:40:43,873 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 14:40:43,876 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 14:40:43,876 - MMT_Flights - INFO - ========== STARTING NEGATIVE TEST ==========
+2026-05-21 14:41:06,954 - MMT_Flights - INFO - Captured UI Text: Number of infants cannot be more than adults
+2026-05-21 14:41:06,958 - MMT_Flights - INFO - ========== TEST PASSED ==========
+2026-05-21 14:41:06,959 - MMT_Flights - INFO - TEST PASSED - CAPTURING SCREENSHOT
+2026-05-21 14:41:07,166 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 14:41:10,003 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY

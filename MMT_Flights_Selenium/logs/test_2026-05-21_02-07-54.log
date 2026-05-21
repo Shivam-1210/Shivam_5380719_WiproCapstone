@@ -1,0 +1,19 @@
+2026-05-21 02:07:55,190 - MMT_Flights - INFO - Reading Excel: C:\wipro_training_work\python_coding\Capstone_Project\MMT_Flights_Selenium\test_data/passenger_data.xlsx | Sheet: PositiveFlights
+2026-05-21 02:07:55,362 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 02:07:58,560 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 02:08:07,016 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 02:08:07,019 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 02:08:07,020 - MMT_Flights - INFO - Opening website: https://www.makemytrip.com
+2026-05-21 02:08:13,566 - MMT_Flights - INFO - ONE WAY SELECTED
+2026-05-21 02:08:24,977 - MMT_Flights - ERROR - TEST FAILED - CAPTURING SCREENSHOT
+2026-05-21 02:08:25,119 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 02:08:27,640 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY
+2026-05-21 02:08:27,642 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 02:08:30,790 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 02:08:39,106 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 02:08:39,108 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 02:08:39,109 - MMT_Flights - INFO - Opening website: https://www.makemytrip.com
+2026-05-21 02:08:45,547 - MMT_Flights - INFO - ONE WAY SELECTED
+2026-05-21 02:08:57,065 - MMT_Flights - ERROR - TEST FAILED - CAPTURING SCREENSHOT
+2026-05-21 02:08:57,201 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 02:08:59,645 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY

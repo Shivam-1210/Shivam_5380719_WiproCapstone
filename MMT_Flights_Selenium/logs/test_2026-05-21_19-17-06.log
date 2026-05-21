@@ -1,0 +1,158 @@
+2026-05-21 19:17:06,519 - MMT_Flights - INFO - Reading Excel: C:\wipro_training_work\python_coding\Capstone_Project\MMT_Flights_Selenium\test_data/passenger_data.xlsx | Sheet: BookingData
+2026-05-21 19:17:06,682 - MMT_Flights - INFO - Reading Excel: C:\wipro_training_work\python_coding\Capstone_Project\MMT_Flights_Selenium\test_data/passenger_data.xlsx | Sheet: PassengerData
+2026-05-21 19:17:06,706 - MMT_Flights - INFO - Reading Excel: C:\wipro_training_work\python_coding\Capstone_Project\MMT_Flights_Selenium\test_data/passenger_data.xlsx | Sheet: PositiveFlights
+2026-05-21 19:17:06,717 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 19:17:09,861 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 19:17:18,396 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 19:17:18,398 - MMT_Flights - INFO - STARTING E2E FLIGHT BOOKING FLOW
+2026-05-21 19:17:18,398 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 19:17:18,399 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 19:17:18,399 - MMT_Flights - INFO - Opening website: https://www.makemytrip.com
+2026-05-21 19:17:42,095 - MMT_Flights - INFO - Selected From City: Delhi
+2026-05-21 19:17:45,413 - MMT_Flights - INFO - Selected To City: Mumbai
+2026-05-21 19:17:46,414 - MMT_Flights - INFO - SELECTING DATE: Fri Jun 19 2026
+2026-05-21 19:17:47,485 - MMT_Flights - INFO - DEPARTURE DATE Fri Jun 19 2026 SELECTED
+2026-05-21 19:17:47,485 - MMT_Flights - INFO - CLICKING SEARCH BUTTON
+2026-05-21 19:17:52,952 - MMT_Flights - INFO - SEARCH BUTTON CLICKED SUCCESSFULLY
+2026-05-21 19:17:59,068 - MMT_Flights - INFO - Successfully clicked: Non-Stop Filter
+2026-05-21 19:18:04,256 - MMT_Flights - INFO - Switching driver focus to the newly opened Booking Tab...
+2026-05-21 19:18:04,288 - MMT_Flights - INFO - Switched successfully. Current URL: https://www.makemytrip.com/flight/reviewDetails/?itineraryId=57236919544f9635d1d807fe6841f596ce392b3e&cur=INR&ccde=IN&crId=757901d4-1f31-4a11-9ec9-cef224500a37&rKey=RKEY%3A486a0b5e-ca1e-438f-81e8-29a94166797a%3A0_0&userCurrency=INR&xflt=eyJjIjoiRSIsInAiOiJBLTFfQy0wX0ktMCIsInQiOiIiLCJzIjoiREVMLUJPTS0yMDI2MDYxOSIsIkl0aW5lcmFyeUlkIjoiREVMLUJPTS0xOS8wNi8yMDI2IiwiVHJpcFR5cGUiOiJPIiwiUGF4VHlwZSI6IkEtMV9DLTBfSS0wIiwiSW50bCI6ZmFsc2UsIkNhYmluQ2xhc3MiOiJFIiwiQ2NkZSI6ImluIiwiUGZ0IjoiIiwiUGFmcyI6IiIsIkZvcndhcmRGbG93UmVxdWlyZWQiOnRydWUsIkNtcElkIjoiIn0%3D
+2026-05-21 19:18:04,289 - MMT_Flights - INFO - Verifying if the Booking Review page is loaded...
+2026-05-21 19:18:04,310 - MMT_Flights - INFO - Booking page loaded successfully.
+2026-05-21 19:18:27,979 - MMT_Flights - ERROR - Failed to enter first name: Message: 
+Stacktrace:
+	uc_driver!GetHandleVerifier [0x7ff6d5b87de5+14895]
+	uc_driver!GetHandleVerifier [0x7ff6d5b87e50+14900]
+	uc_driver!(No symbol) [0x7ff6d58ed5ad]
+	uc_driver!(No symbol) [0x7ff6d5947822]
+	uc_driver!(No symbol) [0x7ff6d5947b2c]
+	uc_driver!(No symbol) [0x7ff6d5997d17]
+	uc_driver!(No symbol) [0x7ff6d599486f]
+	uc_driver!(No symbol) [0x7ff6d5939df8]
+	uc_driver!(No symbol) [0x7ff6d593ace3]
+	uc_driver!GetHandleVerifier [0x7ff6d5e9cc49+3296f9]
+	uc_driver!GetHandleVerifier [0x7ff6d5e97375+323e25]
+	uc_driver!GetHandleVerifier [0x7ff6d5ebbc82+348732]
+	uc_driver!GetHandleVerifier [0x7ff6d5ba6045+32af5]
+	uc_driver!GetHandleVerifier [0x7ff6d5baecec+3b79c]
+	uc_driver!GetHandleVerifier [0x7ff6d5b91bc4+1e674]
+	uc_driver!GetHandleVerifier [0x7ff6d5b91d54+1e804]
+	uc_driver!GetHandleVerifier [0x7ff6d5b760e7+2b97]
+	KERNEL32!BaseThreadInitThunk [0x7ff97b24e957+17]
+	ntdll!RtlUserThreadStart [0x7ff97cd4427c+2c]
+
+2026-05-21 19:18:28,326 - MMT_Flights - INFO - Contact details populated successfully.
+2026-05-21 19:18:28,327 - MMT_Flights - INFO - E2E FLIGHT BOOKING FLOW COMPLETED UP TO FINAL CONFIRMATION STEP
+2026-05-21 19:18:28,327 - MMT_Flights - INFO - TEST PASSED - CAPTURING SCREENSHOT
+2026-05-21 19:18:28,451 - MMT_Flights - ERROR - SCREENSHOT FAILED: cannot access local variable 'os' where it is not associated with a value
+2026-05-21 19:18:28,453 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 19:18:31,045 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY
+2026-05-21 19:18:31,048 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 19:18:34,275 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 19:18:41,442 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 19:18:41,446 - MMT_Flights - INFO - --- Starting Negative Test: Mumbai to Mumbai ---
+2026-05-21 19:19:05,135 - MMT_Flights - INFO - Selected From City: Mumbai
+2026-05-21 19:19:08,383 - MMT_Flights - INFO - Selected To City: Mumbai
+2026-05-21 19:19:13,507 - MMT_Flights - INFO - Captured UI Text: From & To airports cannot be the same
+2026-05-21 19:19:13,507 - MMT_Flights - INFO - ========== TEST PASSED ==========
+2026-05-21 19:19:13,508 - MMT_Flights - INFO - TEST PASSED - CAPTURING SCREENSHOT
+2026-05-21 19:19:13,674 - MMT_Flights - ERROR - SCREENSHOT FAILED: cannot access local variable 'os' where it is not associated with a value
+2026-05-21 19:19:13,682 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 19:19:16,090 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY
+2026-05-21 19:19:16,092 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 19:19:19,272 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 19:19:27,655 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 19:19:27,658 - MMT_Flights - INFO - --- Starting Negative Test: Delhi to Bangalore ---
+2026-05-21 19:19:51,227 - MMT_Flights - INFO - Selected From City: Delhi
+2026-05-21 19:19:54,481 - MMT_Flights - INFO - Selected To City: Bangalore
+2026-05-21 19:19:59,622 - MMT_Flights - INFO - Captured UI Text: Number of infants cannot be more than adults
+2026-05-21 19:19:59,623 - MMT_Flights - INFO - ========== TEST PASSED ==========
+2026-05-21 19:19:59,623 - MMT_Flights - INFO - TEST PASSED - CAPTURING SCREENSHOT
+2026-05-21 19:19:59,804 - MMT_Flights - ERROR - SCREENSHOT FAILED: cannot access local variable 'os' where it is not associated with a value
+2026-05-21 19:19:59,833 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 19:20:02,299 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY
+2026-05-21 19:20:02,301 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 19:20:05,479 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 19:20:13,923 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 19:20:13,925 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 19:20:13,926 - MMT_Flights - INFO - Opening website: https://www.makemytrip.com
+2026-05-21 19:20:34,557 - MMT_Flights - INFO - Testing Scenario: non_stop for New Delhi to Mumbai
+2026-05-21 19:20:36,880 - MMT_Flights - INFO - Selected From City: New Delhi
+2026-05-21 19:20:40,154 - MMT_Flights - INFO - Selected To City: Mumbai
+2026-05-21 19:20:41,155 - MMT_Flights - INFO - Formatted date for locator: Fri Jun 19 2026
+2026-05-21 19:20:41,158 - MMT_Flights - INFO - SELECTING DATE: Fri Jun 19 2026
+2026-05-21 19:20:42,222 - MMT_Flights - INFO - DEPARTURE DATE Fri Jun 19 2026 SELECTED
+2026-05-21 19:20:42,222 - MMT_Flights - INFO - CLICKING SEARCH BUTTON
+2026-05-21 19:21:17,590 - MMT_Flights - INFO - SEARCH BUTTON CLICKED SUCCESSFULLY
+2026-05-21 19:21:22,613 - MMT_Flights - INFO - Applying filter: non_stop
+2026-05-21 19:21:23,721 - MMT_Flights - INFO - Successfully clicked: Non-Stop Filter
+2026-05-21 19:21:27,744 - MMT_Flights - INFO - Found 2 flight cards visible.
+2026-05-21 19:21:27,744 - MMT_Flights - INFO - SUCCESS: Scenario non_stop for New Delhi to Mumbai passed.
+2026-05-21 19:21:27,745 - MMT_Flights - INFO - TEST PASSED - CAPTURING SCREENSHOT
+2026-05-21 19:21:27,894 - MMT_Flights - ERROR - SCREENSHOT FAILED: cannot access local variable 'os' where it is not associated with a value
+2026-05-21 19:21:27,900 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 19:21:30,462 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY
+2026-05-21 19:21:30,464 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 19:21:33,653 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 19:21:42,118 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 19:21:42,121 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 19:21:42,121 - MMT_Flights - INFO - Opening website: https://www.makemytrip.com
+2026-05-21 19:22:03,398 - MMT_Flights - INFO - Testing Scenario: cheapest for Mumbai to Bengaluru
+2026-05-21 19:22:05,711 - MMT_Flights - INFO - Selected From City: Mumbai
+2026-05-21 19:22:08,941 - MMT_Flights - INFO - Selected To City: Bengaluru
+2026-05-21 19:22:09,943 - MMT_Flights - INFO - Formatted date for locator: Mon Jun 22 2026
+2026-05-21 19:22:09,944 - MMT_Flights - INFO - SELECTING DATE: Mon Jun 22 2026
+2026-05-21 19:22:11,006 - MMT_Flights - INFO - DEPARTURE DATE Mon Jun 22 2026 SELECTED
+2026-05-21 19:22:11,007 - MMT_Flights - INFO - CLICKING SEARCH BUTTON
+2026-05-21 19:22:16,302 - MMT_Flights - INFO - SEARCH BUTTON CLICKED SUCCESSFULLY
+2026-05-21 19:22:21,324 - MMT_Flights - INFO - Applying filter: cheapest
+2026-05-21 19:22:21,325 - MMT_Flights - INFO - Attempting to sort by cheapest...
+2026-05-21 19:22:22,391 - MMT_Flights - INFO - Successfully clicked: Cheapest Tab
+2026-05-21 19:22:26,409 - MMT_Flights - INFO - Found 3 flight cards visible.
+2026-05-21 19:22:26,410 - MMT_Flights - INFO - SUCCESS: Scenario cheapest for Mumbai to Bengaluru passed.
+2026-05-21 19:22:26,411 - MMT_Flights - INFO - TEST PASSED - CAPTURING SCREENSHOT
+2026-05-21 19:22:26,540 - MMT_Flights - ERROR - SCREENSHOT FAILED: cannot access local variable 'os' where it is not associated with a value
+2026-05-21 19:22:26,547 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 19:22:29,112 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY
+2026-05-21 19:22:29,115 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 19:22:32,289 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 19:22:40,955 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 19:22:40,958 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 19:22:40,959 - MMT_Flights - INFO - Opening website: https://www.makemytrip.com
+2026-05-21 19:23:02,224 - MMT_Flights - INFO - Testing Scenario: Air India for Bengaluru to Hyderabad
+2026-05-21 19:23:04,599 - MMT_Flights - INFO - Selected From City: Bengaluru
+2026-05-21 19:23:07,840 - MMT_Flights - INFO - Selected To City: Hyderabad
+2026-05-21 19:23:08,840 - MMT_Flights - INFO - Formatted date for locator: Thu Jun 25 2026
+2026-05-21 19:23:08,841 - MMT_Flights - INFO - SELECTING DATE: Thu Jun 25 2026
+2026-05-21 19:23:09,895 - MMT_Flights - INFO - DEPARTURE DATE Thu Jun 25 2026 SELECTED
+2026-05-21 19:23:09,896 - MMT_Flights - INFO - CLICKING SEARCH BUTTON
+2026-05-21 19:23:15,149 - MMT_Flights - INFO - SEARCH BUTTON CLICKED SUCCESSFULLY
+2026-05-21 19:23:20,167 - MMT_Flights - INFO - Applying airline filter for: Air India
+2026-05-21 19:23:21,273 - MMT_Flights - INFO - Successfully clicked 'Air India' filter.
+2026-05-21 19:23:25,296 - MMT_Flights - INFO - Found 2 flight cards visible.
+2026-05-21 19:23:25,297 - MMT_Flights - INFO - SUCCESS: Scenario Air India for Bengaluru to Hyderabad passed.
+2026-05-21 19:23:25,298 - MMT_Flights - INFO - TEST PASSED - CAPTURING SCREENSHOT
+2026-05-21 19:23:25,420 - MMT_Flights - ERROR - SCREENSHOT FAILED: cannot access local variable 'os' where it is not associated with a value
+2026-05-21 19:23:25,430 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 19:23:27,972 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY
+2026-05-21 19:23:27,974 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 19:23:31,195 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 19:23:39,824 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 19:23:39,827 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 19:23:39,828 - MMT_Flights - INFO - Opening website: https://www.makemytrip.com
+2026-05-21 19:24:01,103 - MMT_Flights - INFO - Testing Scenario: morning for Hyderabad to Chennai
+2026-05-21 19:24:03,390 - MMT_Flights - INFO - Selected From City: Hyderabad
+2026-05-21 19:24:06,611 - MMT_Flights - INFO - Selected To City: Chennai
+2026-05-21 19:24:07,613 - MMT_Flights - INFO - Formatted date for locator: Sun Jun 28 2026
+2026-05-21 19:24:07,615 - MMT_Flights - INFO - SELECTING DATE: Sun Jun 28 2026
+2026-05-21 19:24:08,687 - MMT_Flights - INFO - DEPARTURE DATE Sun Jun 28 2026 SELECTED
+2026-05-21 19:24:08,688 - MMT_Flights - INFO - CLICKING SEARCH BUTTON
+2026-05-21 19:24:13,973 - MMT_Flights - INFO - SEARCH BUTTON CLICKED SUCCESSFULLY
+2026-05-21 19:24:18,996 - MMT_Flights - INFO - Applying filter: morning
+2026-05-21 19:24:20,089 - MMT_Flights - INFO - Successfully clicked: Morning Departure Filter
+2026-05-21 19:24:24,109 - MMT_Flights - INFO - Found 2 flight cards visible.
+2026-05-21 19:24:24,109 - MMT_Flights - INFO - SUCCESS: Scenario morning for Hyderabad to Chennai passed.
+2026-05-21 19:24:24,110 - MMT_Flights - INFO - TEST PASSED - CAPTURING SCREENSHOT
+2026-05-21 19:24:24,235 - MMT_Flights - ERROR - SCREENSHOT FAILED: cannot access local variable 'os' where it is not associated with a value
+2026-05-21 19:24:24,243 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 19:24:26,818 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY

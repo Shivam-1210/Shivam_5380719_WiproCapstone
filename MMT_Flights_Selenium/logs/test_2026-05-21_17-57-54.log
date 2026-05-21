@@ -1,0 +1,22 @@
+2026-05-21 17:57:54,777 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 17:57:57,983 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 17:58:06,424 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 17:58:06,428 - MMT_Flights - INFO - --- Starting Negative Test: Mumbai to Mumbai ---
+2026-05-21 17:58:29,999 - MMT_Flights - INFO - Selected From City: Mumbai
+2026-05-21 17:58:33,270 - MMT_Flights - INFO - Selected To City: Mumbai
+2026-05-21 17:58:38,391 - MMT_Flights - INFO - Captured UI Text: From & To airports cannot be the same
+2026-05-21 17:58:38,402 - MMT_Flights - INFO - ========== TEST PASSED ==========
+2026-05-21 17:58:38,403 - MMT_Flights - INFO - TEST PASSED - CAPTURING SCREENSHOT
+2026-05-21 17:58:38,563 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 17:58:41,031 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY
+2026-05-21 17:58:41,034 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 17:58:44,158 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 17:58:52,517 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 17:58:52,520 - MMT_Flights - INFO - --- Starting Negative Test: Delhi to Bangalore ---
+2026-05-21 17:59:16,091 - MMT_Flights - INFO - Selected From City: Delhi
+2026-05-21 17:59:19,391 - MMT_Flights - INFO - Selected To City: Bangalore
+2026-05-21 17:59:24,559 - MMT_Flights - INFO - Captured UI Text: Number of infants cannot be more than adults
+2026-05-21 17:59:24,560 - MMT_Flights - INFO - ========== TEST PASSED ==========
+2026-05-21 17:59:24,560 - MMT_Flights - INFO - TEST PASSED - CAPTURING SCREENSHOT
+2026-05-21 17:59:24,751 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 17:59:27,197 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY

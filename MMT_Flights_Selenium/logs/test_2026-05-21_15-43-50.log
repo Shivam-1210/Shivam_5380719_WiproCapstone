@@ -1,0 +1,170 @@
+2026-05-21 15:43:50,651 - MMT_Flights - INFO - Reading Excel: C:\wipro_training_work\python_coding\Capstone_Project\MMT_Flights_Selenium\test_data/passenger_data.xlsx | Sheet: PositiveFlights
+2026-05-21 15:43:50,824 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 15:43:54,038 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 15:44:02,577 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 15:44:02,580 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 15:44:02,580 - MMT_Flights - INFO - Opening website: https://www.makemytrip.com
+2026-05-21 15:44:15,639 - MMT_Flights - INFO - CLICKED OUTSIDE POPUP
+2026-05-21 15:44:16,681 - MMT_Flights - INFO - FLIGHT CLICKED
+2026-05-21 15:44:18,732 - MMT_Flights - INFO - ONE WAY SELECTED
+2026-05-21 15:44:19,734 - MMT_Flights - INFO - Testing Scenario: non_stop for New Delhi to Mumbai
+2026-05-21 15:44:19,791 - MMT_Flights - INFO - CLICKED LABEL: fromCity
+2026-05-21 15:44:24,091 - MMT_Flights - INFO - TYPED CITY: New Delhi in fromCity
+2026-05-21 15:44:26,163 - MMT_Flights - INFO - SELECTED CITY: New Delhi in fromCity
+2026-05-21 15:44:27,727 - MMT_Flights - INFO - CLICKED LABEL: toCity
+2026-05-21 15:44:31,271 - MMT_Flights - INFO - TYPED CITY: Mumbai in toCity
+2026-05-21 15:44:33,334 - MMT_Flights - INFO - SELECTED CITY: Mumbai in toCity
+2026-05-21 15:44:34,835 - MMT_Flights - INFO - Formatted date for locator: Fri Jun 19 2026
+2026-05-21 15:44:34,835 - MMT_Flights - INFO - SELECTING DATE: Fri Jun 19 2026
+2026-05-21 15:44:35,877 - MMT_Flights - INFO - DEPARTURE DATE Fri Jun 19 2026 SELECTED
+2026-05-21 15:44:35,878 - MMT_Flights - INFO - CLICKING SEARCH BUTTON
+2026-05-21 15:44:41,176 - MMT_Flights - INFO - SEARCH BUTTON CLICKED SUCCESSFULLY
+2026-05-21 15:44:51,177 - MMT_Flights - INFO - Verifying if flight results are loaded...
+2026-05-21 15:44:51,210 - MMT_Flights - INFO - Applying filter: non_stop
+2026-05-21 15:44:52,361 - MMT_Flights - INFO - Successfully clicked: Non-Stop Filter
+2026-05-21 15:44:54,378 - MMT_Flights - INFO - Found 2 flight cards.
+2026-05-21 15:44:54,379 - MMT_Flights - INFO - SUCCESS: Scenario non_stop for New Delhi to Mumbai passed.
+2026-05-21 15:44:54,379 - MMT_Flights - INFO - TEST PASSED - CAPTURING SCREENSHOT
+2026-05-21 15:44:54,526 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 15:44:57,053 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY
+2026-05-21 15:44:57,055 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 15:45:00,176 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 15:45:08,727 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 15:45:08,729 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 15:45:08,730 - MMT_Flights - INFO - Opening website: https://www.makemytrip.com
+2026-05-21 15:45:21,891 - MMT_Flights - INFO - CLICKED OUTSIDE POPUP
+2026-05-21 15:45:22,941 - MMT_Flights - INFO - FLIGHT CLICKED
+2026-05-21 15:45:24,995 - MMT_Flights - INFO - ONE WAY SELECTED
+2026-05-21 15:45:25,996 - MMT_Flights - INFO - Testing Scenario: cheapest for Mumbai to Bengaluru
+2026-05-21 15:45:26,054 - MMT_Flights - INFO - CLICKED LABEL: fromCity
+2026-05-21 15:45:29,680 - MMT_Flights - INFO - TYPED CITY: Mumbai in fromCity
+2026-05-21 15:45:31,759 - MMT_Flights - INFO - SELECTED CITY: Mumbai in fromCity
+2026-05-21 15:45:33,320 - MMT_Flights - INFO - CLICKED LABEL: toCity
+2026-05-21 15:45:37,545 - MMT_Flights - INFO - TYPED CITY: Bengaluru in toCity
+2026-05-21 15:45:39,618 - MMT_Flights - INFO - SELECTED CITY: Bengaluru in toCity
+2026-05-21 15:45:41,118 - MMT_Flights - INFO - Formatted date for locator: Mon Jun 22 2026
+2026-05-21 15:45:41,119 - MMT_Flights - INFO - SELECTING DATE: Mon Jun 22 2026
+2026-05-21 15:45:42,179 - MMT_Flights - INFO - DEPARTURE DATE Mon Jun 22 2026 SELECTED
+2026-05-21 15:45:42,179 - MMT_Flights - INFO - CLICKING SEARCH BUTTON
+2026-05-21 15:45:47,197 - MMT_Flights - INFO - SEARCH BUTTON CLICKED SUCCESSFULLY
+2026-05-21 15:45:57,199 - MMT_Flights - INFO - Verifying if flight results are loaded...
+2026-05-21 15:45:57,224 - MMT_Flights - INFO - Applying filter: cheapest
+2026-05-21 15:46:18,880 - MMT_Flights - ERROR - Failed to click Cheapest Tab Sorting: Message: 
+Stacktrace:
+	uc_driver!GetHandleVerifier [0x7ff6d5b87de5+14895]
+	uc_driver!GetHandleVerifier [0x7ff6d5b87e50+14900]
+	uc_driver!(No symbol) [0x7ff6d58ed5ad]
+	uc_driver!(No symbol) [0x7ff6d5947822]
+	uc_driver!(No symbol) [0x7ff6d5947b2c]
+	uc_driver!(No symbol) [0x7ff6d5997d17]
+	uc_driver!(No symbol) [0x7ff6d599486f]
+	uc_driver!(No symbol) [0x7ff6d5939df8]
+	uc_driver!(No symbol) [0x7ff6d593ace3]
+	uc_driver!GetHandleVerifier [0x7ff6d5e9cc49+3296f9]
+	uc_driver!GetHandleVerifier [0x7ff6d5e97375+323e25]
+	uc_driver!GetHandleVerifier [0x7ff6d5ebbc82+348732]
+	uc_driver!GetHandleVerifier [0x7ff6d5ba6045+32af5]
+	uc_driver!GetHandleVerifier [0x7ff6d5baecec+3b79c]
+	uc_driver!GetHandleVerifier [0x7ff6d5b91bc4+1e674]
+	uc_driver!GetHandleVerifier [0x7ff6d5b91d54+1e804]
+	uc_driver!GetHandleVerifier [0x7ff6d5b760e7+2b97]
+	KERNEL32!BaseThreadInitThunk [0x7ff97b24e957+17]
+	ntdll!RtlUserThreadStart [0x7ff97cd4427c+2c]
+
+2026-05-21 15:46:19,528 - MMT_Flights - ERROR - TEST FAILED - CAPTURING SCREENSHOT
+2026-05-21 15:46:19,654 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 15:46:22,183 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY
+2026-05-21 15:46:22,185 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 15:46:25,321 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 15:46:33,771 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 15:46:33,773 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 15:46:33,774 - MMT_Flights - INFO - Opening website: https://www.makemytrip.com
+2026-05-21 15:46:46,918 - MMT_Flights - INFO - CLICKED OUTSIDE POPUP
+2026-05-21 15:46:47,955 - MMT_Flights - INFO - FLIGHT CLICKED
+2026-05-21 15:46:50,011 - MMT_Flights - INFO - ONE WAY SELECTED
+2026-05-21 15:46:51,012 - MMT_Flights - INFO - Testing Scenario: airline for Bengaluru to Hyderabad
+2026-05-21 15:46:51,063 - MMT_Flights - INFO - CLICKED LABEL: fromCity
+2026-05-21 15:46:55,415 - MMT_Flights - INFO - TYPED CITY: Bengaluru in fromCity
+2026-05-21 15:46:57,520 - MMT_Flights - INFO - SELECTED CITY: Bengaluru in fromCity
+2026-05-21 15:46:59,079 - MMT_Flights - INFO - CLICKED LABEL: toCity
+2026-05-21 15:47:03,355 - MMT_Flights - INFO - TYPED CITY: Hyderabad in toCity
+2026-05-21 15:47:05,432 - MMT_Flights - INFO - SELECTED CITY: Hyderabad in toCity
+2026-05-21 15:47:06,936 - MMT_Flights - INFO - Formatted date for locator: Thu Jun 25 2026
+2026-05-21 15:47:06,937 - MMT_Flights - INFO - SELECTING DATE: Thu Jun 25 2026
+2026-05-21 15:47:07,983 - MMT_Flights - INFO - DEPARTURE DATE Thu Jun 25 2026 SELECTED
+2026-05-21 15:47:07,984 - MMT_Flights - INFO - CLICKING SEARCH BUTTON
+2026-05-21 15:47:13,842 - MMT_Flights - INFO - SEARCH BUTTON CLICKED SUCCESSFULLY
+2026-05-21 15:47:23,843 - MMT_Flights - INFO - Verifying if flight results are loaded...
+2026-05-21 15:47:23,866 - MMT_Flights - INFO - Applying filter: airline
+2026-05-21 15:47:45,508 - MMT_Flights - ERROR - Failed to click Akasa Air Filter: Message: 
+Stacktrace:
+	uc_driver!GetHandleVerifier [0x7ff6d5b87de5+14895]
+	uc_driver!GetHandleVerifier [0x7ff6d5b87e50+14900]
+	uc_driver!(No symbol) [0x7ff6d58ed5ad]
+	uc_driver!(No symbol) [0x7ff6d5947822]
+	uc_driver!(No symbol) [0x7ff6d5947b2c]
+	uc_driver!(No symbol) [0x7ff6d5997d17]
+	uc_driver!(No symbol) [0x7ff6d599486f]
+	uc_driver!(No symbol) [0x7ff6d5939df8]
+	uc_driver!(No symbol) [0x7ff6d593ace3]
+	uc_driver!GetHandleVerifier [0x7ff6d5e9cc49+3296f9]
+	uc_driver!GetHandleVerifier [0x7ff6d5e97375+323e25]
+	uc_driver!GetHandleVerifier [0x7ff6d5ebbc82+348732]
+	uc_driver!GetHandleVerifier [0x7ff6d5ba6045+32af5]
+	uc_driver!GetHandleVerifier [0x7ff6d5baecec+3b79c]
+	uc_driver!GetHandleVerifier [0x7ff6d5b91bc4+1e674]
+	uc_driver!GetHandleVerifier [0x7ff6d5b91d54+1e804]
+	uc_driver!GetHandleVerifier [0x7ff6d5b760e7+2b97]
+	KERNEL32!BaseThreadInitThunk [0x7ff97b24e957+17]
+	ntdll!RtlUserThreadStart [0x7ff97cd4427c+2c]
+
+2026-05-21 15:47:45,532 - MMT_Flights - ERROR - TEST FAILED - CAPTURING SCREENSHOT
+2026-05-21 15:47:45,670 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 15:47:48,213 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY
+2026-05-21 15:47:48,216 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 15:47:51,324 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 15:47:59,626 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 15:47:59,628 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 15:47:59,629 - MMT_Flights - INFO - Opening website: https://www.makemytrip.com
+2026-05-21 15:48:12,762 - MMT_Flights - INFO - CLICKED OUTSIDE POPUP
+2026-05-21 15:48:13,804 - MMT_Flights - INFO - FLIGHT CLICKED
+2026-05-21 15:48:15,851 - MMT_Flights - INFO - ONE WAY SELECTED
+2026-05-21 15:48:16,852 - MMT_Flights - INFO - Testing Scenario: morning for Hyderabad to Chennai
+2026-05-21 15:48:16,905 - MMT_Flights - INFO - CLICKED LABEL: fromCity
+2026-05-21 15:48:21,214 - MMT_Flights - INFO - TYPED CITY: Hyderabad in fromCity
+2026-05-21 15:48:23,288 - MMT_Flights - INFO - SELECTED CITY: Hyderabad in fromCity
+2026-05-21 15:48:24,850 - MMT_Flights - INFO - CLICKED LABEL: toCity
+2026-05-21 15:48:28,648 - MMT_Flights - INFO - TYPED CITY: Chennai in toCity
+2026-05-21 15:48:30,703 - MMT_Flights - INFO - SELECTED CITY: Chennai in toCity
+2026-05-21 15:48:32,205 - MMT_Flights - INFO - Formatted date for locator: Sun Jun 28 2026
+2026-05-21 15:48:32,206 - MMT_Flights - INFO - SELECTING DATE: Sun Jun 28 2026
+2026-05-21 15:48:33,252 - MMT_Flights - INFO - DEPARTURE DATE Sun Jun 28 2026 SELECTED
+2026-05-21 15:48:33,252 - MMT_Flights - INFO - CLICKING SEARCH BUTTON
+2026-05-21 15:49:22,320 - MMT_Flights - INFO - SEARCH BUTTON CLICKED SUCCESSFULLY
+2026-05-21 15:49:32,321 - MMT_Flights - INFO - Verifying if flight results are loaded...
+2026-05-21 15:49:32,342 - MMT_Flights - INFO - Applying filter: morning
+2026-05-21 15:49:54,008 - MMT_Flights - ERROR - Failed to click Morning Departure Filter: Message: 
+Stacktrace:
+	uc_driver!GetHandleVerifier [0x7ff6d5b87de5+14895]
+	uc_driver!GetHandleVerifier [0x7ff6d5b87e50+14900]
+	uc_driver!(No symbol) [0x7ff6d58ed5ad]
+	uc_driver!(No symbol) [0x7ff6d5947822]
+	uc_driver!(No symbol) [0x7ff6d5947b2c]
+	uc_driver!(No symbol) [0x7ff6d5997d17]
+	uc_driver!(No symbol) [0x7ff6d599486f]
+	uc_driver!(No symbol) [0x7ff6d5939df8]
+	uc_driver!(No symbol) [0x7ff6d593ace3]
+	uc_driver!GetHandleVerifier [0x7ff6d5e9cc49+3296f9]
+	uc_driver!GetHandleVerifier [0x7ff6d5e97375+323e25]
+	uc_driver!GetHandleVerifier [0x7ff6d5ebbc82+348732]
+	uc_driver!GetHandleVerifier [0x7ff6d5ba6045+32af5]
+	uc_driver!GetHandleVerifier [0x7ff6d5baecec+3b79c]
+	uc_driver!GetHandleVerifier [0x7ff6d5b91bc4+1e674]
+	uc_driver!GetHandleVerifier [0x7ff6d5b91d54+1e804]
+	uc_driver!GetHandleVerifier [0x7ff6d5b760e7+2b97]
+	KERNEL32!BaseThreadInitThunk [0x7ff97b24e957+17]
+	ntdll!RtlUserThreadStart [0x7ff97cd4427c+2c]
+
+2026-05-21 15:49:54,029 - MMT_Flights - ERROR - TEST FAILED - CAPTURING SCREENSHOT
+2026-05-21 15:49:54,200 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 15:49:56,792 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY

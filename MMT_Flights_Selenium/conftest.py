@@ -65,8 +65,27 @@ def pytest_runtest_makereport(item):
     except Exception as e:
         logger.error(f"SCREENSHOT FAILED: {str(e)}")
 
+    import os
+    import subprocess
 
-def pytest_unconfigure(config):
-    print("\n============= TESTS COMPLETED - OPENING ALLURE REPORT =============")
+    def pytest_unconfigure(config):
+        print("\n------- TESTS COMPLETE! GENERATING PERMANENT ALLURE REPORT --------")
 
-    os.system("allure serve reports/allure-results")
+        # Path to your raw data
+        results_dir = os.path.join("reports", "allure-results")
+        # Path to where you want the beautiful dashboard saved
+        report_dir = os.path.join("reports", "allure-report")
+
+        try:
+            # -o tells Allure to use a specific Output directory
+            # --clean removes the old report before building the new one
+            command = f'allure generate "{results_dir}" -o "{report_dir}" --clean'
+
+            # We use subprocess.run so the terminal waits until the report is 100% ready
+            subprocess.run(command, shell=True, check=True)
+
+            print(f"SUCCESS: Report generated in: {report_dir}")
+        except Exception as e:
+            print(f"ERROR: Could not generate Allure report: {e}")
+
+

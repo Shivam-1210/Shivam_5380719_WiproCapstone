@@ -1,0 +1,84 @@
+2026-05-21 18:40:16,573 - MMT_Flights - INFO - Reading Excel: C:\wipro_training_work\python_coding\Capstone_Project\MMT_Flights_Selenium\test_data/passenger_data.xlsx | Sheet: PositiveFlights
+2026-05-21 18:40:16,758 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 18:40:20,058 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 18:40:28,819 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 18:40:28,821 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 18:40:28,822 - MMT_Flights - INFO - Opening website: https://www.makemytrip.com
+2026-05-21 18:40:50,974 - MMT_Flights - INFO - Testing Scenario: non_stop for New Delhi to Mumbai
+2026-05-21 18:40:53,267 - MMT_Flights - INFO - Selected From City: New Delhi
+2026-05-21 18:40:56,534 - MMT_Flights - INFO - Selected To City: Mumbai
+2026-05-21 18:40:57,535 - MMT_Flights - INFO - Formatted date for locator: Fri Jun 19 2026
+2026-05-21 18:40:57,536 - MMT_Flights - INFO - SELECTING DATE: Fri Jun 19 2026
+2026-05-21 18:40:58,588 - MMT_Flights - INFO - DEPARTURE DATE Fri Jun 19 2026 SELECTED
+2026-05-21 18:40:58,588 - MMT_Flights - INFO - CLICKING SEARCH BUTTON
+2026-05-21 18:41:03,608 - MMT_Flights - INFO - SEARCH BUTTON CLICKED SUCCESSFULLY
+2026-05-21 18:41:08,609 - MMT_Flights - INFO - Verifying if flight results are loaded...
+2026-05-21 18:41:08,640 - MMT_Flights - INFO - Applying filter: non_stop
+2026-05-21 18:41:09,750 - MMT_Flights - INFO - Successfully clicked: Non-Stop Filter
+2026-05-21 18:41:11,774 - MMT_Flights - INFO - Found 2 flight cards.
+2026-05-21 18:41:11,775 - MMT_Flights - INFO - SUCCESS: Scenario non_stop for New Delhi to Mumbai passed.
+2026-05-21 18:41:11,776 - MMT_Flights - INFO - TEST PASSED - CAPTURING SCREENSHOT
+2026-05-21 18:41:11,915 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 18:41:14,515 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY
+2026-05-21 18:41:14,518 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 18:41:17,730 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 18:41:26,048 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 18:41:26,051 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 18:41:26,051 - MMT_Flights - INFO - Opening website: https://www.makemytrip.com
+2026-05-21 18:41:47,354 - MMT_Flights - INFO - Testing Scenario: cheapest for Mumbai to Bengaluru
+2026-05-21 18:41:49,650 - MMT_Flights - INFO - Selected From City: Mumbai
+2026-05-21 18:41:52,895 - MMT_Flights - INFO - Selected To City: Bengaluru
+2026-05-21 18:41:53,897 - MMT_Flights - INFO - Formatted date for locator: Mon Jun 22 2026
+2026-05-21 18:41:53,899 - MMT_Flights - INFO - SELECTING DATE: Mon Jun 22 2026
+2026-05-21 18:41:54,960 - MMT_Flights - INFO - DEPARTURE DATE Mon Jun 22 2026 SELECTED
+2026-05-21 18:41:54,960 - MMT_Flights - INFO - CLICKING SEARCH BUTTON
+2026-05-21 18:42:12,631 - MMT_Flights - INFO - SEARCH BUTTON CLICKED SUCCESSFULLY
+2026-05-21 18:42:17,632 - MMT_Flights - INFO - Verifying if flight results are loaded...
+2026-05-21 18:42:17,665 - MMT_Flights - INFO - Applying filter: cheapest
+2026-05-21 18:42:17,666 - MMT_Flights - INFO - Attempting to sort by cheapest...
+2026-05-21 18:42:17,666 - MMT_Flights - INFO - Cheapest tab is either already active or not clickable. Proceeding safely...
+2026-05-21 18:42:17,680 - MMT_Flights - INFO - Found 3 flight cards.
+2026-05-21 18:42:17,681 - MMT_Flights - INFO - SUCCESS: Scenario cheapest for Mumbai to Bengaluru passed.
+2026-05-21 18:42:17,683 - MMT_Flights - INFO - TEST PASSED - CAPTURING SCREENSHOT
+2026-05-21 18:42:17,830 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 18:42:20,368 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY
+2026-05-21 18:42:20,371 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 18:42:23,515 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 18:42:31,970 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 18:42:31,973 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 18:42:31,974 - MMT_Flights - INFO - Opening website: https://www.makemytrip.com
+2026-05-21 18:42:53,575 - MMT_Flights - INFO - Testing Scenario: airline for Bengaluru to Hyderabad
+2026-05-21 18:42:55,847 - MMT_Flights - INFO - Selected From City: Bengaluru
+2026-05-21 18:42:59,071 - MMT_Flights - INFO - Selected To City: Hyderabad
+2026-05-21 18:43:00,072 - MMT_Flights - INFO - Formatted date for locator: Thu Jun 25 2026
+2026-05-21 18:43:00,073 - MMT_Flights - INFO - SELECTING DATE: Thu Jun 25 2026
+2026-05-21 18:43:01,135 - MMT_Flights - INFO - DEPARTURE DATE Thu Jun 25 2026 SELECTED
+2026-05-21 18:43:01,136 - MMT_Flights - INFO - CLICKING SEARCH BUTTON
+2026-05-21 18:43:06,513 - MMT_Flights - INFO - SEARCH BUTTON CLICKED SUCCESSFULLY
+2026-05-21 18:43:11,514 - MMT_Flights - INFO - Verifying if flight results are loaded...
+2026-05-21 18:43:11,544 - MMT_Flights - INFO - Applying airline filter for: airline
+2026-05-21 18:43:11,545 - MMT_Flights - WARNING - 'airline' not found in inventory. Clicking the first available airline filter instead.
+2026-05-21 18:43:12,124 - MMT_Flights - ERROR - TEST FAILED - CAPTURING SCREENSHOT
+2026-05-21 18:43:12,286 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 18:43:14,826 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY
+2026-05-21 18:43:14,829 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 18:43:17,905 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 18:43:26,210 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 18:43:26,213 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 18:43:26,213 - MMT_Flights - INFO - Opening website: https://www.makemytrip.com
+2026-05-21 18:43:47,479 - MMT_Flights - INFO - Testing Scenario: morning for Hyderabad to Chennai
+2026-05-21 18:43:49,816 - MMT_Flights - INFO - Selected From City: Hyderabad
+2026-05-21 18:43:53,039 - MMT_Flights - INFO - Selected To City: Chennai
+2026-05-21 18:43:54,040 - MMT_Flights - INFO - Formatted date for locator: Sun Jun 28 2026
+2026-05-21 18:43:54,041 - MMT_Flights - INFO - SELECTING DATE: Sun Jun 28 2026
+2026-05-21 18:43:55,094 - MMT_Flights - INFO - DEPARTURE DATE Sun Jun 28 2026 SELECTED
+2026-05-21 18:43:55,094 - MMT_Flights - INFO - CLICKING SEARCH BUTTON
+2026-05-21 18:44:00,181 - MMT_Flights - INFO - SEARCH BUTTON CLICKED SUCCESSFULLY
+2026-05-21 18:44:05,182 - MMT_Flights - INFO - Verifying if flight results are loaded...
+2026-05-21 18:44:05,242 - MMT_Flights - INFO - Applying filter: morning
+2026-05-21 18:44:06,331 - MMT_Flights - INFO - Successfully clicked: Morning Departure Filter
+2026-05-21 18:44:08,353 - MMT_Flights - INFO - Found 2 flight cards.
+2026-05-21 18:44:08,353 - MMT_Flights - INFO - SUCCESS: Scenario morning for Hyderabad to Chennai passed.
+2026-05-21 18:44:08,354 - MMT_Flights - INFO - TEST PASSED - CAPTURING SCREENSHOT
+2026-05-21 18:44:08,493 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 18:44:11,038 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY

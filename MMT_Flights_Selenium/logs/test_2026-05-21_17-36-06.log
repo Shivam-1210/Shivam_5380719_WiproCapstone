@@ -1,0 +1,50 @@
+2026-05-21 17:36:06,555 - MMT_Flights - INFO - Reading Excel: C:\wipro_training_work\python_coding\Capstone_Project\MMT_Flights_Selenium\test_data/passenger_data.xlsx | Sheet: BookingData
+2026-05-21 17:36:06,737 - MMT_Flights - INFO - Reading Excel: C:\wipro_training_work\python_coding\Capstone_Project\MMT_Flights_Selenium\test_data/passenger_data.xlsx | Sheet: PassengerData
+2026-05-21 17:36:06,747 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 17:36:09,908 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 17:36:16,984 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 17:36:16,986 - MMT_Flights - INFO - STARTING E2E FLIGHT BOOKING FLOW
+2026-05-21 17:36:16,986 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 17:36:16,986 - MMT_Flights - INFO - BasePage initialized
+2026-05-21 17:36:16,987 - MMT_Flights - INFO - Opening website: https://www.makemytrip.com
+2026-05-21 17:36:40,437 - MMT_Flights - INFO - Selected From City: Delhi
+2026-05-21 17:36:43,668 - MMT_Flights - INFO - Selected To City: Mumbai
+2026-05-21 17:36:44,670 - MMT_Flights - INFO - SELECTING DATE: Fri Jun 19 2026
+2026-05-21 17:36:45,739 - MMT_Flights - INFO - DEPARTURE DATE Fri Jun 19 2026 SELECTED
+2026-05-21 17:36:45,739 - MMT_Flights - INFO - CLICKING SEARCH BUTTON
+2026-05-21 17:36:51,603 - MMT_Flights - INFO - SEARCH BUTTON CLICKED SUCCESSFULLY
+2026-05-21 17:36:56,604 - MMT_Flights - INFO - Verifying if flight results are loaded...
+2026-05-21 17:36:57,724 - MMT_Flights - INFO - Successfully clicked: Non-Stop Filter
+2026-05-21 17:37:00,808 - MMT_Flights - INFO - Successfully clicked: VIEW PRICES
+2026-05-21 17:37:03,904 - MMT_Flights - INFO - Successfully clicked: BOOK NOW
+2026-05-21 17:37:05,905 - MMT_Flights - INFO - Switching driver focus to the newly opened Booking Tab...
+2026-05-21 17:37:05,942 - MMT_Flights - INFO - Switched successfully. Current URL: https://www.makemytrip.com/flight/reviewDetails/?itineraryId=2ffc15bcab2e1a5ddfe6016ce0efd3a22b81ee1d&cur=INR&ccde=IN&crId=f4163b63-c080-437a-84f3-f3ee04df3668&rKey=RKEY%3A511083f6-1f6d-4e4d-9e9d-a3c07553996a%3A0_0&userCurrency=INR&xflt=eyJjIjoiRSIsInAiOiJBLTFfQy0wX0ktMCIsInQiOiIiLCJzIjoiREVMLUJPTS0yMDI2MDYxOSIsIkl0aW5lcmFyeUlkIjoiREVMLUJPTS0xOS8wNi8yMDI2IiwiVHJpcFR5cGUiOiJPIiwiUGF4VHlwZSI6IkEtMV9DLTBfSS0wIiwiSW50bCI6ZmFsc2UsIkNhYmluQ2xhc3MiOiJFIiwiQ2NkZSI6ImluIiwiUGZ0IjoiIiwiUGFmcyI6IiIsIkZvcndhcmRGbG93UmVxdWlyZWQiOnRydWUsIkNtcElkIjoiIn0%3D
+2026-05-21 17:37:05,943 - MMT_Flights - INFO - Verifying if the Booking Review page is loaded...
+2026-05-21 17:37:05,970 - MMT_Flights - INFO - Booking page loaded successfully.
+2026-05-21 17:37:29,621 - MMT_Flights - ERROR - Failed to enter first name: Message: 
+Stacktrace:
+	uc_driver!GetHandleVerifier [0x7ff6d5b87de5+14895]
+	uc_driver!GetHandleVerifier [0x7ff6d5b87e50+14900]
+	uc_driver!(No symbol) [0x7ff6d58ed5ad]
+	uc_driver!(No symbol) [0x7ff6d5947822]
+	uc_driver!(No symbol) [0x7ff6d5947b2c]
+	uc_driver!(No symbol) [0x7ff6d5997d17]
+	uc_driver!(No symbol) [0x7ff6d599486f]
+	uc_driver!(No symbol) [0x7ff6d5939df8]
+	uc_driver!(No symbol) [0x7ff6d593ace3]
+	uc_driver!GetHandleVerifier [0x7ff6d5e9cc49+3296f9]
+	uc_driver!GetHandleVerifier [0x7ff6d5e97375+323e25]
+	uc_driver!GetHandleVerifier [0x7ff6d5ebbc82+348732]
+	uc_driver!GetHandleVerifier [0x7ff6d5ba6045+32af5]
+	uc_driver!GetHandleVerifier [0x7ff6d5baecec+3b79c]
+	uc_driver!GetHandleVerifier [0x7ff6d5b91bc4+1e674]
+	uc_driver!GetHandleVerifier [0x7ff6d5b91d54+1e804]
+	uc_driver!GetHandleVerifier [0x7ff6d5b760e7+2b97]
+	KERNEL32!BaseThreadInitThunk [0x7ff97b24e957+17]
+	ntdll!RtlUserThreadStart [0x7ff97cd4427c+2c]
+
+2026-05-21 17:37:30,004 - MMT_Flights - INFO - Contact details populated successfully.
+2026-05-21 17:37:30,004 - MMT_Flights - INFO - E2E FLIGHT BOOKING FLOW COMPLETED UP TO FINAL CONFIRMATION STEP
+2026-05-21 17:37:30,005 - MMT_Flights - INFO - TEST PASSED - CAPTURING SCREENSHOT
+2026-05-21 17:37:30,141 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 17:37:32,719 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY

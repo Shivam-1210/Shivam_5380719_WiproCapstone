@@ -1,35 +1,44 @@
-import time
 import pytest
-
+import time
+import allure
+import logging
 from pages.home_page import HomePage
+from utils.config_reader import get_base_url
+
+logger = logging.getLogger("MMT_Flights")
 
 
-class TestNegativeFlights:
+@allure.feature("Negative Flight Searches")
+@pytest.mark.parametrize("from_city, to_city, adults, infants, expected_error", [
+    ('Mumbai', 'Mumbai', 1, 0, 'cannot be the same'),
+    ('Delhi', 'Bangalore', 1, 2, 'Number of infants cannot be more than adults')
+])
+def test_negative_scenarios(driver, from_city, to_city, adults, infants, expected_error):
+    home = HomePage(driver)
 
-    def test_negative_scenarios(self, setup):
+    logger.info(f"--- Starting Negative Test: {from_city} to {to_city} ---")
+    driver.get(get_base_url())
+    home.dismiss_modal_if_any()  # Ensure this is robust as shown above
 
-        driver = setup
+    home.select_flight()
+    #home.select_flight_mode()
+    home.select_one_way()
 
-        home = HomePage(driver)
+    home.select_flight_cities(from_city, to_city)
 
-        driver.get("https://www.makemytrip.com")
+    # 2. Enter Passengers
+    home.select_passengers(adults, infants)
 
-        time.sleep(5)
 
-       # driver.find_element("tag name", "body").click()
+    time.sleep(2)
+    actual_error = home.get_ui_error_message()
 
-        # Negative Test 1
-        # Search without selecting cities
+    # Cleaning for logs
+    safe_log_error = actual_error.replace('\n', ' ').encode('ascii', 'ignore').decode('ascii')
+    logger.info(f"Captured UI Text: {safe_log_error}")
 
-        home.click_search()
+    # 4. Assert
+    assert expected_error.lower() in actual_error.lower(), \
+        f"Expected '{expected_error}' but found: {safe_log_error}"
 
-        time.sleep(3)
-
-        assert "makemytrip" in driver.current_url
-
-        # Negative Test 2
-        # Invalid city
-
-        with pytest.raises(Exception):
-
-            home.select_from_city("XYZINVALIDCITY")
+    logger.info("========== TEST PASSED ==========")

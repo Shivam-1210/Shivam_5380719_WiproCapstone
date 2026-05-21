@@ -1,0 +1,41 @@
+2026-05-21 12:45:16,503 - MMT_Flights - INFO - Reading Excel: C:\wipro_training_work\python_coding\Capstone_Project\MMT_Flights_Selenium\test_data/passenger_data.xlsx | Sheet: NegativeFlights
+2026-05-21 12:45:16,738 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 12:45:19,963 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 12:45:26,989 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 12:45:26,991 - MMT_Flights - INFO - ========== STARTING NEGATIVE TEST: xyz to Mumbai ==========
+2026-05-21 12:45:26,991 - MMT_Flights - INFO - Opening website: https://www.makemytrip.com
+2026-05-21 12:45:40,175 - MMT_Flights - INFO - CLICKED OUTSIDE POPUP
+2026-05-21 12:45:41,230 - MMT_Flights - INFO - FLIGHT CLICKED
+2026-05-21 12:45:43,277 - MMT_Flights - INFO - ONE WAY SELECTED
+2026-05-21 12:45:44,277 - MMT_Flights - INFO - Testing invalid scenario: Expecting error 'No Match Found'
+2026-05-21 12:45:44,335 - MMT_Flights - INFO - CLICKED LABEL: fromCity
+2026-05-21 12:45:47,234 - MMT_Flights - INFO - TYPED CITY: xyz in fromCity
+2026-05-21 12:45:49,322 - MMT_Flights - INFO - SELECTED CITY: xyz in fromCity
+2026-05-21 12:45:50,884 - MMT_Flights - INFO - CLICKED LABEL: toCity
+2026-05-21 12:45:54,431 - MMT_Flights - INFO - TYPED CITY: Mumbai in toCity
+2026-05-21 12:45:56,505 - MMT_Flights - INFO - SELECTED CITY: Mumbai in toCity
+2026-05-21 12:45:58,006 - MMT_Flights - INFO - Checking for 'cannot be same' UI error...
+2026-05-21 12:46:03,064 - MMT_Flights - INFO - Failed to select cities, checking for 'No Match Found' message...
+2026-05-21 12:46:08,796 - MMT_Flights - ERROR - TEST FAILED - CAPTURING SCREENSHOT
+2026-05-21 12:46:08,989 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 12:46:11,427 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY
+2026-05-21 12:46:11,430 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 12:46:14,579 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 12:46:23,193 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 12:46:23,195 - MMT_Flights - INFO - ========== STARTING NEGATIVE TEST: Mumbai to Mumbai ==========
+2026-05-21 12:46:23,195 - MMT_Flights - INFO - Opening website: https://www.makemytrip.com
+2026-05-21 12:46:36,177 - MMT_Flights - INFO - CLICKED OUTSIDE POPUP
+2026-05-21 12:46:37,214 - MMT_Flights - INFO - FLIGHT CLICKED
+2026-05-21 12:46:39,261 - MMT_Flights - INFO - ONE WAY SELECTED
+2026-05-21 12:46:40,262 - MMT_Flights - INFO - Testing invalid scenario: Expecting error 'From & To airports cannot be same'
+2026-05-21 12:46:40,321 - MMT_Flights - INFO - CLICKED LABEL: fromCity
+2026-05-21 12:46:43,891 - MMT_Flights - INFO - TYPED CITY: Mumbai in fromCity
+2026-05-21 12:46:45,966 - MMT_Flights - INFO - SELECTED CITY: Mumbai in fromCity
+2026-05-21 12:46:47,524 - MMT_Flights - INFO - CLICKED LABEL: toCity
+2026-05-21 12:46:51,062 - MMT_Flights - INFO - TYPED CITY: Mumbai in toCity
+2026-05-21 12:46:53,138 - MMT_Flights - INFO - SELECTED CITY: Mumbai in toCity
+2026-05-21 12:46:54,639 - MMT_Flights - INFO - Checking for 'cannot be same' UI error...
+2026-05-21 12:46:59,699 - MMT_Flights - INFO - Failed to select cities, checking for 'No Match Found' message...
+2026-05-21 12:46:59,721 - MMT_Flights - ERROR - TEST FAILED - CAPTURING SCREENSHOT
+2026-05-21 12:46:59,948 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 12:47:02,377 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY

@@ -1,0 +1,19 @@
+2026-05-21 16:32:01,099 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 16:32:04,333 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 16:32:12,727 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 16:32:33,808 - MMT_Flights - INFO - FLIGHT CLICKED
+2026-05-21 16:32:35,848 - MMT_Flights - INFO - ONE WAY SELECTED
+2026-05-21 16:33:01,422 - MMT_Flights - INFO - Captured UI Text: From DEL, Delhi Airport India  To BLR, Bengaluru International Airport India Departure 22 May26 Friday Return Tap to add a return date for bigger discounts Travellers & Class 1 Traveller Economy/Premium Economy ADULTS (12y +) on the day of travel 1 2 3 4 5 6 7 8 9 >9 CHILDREN (2y - 12y ) on the day of travel 0 1 2 3 4 5 6 >6 INFANTS (below 2y) on the day of travel 0 1 2 3 4 5 6 >6 CHOOSE TRAVEL CLASS Economy/Premium Economy Premium Economy Business First Class APPLY SPECIAL FARES Regular Regular fares Student Extra discounts/baggage Armed Forces Up to  600 off Have a GST number ? Upto 10% Extra Savings ! Senior Citizen Up to  600 off Doctor and Nurses Up to  600 off Add Price Drop Protection If the price drops, well refund the difference. View Details Flight Tracker Shop Duty Free 10% off SEARCH
+2026-05-21 16:33:01,940 - MMT_Flights - ERROR - TEST FAILED - CAPTURING SCREENSHOT
+2026-05-21 16:33:02,163 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 16:33:04,609 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY
+2026-05-21 16:33:04,612 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 16:33:07,723 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 16:33:16,122 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 16:33:37,420 - MMT_Flights - INFO - FLIGHT CLICKED
+2026-05-21 16:33:39,479 - MMT_Flights - INFO - ONE WAY SELECTED
+2026-05-21 16:33:44,610 - MMT_Flights - INFO - Captured UI Text: Number of infants cannot be more than adults
+2026-05-21 16:33:44,611 - MMT_Flights - INFO - ========== TEST PASSED ==========
+2026-05-21 16:33:44,611 - MMT_Flights - INFO - TEST PASSED - CAPTURING SCREENSHOT
+2026-05-21 16:33:44,806 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 16:33:47,235 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY

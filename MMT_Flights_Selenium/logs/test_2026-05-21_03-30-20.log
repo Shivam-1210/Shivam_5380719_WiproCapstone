@@ -1,0 +1,9 @@
+2026-05-21 03:30:20,879 - MMT_Flights - INFO - Reading Excel: C:\wipro_training_work\python_coding\Capstone_Project\MMT_Flights_Selenium\test_data/passenger_data.xlsx | Sheet: BookingData
+2026-05-21 03:30:21,034 - MMT_Flights - INFO - Reading Excel: C:\wipro_training_work\python_coding\Capstone_Project\MMT_Flights_Selenium\test_data/passenger_data.xlsx | Sheet: PassengerData
+2026-05-21 03:30:21,057 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-21 03:30:24,214 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-21 03:30:32,552 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-21 03:30:32,554 - MMT_Flights - INFO - STARTING E2E FLIGHT BOOKING FLOW
+2026-05-21 03:30:32,985 - MMT_Flights - ERROR - TEST FAILED - CAPTURING SCREENSHOT
+2026-05-21 03:30:33,264 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-21 03:30:35,707 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY
