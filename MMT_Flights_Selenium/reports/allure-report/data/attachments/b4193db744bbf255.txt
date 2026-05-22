@@ -1,0 +1,10 @@
+[32mINFO    [0m MMT_Flights:conftest.py:17 ========== STARTING TEST ==========
+[32mINFO    [0m MMT_Flights:conftest.py:23 OPENING MAKEMYTRIP WEBSITE
+[32mINFO    [0m MMT_Flights:conftest.py:27 CURRENT URL: https://www.makemytrip.com/
+[32mINFO    [0m MMT_Flights:test_negative_flights.py:19 --- Starting Negative Test: Delhi to Bangalore ---
+[32mINFO    [0m MMT_Flights:home_page.py:85 Selected From City: Delhi
+[32mINFO    [0m MMT_Flights:home_page.py:85 Selected To City: Bangalore
+[32mINFO    [0m MMT_Flights:test_negative_flights.py:38 Captured UI Text: Number of infants cannot be more than adults
+[32mINFO    [0m MMT_Flights:test_negative_flights.py:44 ========== TEST PASSED ==========
+[32mINFO    [0m MMT_Flights:conftest.py:31 ========== CLOSING TEST ==========
+[32mINFO    [0m MMT_Flights:conftest.py:35 BROWSER CLOSED SUCCESSFULLY

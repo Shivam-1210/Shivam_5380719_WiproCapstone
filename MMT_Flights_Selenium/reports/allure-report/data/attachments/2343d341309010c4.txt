@@ -1,0 +1,10 @@
+[32mINFO    [0m MMT_Flights:conftest.py:17 ========== STARTING TEST ==========
+[32mINFO    [0m MMT_Flights:conftest.py:23 OPENING MAKEMYTRIP WEBSITE
+[32mINFO    [0m MMT_Flights:conftest.py:27 CURRENT URL: https://www.makemytrip.com/
+[32mINFO    [0m MMT_Flights:test_negative_flights.py:19 --- Starting Negative Test: Mumbai to Mumbai ---
+[32mINFO    [0m MMT_Flights:home_page.py:85 Selected From City: Mumbai
+[32mINFO    [0m MMT_Flights:home_page.py:85 Selected To City: Mumbai
+[32mINFO    [0m MMT_Flights:test_negative_flights.py:38 Captured UI Text: From & To airports cannot be the same
+[32mINFO    [0m MMT_Flights:test_negative_flights.py:44 ========== TEST PASSED ==========
+[32mINFO    [0m MMT_Flights:conftest.py:31 ========== CLOSING TEST ==========
+[32mINFO    [0m MMT_Flights:conftest.py:35 BROWSER CLOSED SUCCESSFULLY

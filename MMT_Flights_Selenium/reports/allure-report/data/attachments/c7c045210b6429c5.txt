@@ -1,0 +1,20 @@
+[32mINFO    [0m MMT_Flights:conftest.py:17 ========== STARTING TEST ==========
+[32mINFO    [0m MMT_Flights:conftest.py:23 OPENING MAKEMYTRIP WEBSITE
+[32mINFO    [0m MMT_Flights:conftest.py:27 CURRENT URL: https://www.makemytrip.com/
+[32mINFO    [0m MMT_Flights:base_page.py:12 BasePage initialized
+[32mINFO    [0m MMT_Flights:home_page.py:28 Opening website: https://www.makemytrip.com
+[32mINFO    [0m MMT_Flights:test_positive_flights.py:40 Testing Scenario: cheapest for Mumbai to Bengaluru
+[32mINFO    [0m MMT_Flights:home_page.py:85 Selected From City: Mumbai
+[32mINFO    [0m MMT_Flights:home_page.py:85 Selected To City: Bengaluru
+[32mINFO    [0m MMT_Flights:test_positive_flights.py:48 Formatted date for locator: Mon Jun 22 2026
+[32mINFO    [0m MMT_Flights:home_page.py:116 SELECTING DATE: Mon Jun 22 2026
+[32mINFO    [0m MMT_Flights:home_page.py:123 DEPARTURE DATE Mon Jun 22 2026 SELECTED
+[32mINFO    [0m MMT_Flights:home_page.py:130 CLICKING SEARCH BUTTON
+[32mINFO    [0m MMT_Flights:home_page.py:137 SEARCH BUTTON CLICKED SUCCESSFULLY
+[32mINFO    [0m MMT_Flights:test_positive_flights.py:63 Applying filter: cheapest
+[32mINFO    [0m MMT_Flights:flight_search_page.py:68 Attempting to sort by cheapest...
+[32mINFO    [0m MMT_Flights:flight_search_page.py:79 Successfully clicked: Cheapest Tab
+[32mINFO    [0m MMT_Flights:flight_search_page.py:105 Found 3 flight cards visible.
+[32mINFO    [0m MMT_Flights:test_positive_flights.py:76 SUCCESS: Scenario cheapest for Mumbai to Bengaluru passed.
+[32mINFO    [0m MMT_Flights:conftest.py:31 ========== CLOSING TEST ==========
+[32mINFO    [0m MMT_Flights:conftest.py:35 BROWSER CLOSED SUCCESSFULLY

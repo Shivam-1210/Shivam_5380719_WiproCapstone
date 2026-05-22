@@ -1,0 +1,43 @@
+[32mINFO    [0m MMT_Flights:conftest.py:17 ========== STARTING TEST ==========
+[32mINFO    [0m MMT_Flights:conftest.py:23 OPENING MAKEMYTRIP WEBSITE
+[32mINFO    [0m MMT_Flights:conftest.py:27 CURRENT URL: https://www.makemytrip.com/
+[32mINFO    [0m MMT_Flights:test_e2e_booking.py:108 STARTING E2E FLIGHT BOOKING FLOW
+[32mINFO    [0m MMT_Flights:base_page.py:12 BasePage initialized
+[32mINFO    [0m MMT_Flights:base_page.py:12 BasePage initialized
+[32mINFO    [0m MMT_Flights:home_page.py:28 Opening website: https://www.makemytrip.com
+[32mINFO    [0m MMT_Flights:home_page.py:85 Selected From City: Delhi
+[32mINFO    [0m MMT_Flights:home_page.py:85 Selected To City: Mumbai
+[32mINFO    [0m MMT_Flights:home_page.py:116 SELECTING DATE: Fri Jun 19 2026
+[32mINFO    [0m MMT_Flights:home_page.py:123 DEPARTURE DATE Fri Jun 19 2026 SELECTED
+[32mINFO    [0m MMT_Flights:home_page.py:130 CLICKING SEARCH BUTTON
+[32mINFO    [0m MMT_Flights:home_page.py:137 SEARCH BUTTON CLICKED SUCCESSFULLY
+[32mINFO    [0m MMT_Flights:flight_search_page.py:52 Successfully clicked: Non-Stop Filter
+[32mINFO    [0m MMT_Flights:test_e2e_booking.py:128 Switching driver focus to the newly opened Booking Tab...
+[32mINFO    [0m MMT_Flights:booking_page.py:206 Clicked '+ ADD NEW ADULT' button.
+[32mINFO    [0m MMT_Flights:booking_page.py:180 Successfully entered First Name: Vats
+[33mWARNING [0m MMT_Flights:booking_page.py:183 Standard entry for Email blocked. Using JS Fallback.
+[1m[31mERROR   [0m MMT_Flights:booking_page.py:191 Failed to interact with Email: Message: javascript error: True is not defined
+  (Session info: chrome=148.0.7778.179)
+Stacktrace:
+	uc_driver!GetHandleVerifier [0x7ff776e67de5+14895]
+	uc_driver!GetHandleVerifier [0x7ff776e67e50+14900]
+	uc_driver!(No symbol) [0x7ff776bcd5ad]
+	uc_driver!(No symbol) [0x7ff776bd5521]
+	uc_driver!(No symbol) [0x7ff776bd897f]
+	uc_driver!(No symbol) [0x7ff776c75c7d]
+	uc_driver!(No symbol) [0x7ff776c5005a]
+	uc_driver!(No symbol) [0x7ff776c7486f]
+	uc_driver!(No symbol) [0x7ff776c19df8]
+	uc_driver!(No symbol) [0x7ff776c1ace3]
+	uc_driver!GetHandleVerifier [0x7ff77717cc49+3296f9]
+	uc_driver!GetHandleVerifier [0x7ff777177375+323e25]
+	uc_driver!GetHandleVerifier [0x7ff77719bc82+348732]
+	uc_driver!GetHandleVerifier [0x7ff776e86045+32af5]
+	uc_driver!GetHandleVerifier [0x7ff776e8ecec+3b79c]
+	uc_driver!GetHandleVerifier [0x7ff776e71bc4+1e674]
+	uc_driver!GetHandleVerifier [0x7ff776e71d54+1e804]
+	uc_driver!GetHandleVerifier [0x7ff776e560e7+2b97]
+	KERNEL32!BaseThreadInitThunk [0x7ff97b24e957+17]
+	ntdll!RtlUserThreadStart [0x7ff97cd4427c+2c]
+[32mINFO    [0m MMT_Flights:conftest.py:31 ========== CLOSING TEST ==========
+[32mINFO    [0m MMT_Flights:conftest.py:35 BROWSER CLOSED SUCCESSFULLY

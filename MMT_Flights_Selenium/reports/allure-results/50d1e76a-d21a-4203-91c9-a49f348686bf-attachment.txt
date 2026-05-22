@@ -1,0 +1,19 @@
+[32mINFO    [0m MMT_Flights:conftest.py:17 ========== STARTING TEST ==========
+[32mINFO    [0m MMT_Flights:conftest.py:23 OPENING MAKEMYTRIP WEBSITE
+[32mINFO    [0m MMT_Flights:conftest.py:27 CURRENT URL: https://www.makemytrip.com/
+[32mINFO    [0m MMT_Flights:base_page.py:12 BasePage initialized
+[32mINFO    [0m MMT_Flights:home_page.py:28 Opening website: https://www.makemytrip.com
+[32mINFO    [0m MMT_Flights:test_positive_flights.py:40 Testing Scenario: Air India for Bengaluru to Hyderabad
+[32mINFO    [0m MMT_Flights:home_page.py:85 Selected From City: Bengaluru
+[32mINFO    [0m MMT_Flights:home_page.py:85 Selected To City: Hyderabad
+[32mINFO    [0m MMT_Flights:test_positive_flights.py:48 Formatted date for locator: Thu Jun 25 2026
+[32mINFO    [0m MMT_Flights:home_page.py:116 SELECTING DATE: Thu Jun 25 2026
+[32mINFO    [0m MMT_Flights:home_page.py:123 DEPARTURE DATE Thu Jun 25 2026 SELECTED
+[32mINFO    [0m MMT_Flights:home_page.py:130 CLICKING SEARCH BUTTON
+[32mINFO    [0m MMT_Flights:home_page.py:137 SEARCH BUTTON CLICKED SUCCESSFULLY
+[32mINFO    [0m MMT_Flights:test_positive_flights.py:71 Applying airline filter for: Air India
+[32mINFO    [0m MMT_Flights:flight_search_page.py:93 Successfully clicked 'Air India' filter.
+[32mINFO    [0m MMT_Flights:flight_search_page.py:105 Found 1 flight cards visible.
+[32mINFO    [0m MMT_Flights:test_positive_flights.py:76 SUCCESS: Scenario Air India for Bengaluru to Hyderabad passed.
+[32mINFO    [0m MMT_Flights:conftest.py:31 ========== CLOSING TEST ==========
+[32mINFO    [0m MMT_Flights:conftest.py:35 BROWSER CLOSED SUCCESSFULLY

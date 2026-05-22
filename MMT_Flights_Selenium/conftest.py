@@ -68,22 +68,6 @@ def pytest_runtest_makereport(item):
         logger.error(f"SCREENSHOT FAILED: {str(e)}")
 
 
-#--------------------------------------------------------
-    #
-    # @pytest.hookimpl(hookwrapper=True)
-    # def pytest_runtest_makereport(item, call):
-    #     outcome = yield
-    #     report = outcome.get_result()
-    #     if report.when == "call" and report.failed:
-    #         # Get the driver instance
-    #         driver = item.funcargs.get("driver")
-    #         if driver:
-    #             # FIX: Ensure os is used correctly here
-    #             screenshot_dir = os.path.join("reports", "screenshots")
-    #             if not os.path.exists(screenshot_dir):
-    #                 os.makedirs(screenshot_dir)
-    #             file_name = f"screenshot_{datetime.now().strftime('%Y%m%d_%H%M%S')}.png"
-    #             driver.save_screenshot(os.path.join(screenshot_dir, file_name))
 
 
 def pytest_unconfigure(config):

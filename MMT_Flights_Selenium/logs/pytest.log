@@ -4,27 +4,23 @@ INFO     MMT_Flights:excel_reader.py:14 Reading Excel: C:\wipro_training_work\py
 INFO     MMT_Flights:conftest.py:17 ========== STARTING TEST ==========
 INFO     MMT_Flights:conftest.py:23 OPENING MAKEMYTRIP WEBSITE
 INFO     MMT_Flights:conftest.py:27 CURRENT URL: https://www.makemytrip.com/
-INFO     MMT_Flights:test_e2e_booking.py:110 STARTING E2E FLIGHT BOOKING FLOW
+INFO     MMT_Flights:test_e2e_booking.py:24 STARTING E2E FLIGHT BOOKING FLOW
 INFO     MMT_Flights:base_page.py:12 BasePage initialized
 INFO     MMT_Flights:base_page.py:12 BasePage initialized
-INFO     MMT_Flights:home_page.py:276 Opening website: https://www.makemytrip.com
-INFO     MMT_Flights:home_page.py:333 Selected From City: Delhi
-INFO     MMT_Flights:home_page.py:333 Selected To City: Mumbai
-INFO     MMT_Flights:home_page.py:364 SELECTING DATE: Fri Jun 19 2026
-INFO     MMT_Flights:home_page.py:371 DEPARTURE DATE Fri Jun 19 2026 SELECTED
-INFO     MMT_Flights:home_page.py:378 CLICKING SEARCH BUTTON
-INFO     MMT_Flights:home_page.py:385 SEARCH BUTTON CLICKED SUCCESSFULLY
-INFO     MMT_Flights:flight_search_page.py:174 Successfully clicked: Non-Stop Filter
-INFO     MMT_Flights:test_e2e_booking.py:130 Switching driver focus to the newly opened Booking Tab...
-INFO     MMT_Flights:booking_page.py:132 Verifying if the Booking Review page is loaded...
-INFO     MMT_Flights:booking_page.py:135 Booking page loaded successfully.
-INFO     MMT_Flights:booking_page.py:159 Clicked '+ ADD NEW ADULT' button.
-INFO     MMT_Flights:booking_page.py:172 Entered First Name: Vats
-INFO     MMT_Flights:booking_page.py:197 Entered Email: vats123@gmail.com
-WARNING  MMT_Flights:booking_page.py:218 Standard Mobile entry failed, attempting JS fallback...
-INFO     MMT_Flights:booking_page.py:221 Entered Mobile via JS fallback.
-INFO     MMT_Flights:booking_page.py:233 Contact details populated successfully.
-INFO     MMT_Flights:test_e2e_booking.py:160 E2E FLIGHT BOOKING FLOW COMPLETED SUCCESSFULLY
+INFO     MMT_Flights:home_page.py:28 Opening website: https://www.makemytrip.com
+INFO     MMT_Flights:home_page.py:85 Selected From City: Delhi
+INFO     MMT_Flights:home_page.py:85 Selected To City: Mumbai
+INFO     MMT_Flights:home_page.py:116 SELECTING DATE: Fri Jun 19 2026
+INFO     MMT_Flights:home_page.py:123 DEPARTURE DATE Fri Jun 19 2026 SELECTED
+INFO     MMT_Flights:home_page.py:130 CLICKING SEARCH BUTTON
+INFO     MMT_Flights:home_page.py:137 SEARCH BUTTON CLICKED SUCCESSFULLY
+INFO     MMT_Flights:flight_search_page.py:52 Successfully clicked: Non-Stop Filter
+INFO     MMT_Flights:test_e2e_booking.py:44 Switching driver focus to the newly opened Booking Tab...
+INFO     MMT_Flights:booking_page.py:70 Clicked '+ ADD NEW ADULT' button.
+WARNING  MMT_Flights:booking_page.py:48 Standard entry for First Name blocked. Using JS Fallback.
+WARNING  MMT_Flights:booking_page.py:48 Standard entry for Email blocked. Using JS Fallback.
+WARNING  MMT_Flights:booking_page.py:48 Standard entry for Mobile blocked. Using JS Fallback.
+INFO     MMT_Flights:test_e2e_booking.py:73 E2E FLIGHT BOOKING FLOW COMPLETED SUCCESSFULLY
 INFO     MMT_Flights:conftest.py:55 TEST PASSED - CAPTURING SCREENSHOT
 INFO     MMT_Flights:conftest.py:31 ========== CLOSING TEST ==========
 INFO     MMT_Flights:conftest.py:35 BROWSER CLOSED SUCCESSFULLY
@@ -32,8 +28,8 @@ INFO     MMT_Flights:conftest.py:17 ========== STARTING TEST ==========
 INFO     MMT_Flights:conftest.py:23 OPENING MAKEMYTRIP WEBSITE
 INFO     MMT_Flights:conftest.py:27 CURRENT URL: https://www.makemytrip.com/
 INFO     MMT_Flights:test_negative_flights.py:19 --- Starting Negative Test: Mumbai to Mumbai ---
-INFO     MMT_Flights:home_page.py:333 Selected From City: Mumbai
-INFO     MMT_Flights:home_page.py:333 Selected To City: Mumbai
+INFO     MMT_Flights:home_page.py:85 Selected From City: Mumbai
+INFO     MMT_Flights:home_page.py:85 Selected To City: Mumbai
 INFO     MMT_Flights:test_negative_flights.py:38 Captured UI Text: From & To airports cannot be the same
 INFO     MMT_Flights:test_negative_flights.py:44 ========== TEST PASSED ==========
 INFO     MMT_Flights:conftest.py:55 TEST PASSED - CAPTURING SCREENSHOT
@@ -43,8 +39,8 @@ INFO     MMT_Flights:conftest.py:17 ========== STARTING TEST ==========
 INFO     MMT_Flights:conftest.py:23 OPENING MAKEMYTRIP WEBSITE
 INFO     MMT_Flights:conftest.py:27 CURRENT URL: https://www.makemytrip.com/
 INFO     MMT_Flights:test_negative_flights.py:19 --- Starting Negative Test: Delhi to Bangalore ---
-INFO     MMT_Flights:home_page.py:333 Selected From City: Delhi
-INFO     MMT_Flights:home_page.py:333 Selected To City: Bangalore
+INFO     MMT_Flights:home_page.py:85 Selected From City: Delhi
+INFO     MMT_Flights:home_page.py:85 Selected To City: Bangalore
 INFO     MMT_Flights:test_negative_flights.py:38 Captured UI Text: Number of infants cannot be more than adults
 INFO     MMT_Flights:test_negative_flights.py:44 ========== TEST PASSED ==========
 INFO     MMT_Flights:conftest.py:55 TEST PASSED - CAPTURING SCREENSHOT
@@ -54,19 +50,19 @@ INFO     MMT_Flights:conftest.py:17 ========== STARTING TEST ==========
 INFO     MMT_Flights:conftest.py:23 OPENING MAKEMYTRIP WEBSITE
 INFO     MMT_Flights:conftest.py:27 CURRENT URL: https://www.makemytrip.com/
 INFO     MMT_Flights:base_page.py:12 BasePage initialized
-INFO     MMT_Flights:home_page.py:276 Opening website: https://www.makemytrip.com
+INFO     MMT_Flights:home_page.py:28 Opening website: https://www.makemytrip.com
 INFO     MMT_Flights:test_positive_flights.py:40 Testing Scenario: non_stop for New Delhi to Mumbai
-INFO     MMT_Flights:home_page.py:333 Selected From City: New Delhi
-INFO     MMT_Flights:home_page.py:333 Selected To City: Mumbai
-INFO     MMT_Flights:test_positive_flights.py:52 Formatted date for locator: Fri Jun 19 2026
-INFO     MMT_Flights:home_page.py:364 SELECTING DATE: Fri Jun 19 2026
-INFO     MMT_Flights:home_page.py:371 DEPARTURE DATE Fri Jun 19 2026 SELECTED
-INFO     MMT_Flights:home_page.py:378 CLICKING SEARCH BUTTON
-INFO     MMT_Flights:home_page.py:385 SEARCH BUTTON CLICKED SUCCESSFULLY
-INFO     MMT_Flights:test_positive_flights.py:64 Applying filter: non_stop
-INFO     MMT_Flights:flight_search_page.py:174 Successfully clicked: Non-Stop Filter
-INFO     MMT_Flights:flight_search_page.py:227 Found 2 flight cards visible.
-INFO     MMT_Flights:test_positive_flights.py:80 SUCCESS: Scenario non_stop for New Delhi to Mumbai passed.
+INFO     MMT_Flights:home_page.py:85 Selected From City: New Delhi
+INFO     MMT_Flights:home_page.py:85 Selected To City: Mumbai
+INFO     MMT_Flights:test_positive_flights.py:48 Formatted date for locator: Fri Jun 19 2026
+INFO     MMT_Flights:home_page.py:116 SELECTING DATE: Fri Jun 19 2026
+INFO     MMT_Flights:home_page.py:123 DEPARTURE DATE Fri Jun 19 2026 SELECTED
+INFO     MMT_Flights:home_page.py:130 CLICKING SEARCH BUTTON
+INFO     MMT_Flights:home_page.py:137 SEARCH BUTTON CLICKED SUCCESSFULLY
+INFO     MMT_Flights:test_positive_flights.py:60 Applying filter: non_stop
+INFO     MMT_Flights:flight_search_page.py:52 Successfully clicked: Non-Stop Filter
+INFO     MMT_Flights:flight_search_page.py:105 Found 2 flight cards visible.
+INFO     MMT_Flights:test_positive_flights.py:76 SUCCESS: Scenario non_stop for New Delhi to Mumbai passed.
 INFO     MMT_Flights:conftest.py:55 TEST PASSED - CAPTURING SCREENSHOT
 INFO     MMT_Flights:conftest.py:31 ========== CLOSING TEST ==========
 INFO     MMT_Flights:conftest.py:35 BROWSER CLOSED SUCCESSFULLY
@@ -74,20 +70,20 @@ INFO     MMT_Flights:conftest.py:17 ========== STARTING TEST ==========
 INFO     MMT_Flights:conftest.py:23 OPENING MAKEMYTRIP WEBSITE
 INFO     MMT_Flights:conftest.py:27 CURRENT URL: https://www.makemytrip.com/
 INFO     MMT_Flights:base_page.py:12 BasePage initialized
-INFO     MMT_Flights:home_page.py:276 Opening website: https://www.makemytrip.com
+INFO     MMT_Flights:home_page.py:28 Opening website: https://www.makemytrip.com
 INFO     MMT_Flights:test_positive_flights.py:40 Testing Scenario: cheapest for Mumbai to Bengaluru
-INFO     MMT_Flights:home_page.py:333 Selected From City: Mumbai
-INFO     MMT_Flights:home_page.py:333 Selected To City: Bengaluru
-INFO     MMT_Flights:test_positive_flights.py:52 Formatted date for locator: Mon Jun 22 2026
-INFO     MMT_Flights:home_page.py:364 SELECTING DATE: Mon Jun 22 2026
-INFO     MMT_Flights:home_page.py:371 DEPARTURE DATE Mon Jun 22 2026 SELECTED
-INFO     MMT_Flights:home_page.py:378 CLICKING SEARCH BUTTON
-INFO     MMT_Flights:home_page.py:385 SEARCH BUTTON CLICKED SUCCESSFULLY
-INFO     MMT_Flights:test_positive_flights.py:67 Applying filter: cheapest
-INFO     MMT_Flights:flight_search_page.py:190 Attempting to sort by cheapest...
-INFO     MMT_Flights:flight_search_page.py:201 Successfully clicked: Cheapest Tab
-INFO     MMT_Flights:flight_search_page.py:227 Found 3 flight cards visible.
-INFO     MMT_Flights:test_positive_flights.py:80 SUCCESS: Scenario cheapest for Mumbai to Bengaluru passed.
+INFO     MMT_Flights:home_page.py:85 Selected From City: Mumbai
+INFO     MMT_Flights:home_page.py:85 Selected To City: Bengaluru
+INFO     MMT_Flights:test_positive_flights.py:48 Formatted date for locator: Mon Jun 22 2026
+INFO     MMT_Flights:home_page.py:116 SELECTING DATE: Mon Jun 22 2026
+INFO     MMT_Flights:home_page.py:123 DEPARTURE DATE Mon Jun 22 2026 SELECTED
+INFO     MMT_Flights:home_page.py:130 CLICKING SEARCH BUTTON
+INFO     MMT_Flights:home_page.py:137 SEARCH BUTTON CLICKED SUCCESSFULLY
+INFO     MMT_Flights:test_positive_flights.py:63 Applying filter: cheapest
+INFO     MMT_Flights:flight_search_page.py:68 Attempting to sort by cheapest...
+INFO     MMT_Flights:flight_search_page.py:79 Successfully clicked: Cheapest Tab
+INFO     MMT_Flights:flight_search_page.py:105 Found 3 flight cards visible.
+INFO     MMT_Flights:test_positive_flights.py:76 SUCCESS: Scenario cheapest for Mumbai to Bengaluru passed.
 INFO     MMT_Flights:conftest.py:55 TEST PASSED - CAPTURING SCREENSHOT
 INFO     MMT_Flights:conftest.py:31 ========== CLOSING TEST ==========
 INFO     MMT_Flights:conftest.py:35 BROWSER CLOSED SUCCESSFULLY
@@ -95,19 +91,19 @@ INFO     MMT_Flights:conftest.py:17 ========== STARTING TEST ==========
 INFO     MMT_Flights:conftest.py:23 OPENING MAKEMYTRIP WEBSITE
 INFO     MMT_Flights:conftest.py:27 CURRENT URL: https://www.makemytrip.com/
 INFO     MMT_Flights:base_page.py:12 BasePage initialized
-INFO     MMT_Flights:home_page.py:276 Opening website: https://www.makemytrip.com
+INFO     MMT_Flights:home_page.py:28 Opening website: https://www.makemytrip.com
 INFO     MMT_Flights:test_positive_flights.py:40 Testing Scenario: Air India for Bengaluru to Hyderabad
-INFO     MMT_Flights:home_page.py:333 Selected From City: Bengaluru
-INFO     MMT_Flights:home_page.py:333 Selected To City: Hyderabad
-INFO     MMT_Flights:test_positive_flights.py:52 Formatted date for locator: Thu Jun 25 2026
-INFO     MMT_Flights:home_page.py:364 SELECTING DATE: Thu Jun 25 2026
-INFO     MMT_Flights:home_page.py:371 DEPARTURE DATE Thu Jun 25 2026 SELECTED
-INFO     MMT_Flights:home_page.py:378 CLICKING SEARCH BUTTON
-INFO     MMT_Flights:home_page.py:385 SEARCH BUTTON CLICKED SUCCESSFULLY
-INFO     MMT_Flights:test_positive_flights.py:75 Applying airline filter for: Air India
-INFO     MMT_Flights:flight_search_page.py:215 Successfully clicked 'Air India' filter.
-INFO     MMT_Flights:flight_search_page.py:227 Found 2 flight cards visible.
-INFO     MMT_Flights:test_positive_flights.py:80 SUCCESS: Scenario Air India for Bengaluru to Hyderabad passed.
+INFO     MMT_Flights:home_page.py:85 Selected From City: Bengaluru
+INFO     MMT_Flights:home_page.py:85 Selected To City: Hyderabad
+INFO     MMT_Flights:test_positive_flights.py:48 Formatted date for locator: Thu Jun 25 2026
+INFO     MMT_Flights:home_page.py:116 SELECTING DATE: Thu Jun 25 2026
+INFO     MMT_Flights:home_page.py:123 DEPARTURE DATE Thu Jun 25 2026 SELECTED
+INFO     MMT_Flights:home_page.py:130 CLICKING SEARCH BUTTON
+INFO     MMT_Flights:home_page.py:137 SEARCH BUTTON CLICKED SUCCESSFULLY
+INFO     MMT_Flights:test_positive_flights.py:71 Applying airline filter for: Air India
+INFO     MMT_Flights:flight_search_page.py:93 Successfully clicked 'Air India' filter.
+INFO     MMT_Flights:flight_search_page.py:105 Found 1 flight cards visible.
+INFO     MMT_Flights:test_positive_flights.py:76 SUCCESS: Scenario Air India for Bengaluru to Hyderabad passed.
 INFO     MMT_Flights:conftest.py:55 TEST PASSED - CAPTURING SCREENSHOT
 INFO     MMT_Flights:conftest.py:31 ========== CLOSING TEST ==========
 INFO     MMT_Flights:conftest.py:35 BROWSER CLOSED SUCCESSFULLY
@@ -115,19 +111,19 @@ INFO     MMT_Flights:conftest.py:17 ========== STARTING TEST ==========
 INFO     MMT_Flights:conftest.py:23 OPENING MAKEMYTRIP WEBSITE
 INFO     MMT_Flights:conftest.py:27 CURRENT URL: https://www.makemytrip.com/
 INFO     MMT_Flights:base_page.py:12 BasePage initialized
-INFO     MMT_Flights:home_page.py:276 Opening website: https://www.makemytrip.com
+INFO     MMT_Flights:home_page.py:28 Opening website: https://www.makemytrip.com
 INFO     MMT_Flights:test_positive_flights.py:40 Testing Scenario: morning for Hyderabad to Chennai
-INFO     MMT_Flights:home_page.py:333 Selected From City: Hyderabad
-INFO     MMT_Flights:home_page.py:333 Selected To City: Chennai
-INFO     MMT_Flights:test_positive_flights.py:52 Formatted date for locator: Sun Jun 28 2026
-INFO     MMT_Flights:home_page.py:364 SELECTING DATE: Sun Jun 28 2026
-INFO     MMT_Flights:home_page.py:371 DEPARTURE DATE Sun Jun 28 2026 SELECTED
-INFO     MMT_Flights:home_page.py:378 CLICKING SEARCH BUTTON
-INFO     MMT_Flights:home_page.py:385 SEARCH BUTTON CLICKED SUCCESSFULLY
-INFO     MMT_Flights:test_positive_flights.py:70 Applying filter: morning
-INFO     MMT_Flights:flight_search_page.py:174 Successfully clicked: Morning Departure Filter
-INFO     MMT_Flights:flight_search_page.py:227 Found 2 flight cards visible.
-INFO     MMT_Flights:test_positive_flights.py:80 SUCCESS: Scenario morning for Hyderabad to Chennai passed.
+INFO     MMT_Flights:home_page.py:85 Selected From City: Hyderabad
+INFO     MMT_Flights:home_page.py:85 Selected To City: Chennai
+INFO     MMT_Flights:test_positive_flights.py:48 Formatted date for locator: Sun Jun 28 2026
+INFO     MMT_Flights:home_page.py:116 SELECTING DATE: Sun Jun 28 2026
+INFO     MMT_Flights:home_page.py:123 DEPARTURE DATE Sun Jun 28 2026 SELECTED
+INFO     MMT_Flights:home_page.py:130 CLICKING SEARCH BUTTON
+INFO     MMT_Flights:home_page.py:137 SEARCH BUTTON CLICKED SUCCESSFULLY
+INFO     MMT_Flights:test_positive_flights.py:66 Applying filter: morning
+WARNING  MMT_Flights:flight_search_page.py:55 Could not click 'Morning Departure Filter'. It might not be available for this specific date/route. Proceeding safely...
+INFO     MMT_Flights:flight_search_page.py:105 Found 2 flight cards visible.
+INFO     MMT_Flights:test_positive_flights.py:76 SUCCESS: Scenario morning for Hyderabad to Chennai passed.
 INFO     MMT_Flights:conftest.py:55 TEST PASSED - CAPTURING SCREENSHOT
 INFO     MMT_Flights:conftest.py:31 ========== CLOSING TEST ==========
 INFO     MMT_Flights:conftest.py:35 BROWSER CLOSED SUCCESSFULLY

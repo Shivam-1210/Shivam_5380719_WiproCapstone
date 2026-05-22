@@ -40,10 +40,6 @@ def test_positive_search_scenarios(driver, from_city, to_city, travel_date, filt
     logger.info(f"Testing Scenario: {filter_type} for {from_city} to {to_city}")
     home.select_flight_cities(from_city, to_city)
 
-    # --- DATE FORMATTING LOGIC ---
-    # Your HomePage XPath expects: "Fri Jun 19 2026"
-    # strftime("%a %b %d %Y") gives: "Fri Jun 19 2026"
-    # .replace(" 0", " ") handles cases like "Jun 05" -> "Jun 5" if MMT uses single digits.
     if hasattr(travel_date, 'strftime'):
         formatted_date = travel_date.strftime("%a %b %d %Y").replace(" 0", " ")
     else:
