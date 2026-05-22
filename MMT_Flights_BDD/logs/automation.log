@@ -1,0 +1,753 @@
+05/23/2026 12:23:58 AM: INFO: ========== STARTING SCENARIO: 1. Positive - Valid One-Way Flight Search ==========
+05/23/2026 12:24:12 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 12:24:15 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 12:24:16 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 12:24:18 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 12:24:18 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 12:24:19 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='oneWayTrip']")
+05/23/2026 12:24:19 AM: INFO: STEP PASSED: I select "One Way" trip
+05/23/2026 12:24:19 AM: INFO: Clicked on element: ('id', 'fromCity')
+05/23/2026 12:24:19 AM: INFO: Entered text 'Delhi' into ('xpath', "//input[@placeholder='From']")
+05/23/2026 12:24:41 AM: ERROR: Failed to click ('xpath', "//div[contains(text(), 'Delhi')]")
+05/23/2026 12:24:41 AM: ERROR: STEP FAILED: I enter "Delhi" as the source city - CAPTURING SCREENSHOT
+05/23/2026 12:24:41 AM: INFO: ========== CLOSING SCENARIO: 1. Positive - Valid One-Way Flight Search ==========
+05/23/2026 12:24:43 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 12:24:43 AM: INFO: ========== STARTING SCENARIO: 2. Positive - Valid Round-Trip Flight Search ==========
+05/23/2026 12:24:57 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 12:24:59 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 12:25:00 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 12:25:02 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 12:25:02 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 12:25:02 AM: INFO: ========== CLOSING SCENARIO: 2. Positive - Valid Round-Trip Flight Search ==========
+05/23/2026 12:25:04 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 12:25:04 AM: INFO: ========== STARTING SCENARIO: 3. Positive - Change Passenger Count ==========
+05/23/2026 12:25:18 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 12:25:20 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 12:25:21 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 12:25:23 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 12:25:23 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 12:25:24 AM: INFO: Clicked on element: ('xpath', "//label[@for='travellers']")
+05/23/2026 12:25:24 AM: INFO: STEP PASSED: I open the Traveller and Class modal
+05/23/2026 12:25:24 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='adults-2']")
+05/23/2026 12:25:24 AM: INFO: STEP PASSED: I select 2 Adults
+05/23/2026 12:25:24 AM: INFO: Clicked on element: ('xpath', "//button[@data-cy='travellerApplyBtn']")
+05/23/2026 12:25:24 AM: INFO: STEP PASSED: I click Apply
+05/23/2026 12:25:45 AM: ERROR: Failed to get text from ('xpath', "//span[@data-cy='travellerText']/span")
+05/23/2026 12:25:45 AM: ERROR: STEP FAILED: the passenger count should update to "2" - CAPTURING SCREENSHOT
+05/23/2026 12:25:45 AM: INFO: ========== CLOSING SCENARIO: 3. Positive - Change Passenger Count ==========
+05/23/2026 12:25:47 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 12:25:47 AM: INFO: ========== STARTING SCENARIO: 4. Positive - Filter flights by Non-Stop ==========
+05/23/2026 12:26:01 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 12:26:03 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 12:26:04 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 12:26:06 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 12:26:06 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 12:26:07 AM: INFO: Clicked on element: ('id', 'fromCity')
+05/23/2026 12:26:07 AM: INFO: Entered text 'Delhi' into ('xpath', "//input[@placeholder='From']")
+05/23/2026 12:26:29 AM: ERROR: Failed to click ('xpath', "//div[contains(text(), 'Delhi')]")
+05/23/2026 12:26:29 AM: ERROR: STEP FAILED: I enter "Delhi" as the source city - CAPTURING SCREENSHOT
+05/23/2026 12:26:29 AM: INFO: ========== CLOSING SCENARIO: 4. Positive - Filter flights by Non-Stop ==========
+05/23/2026 12:26:31 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 12:26:31 AM: INFO: ========== STARTING SCENARIO: 5. Negative - Search with same origin and destination ==========
+05/23/2026 12:26:44 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 12:26:46 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 12:26:47 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 12:26:50 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 12:26:50 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 12:26:50 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='oneWayTrip']")
+05/23/2026 12:26:50 AM: INFO: STEP PASSED: I select "One Way" trip
+05/23/2026 12:26:51 AM: INFO: Clicked on element: ('id', 'fromCity')
+05/23/2026 12:26:51 AM: INFO: Entered text 'Delhi' into ('xpath', "//input[@placeholder='From']")
+05/23/2026 12:27:12 AM: ERROR: Failed to click ('xpath', "//div[contains(text(), 'Delhi')]")
+05/23/2026 12:27:12 AM: ERROR: STEP FAILED: I enter "Delhi" as the source city - CAPTURING SCREENSHOT
+05/23/2026 12:27:13 AM: INFO: ========== CLOSING SCENARIO: 5. Negative - Search with same origin and destination ==========
+05/23/2026 12:27:15 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 12:27:15 AM: INFO: ========== STARTING SCENARIO: 6. Negative - Search without destination ==========
+05/23/2026 12:27:28 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 12:27:30 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 12:27:31 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 12:27:33 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 12:27:33 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 12:27:34 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='oneWayTrip']")
+05/23/2026 12:27:34 AM: INFO: STEP PASSED: I select "One Way" trip
+05/23/2026 12:27:34 AM: INFO: Clicked on element: ('id', 'toCity')
+05/23/2026 12:27:34 AM: INFO: STEP PASSED: I clear the destination city
+05/23/2026 12:27:38 AM: INFO: Clicked on element: ('xpath', "//a[contains(text(), 'Search')]")
+05/23/2026 12:27:38 AM: INFO: STEP PASSED: I click on the Search button
+05/23/2026 12:27:38 AM: ERROR: STEP FAILED: a validation error should prompt me to enter a destination - CAPTURING SCREENSHOT
+05/23/2026 12:27:38 AM: INFO: ========== CLOSING SCENARIO: 6. Negative - Search without destination ==========
+05/23/2026 12:27:40 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 12:27:40 AM: INFO: ========== STARTING SCENARIO: 7. E2E - Complete flight search and proceed to booking ==========
+05/23/2026 12:27:53 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 12:27:56 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 12:27:57 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 12:27:59 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 12:27:59 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 12:28:00 AM: INFO: Clicked on element: ('id', 'fromCity')
+05/23/2026 12:28:00 AM: INFO: Entered text 'Delhi' into ('xpath', "//input[@placeholder='From']")
+05/23/2026 12:28:22 AM: ERROR: Failed to click ('xpath', "//div[contains(text(), 'Delhi')]")
+05/23/2026 12:28:22 AM: ERROR: STEP FAILED: I enter "Delhi" as the source city - CAPTURING SCREENSHOT
+05/23/2026 12:28:22 AM: INFO: ========== CLOSING SCENARIO: 7. E2E - Complete flight search and proceed to booking ==========
+05/23/2026 12:28:24 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 12:40:32 AM: INFO: ========== STARTING SCENARIO: 1. Positive - Valid One-Way Flight Search ==========
+05/23/2026 12:40:44 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 12:40:47 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 12:40:48 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 12:40:50 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 12:40:50 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 12:40:50 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='oneWayTrip']")
+05/23/2026 12:40:50 AM: INFO: STEP PASSED: I select "One Way" trip
+05/23/2026 12:40:51 AM: INFO: Clicked on element: ('id', 'fromCity')
+05/23/2026 12:40:52 AM: INFO: Entered text 'Delhi' into ('xpath', "//input[@placeholder='From']")
+05/23/2026 12:40:54 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 12:40:54 AM: INFO: STEP PASSED: I enter "Delhi" as the source city
+05/23/2026 12:41:05 AM: INFO: Clicked on element: ('id', 'toCity')
+05/23/2026 12:41:05 AM: INFO: Entered text 'Mumbai' into ('xpath', "//input[@placeholder='To']")
+05/23/2026 12:41:07 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 12:41:07 AM: INFO: STEP PASSED: I enter "Mumbai" as the destination city
+05/23/2026 12:41:11 AM: INFO: Clicked on element: ('xpath', "//a[contains(text(), 'Search')]")
+05/23/2026 12:41:11 AM: INFO: STEP PASSED: I click on the Search button
+05/23/2026 12:41:11 AM: INFO: STEP PASSED: I should see the flight search results page
+05/23/2026 12:41:11 AM: INFO: ========== CLOSING SCENARIO: 1. Positive - Valid One-Way Flight Search ==========
+05/23/2026 12:41:13 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 12:41:13 AM: INFO: ========== STARTING SCENARIO: 2. Positive - Valid Round-Trip Flight Search ==========
+05/23/2026 12:41:30 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 12:41:32 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 12:41:33 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 12:41:35 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 12:41:35 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 12:41:36 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='roundTrip']")
+05/23/2026 12:41:36 AM: INFO: STEP PASSED: I select "Round Trip"
+05/23/2026 12:41:36 AM: INFO: Clicked on element: ('id', 'fromCity')
+05/23/2026 12:41:37 AM: INFO: Entered text 'Delhi' into ('xpath', "//input[@placeholder='From']")
+05/23/2026 12:41:39 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 12:41:39 AM: INFO: STEP PASSED: I enter "Delhi" as the source city
+05/23/2026 12:41:50 AM: INFO: Clicked on element: ('id', 'toCity')
+05/23/2026 12:41:50 AM: INFO: Entered text 'Bangalore' into ('xpath', "//input[@placeholder='To']")
+05/23/2026 12:41:52 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 12:41:52 AM: INFO: STEP PASSED: I enter "Bangalore" as the destination city
+05/23/2026 12:42:41 AM: INFO: Clicked on element: ('xpath', "//a[contains(text(), 'Search')]")
+05/23/2026 12:42:41 AM: INFO: STEP PASSED: I click on the Search button
+05/23/2026 12:42:41 AM: INFO: STEP PASSED: I should see the flight search results page
+05/23/2026 12:42:41 AM: INFO: ========== CLOSING SCENARIO: 2. Positive - Valid Round-Trip Flight Search ==========
+05/23/2026 12:42:43 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 12:42:43 AM: INFO: ========== STARTING SCENARIO: 3. Positive - Change Passenger Count ==========
+05/23/2026 12:42:56 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 12:42:58 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 12:42:59 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 12:43:01 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 12:43:01 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 12:43:02 AM: INFO: Clicked on element: ('xpath', "//label[@for='travellers']")
+05/23/2026 12:43:02 AM: INFO: STEP PASSED: I open the Traveller and Class modal
+05/23/2026 12:43:02 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='adults-2']")
+05/23/2026 12:43:02 AM: INFO: STEP PASSED: I select 2 Adults
+05/23/2026 12:43:02 AM: INFO: Clicked on element: ('xpath', "//button[@data-cy='travellerApplyBtn']")
+05/23/2026 12:43:02 AM: INFO: STEP PASSED: I click Apply
+05/23/2026 12:43:02 AM: INFO: STEP PASSED: the passenger count should update to "2"
+05/23/2026 12:43:02 AM: INFO: ========== CLOSING SCENARIO: 3. Positive - Change Passenger Count ==========
+05/23/2026 12:43:05 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 12:43:05 AM: INFO: ========== STARTING SCENARIO: 4. Positive - Filter flights by Non-Stop ==========
+05/23/2026 12:43:22 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 12:43:24 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 12:43:25 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 12:43:28 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 12:43:28 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 12:43:28 AM: INFO: Clicked on element: ('id', 'fromCity')
+05/23/2026 12:43:29 AM: INFO: Entered text 'Delhi' into ('xpath', "//input[@placeholder='From']")
+05/23/2026 12:43:31 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 12:43:31 AM: INFO: STEP PASSED: I enter "Delhi" as the source city
+05/23/2026 12:43:43 AM: INFO: Clicked on element: ('id', 'toCity')
+05/23/2026 12:43:43 AM: INFO: Entered text 'Mumbai' into ('xpath', "//input[@placeholder='To']")
+05/23/2026 12:43:45 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 12:43:45 AM: INFO: STEP PASSED: I enter "Mumbai" as the destination city
+05/23/2026 12:43:48 AM: INFO: Clicked on element: ('xpath', "//a[contains(text(), 'Search')]")
+05/23/2026 12:43:48 AM: INFO: STEP PASSED: I click on the Search button
+05/23/2026 12:43:48 AM: INFO: Clicked on element: ('xpath', "//p[contains(text(), 'Non Stop')]")
+05/23/2026 12:43:50 AM: INFO: STEP PASSED: I apply the "Non-Stop" filter
+05/23/2026 12:43:50 AM: INFO: STEP PASSED: only non-stop flights should be displayed
+05/23/2026 12:43:50 AM: INFO: ========== CLOSING SCENARIO: 4. Positive - Filter flights by Non-Stop ==========
+05/23/2026 12:43:53 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 12:43:53 AM: INFO: ========== STARTING SCENARIO: 5. Negative - Search with same origin and destination ==========
+05/23/2026 12:44:07 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 12:44:09 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 12:44:10 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 12:44:12 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 12:44:12 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 12:44:13 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='oneWayTrip']")
+05/23/2026 12:44:13 AM: INFO: STEP PASSED: I select "One Way" trip
+05/23/2026 12:44:13 AM: INFO: Clicked on element: ('id', 'fromCity')
+05/23/2026 12:44:14 AM: INFO: Entered text 'Delhi' into ('xpath', "//input[@placeholder='From']")
+05/23/2026 12:44:16 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 12:44:16 AM: INFO: STEP PASSED: I enter "Delhi" as the source city
+05/23/2026 12:44:27 AM: INFO: Clicked on element: ('id', 'toCity')
+05/23/2026 12:44:27 AM: INFO: Entered text 'Delhi' into ('xpath', "//input[@placeholder='To']")
+05/23/2026 12:44:29 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 12:44:29 AM: INFO: STEP PASSED: I enter "Delhi" as the destination city
+05/23/2026 12:44:29 AM: INFO: STEP PASSED: I should see an error message indicating same cities are not allowed
+05/23/2026 12:44:29 AM: INFO: ========== CLOSING SCENARIO: 5. Negative - Search with same origin and destination ==========
+05/23/2026 12:44:32 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 12:44:32 AM: INFO: ========== STARTING SCENARIO: 6. Negative - Search without destination ==========
+05/23/2026 12:44:49 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 12:44:51 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 12:44:52 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 12:44:55 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 12:44:55 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 12:44:55 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='oneWayTrip']")
+05/23/2026 12:44:55 AM: INFO: STEP PASSED: I select "One Way" trip
+05/23/2026 12:44:55 AM: INFO: Clicked on element: ('id', 'toCity')
+05/23/2026 12:44:56 AM: INFO: STEP PASSED: I clear the destination city
+05/23/2026 12:44:57 AM: ERROR: Failed to click ('xpath', "//a[contains(text(), 'Search')]")
+05/23/2026 12:44:57 AM: ERROR: STEP FAILED: I click on the Search button - CAPTURING SCREENSHOT
+05/23/2026 12:44:58 AM: INFO: ========== CLOSING SCENARIO: 6. Negative - Search without destination ==========
+05/23/2026 12:45:00 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 12:45:00 AM: INFO: ========== STARTING SCENARIO: 7. E2E - Complete flight search and proceed to booking ==========
+05/23/2026 12:45:13 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 12:45:15 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 12:45:16 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 12:45:19 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 12:45:19 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 12:45:19 AM: INFO: Clicked on element: ('id', 'fromCity')
+05/23/2026 12:45:20 AM: INFO: Entered text 'Delhi' into ('xpath', "//input[@placeholder='From']")
+05/23/2026 12:45:23 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 12:45:23 AM: INFO: STEP PASSED: I enter "Delhi" as the source city
+05/23/2026 12:45:34 AM: INFO: Clicked on element: ('id', 'toCity')
+05/23/2026 12:45:34 AM: INFO: Entered text 'Mumbai' into ('xpath', "//input[@placeholder='To']")
+05/23/2026 12:45:36 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 12:45:36 AM: INFO: STEP PASSED: I enter "Mumbai" as the destination city
+05/23/2026 12:45:39 AM: INFO: Clicked on element: ('xpath', "//a[contains(text(), 'Search')]")
+05/23/2026 12:45:39 AM: INFO: STEP PASSED: I click on the Search button
+05/23/2026 12:45:40 AM: INFO: Clicked on element: ('xpath', "(//button[contains(@id, 'bookbutton')])[1]")
+05/23/2026 12:46:01 AM: ERROR: Failed to click ('xpath', "(//button[contains(text(), 'Book Now')])[1]")
+05/23/2026 12:46:01 AM: ERROR: STEP FAILED: I select the first available flight - CAPTURING SCREENSHOT
+05/23/2026 12:46:01 AM: INFO: ========== CLOSING SCENARIO: 7. E2E - Complete flight search and proceed to booking ==========
+05/23/2026 12:46:04 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 01:13:26 AM: INFO: ========== STARTING SCENARIO: 1. Positive - Valid One-Way Flight Search ==========
+05/23/2026 01:13:39 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 01:13:41 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 01:13:42 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 01:13:44 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 01:13:44 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 01:13:45 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='oneWayTrip']")
+05/23/2026 01:13:45 AM: INFO: STEP PASSED: I select "One Way" trip
+05/23/2026 01:13:45 AM: INFO: Clicked on element: ('id', 'fromCity')
+05/23/2026 01:13:46 AM: INFO: Entered text 'Delhi' into ('xpath', "//input[@placeholder='From']")
+05/23/2026 01:13:48 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 01:13:48 AM: INFO: STEP PASSED: I enter "Delhi" as the source city
+05/23/2026 01:13:59 AM: INFO: Clicked on element: ('id', 'toCity')
+05/23/2026 01:13:59 AM: INFO: Entered text 'Mumbai' into ('xpath', "//input[@placeholder='To']")
+05/23/2026 01:14:01 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 01:14:01 AM: INFO: STEP PASSED: I enter "Mumbai" as the destination city
+05/23/2026 01:14:05 AM: INFO: STEP PASSED: I click on the Search button
+05/23/2026 01:14:05 AM: INFO: STEP PASSED: I should see the flight search results page
+05/23/2026 01:14:05 AM: INFO: ========== CLOSING SCENARIO: 1. Positive - Valid One-Way Flight Search ==========
+05/23/2026 01:14:07 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 01:14:07 AM: INFO: ========== STARTING SCENARIO: 2. Positive - Valid Round-Trip Flight Search ==========
+05/23/2026 01:14:24 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 01:14:26 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 01:14:27 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 01:14:29 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 01:14:29 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 01:14:30 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='roundTrip']")
+05/23/2026 01:14:30 AM: INFO: STEP PASSED: I select "Round Trip"
+05/23/2026 01:14:30 AM: INFO: Clicked on element: ('id', 'fromCity')
+05/23/2026 01:14:31 AM: INFO: Entered text 'Delhi' into ('xpath', "//input[@placeholder='From']")
+05/23/2026 01:14:33 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 01:14:33 AM: INFO: STEP PASSED: I enter "Delhi" as the source city
+05/23/2026 01:14:44 AM: INFO: Clicked on element: ('id', 'toCity')
+05/23/2026 01:14:44 AM: INFO: Entered text 'Bangalore' into ('xpath', "//input[@placeholder='To']")
+05/23/2026 01:14:46 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 01:14:46 AM: INFO: STEP PASSED: I enter "Bangalore" as the destination city
+05/23/2026 01:14:50 AM: INFO: STEP PASSED: I click on the Search button
+05/23/2026 01:14:50 AM: INFO: STEP PASSED: I should see the flight search results page
+05/23/2026 01:14:50 AM: INFO: ========== CLOSING SCENARIO: 2. Positive - Valid Round-Trip Flight Search ==========
+05/23/2026 01:14:53 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 01:14:53 AM: INFO: ========== STARTING SCENARIO: 3. Positive - Change Passenger Count ==========
+05/23/2026 01:15:05 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 01:15:08 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 01:15:09 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 01:15:11 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 01:15:11 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 01:15:11 AM: INFO: Clicked on element: ('xpath', "//label[@for='travellers']")
+05/23/2026 01:15:11 AM: INFO: STEP PASSED: I open the Traveller and Class modal
+05/23/2026 01:15:12 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='adults-2']")
+05/23/2026 01:15:12 AM: INFO: STEP PASSED: I select 2 Adults
+05/23/2026 01:15:12 AM: INFO: Clicked on element: ('xpath', "//button[@data-cy='travellerApplyBtn']")
+05/23/2026 01:15:12 AM: INFO: STEP PASSED: I click Apply
+05/23/2026 01:15:12 AM: INFO: STEP PASSED: the passenger count should update to "2"
+05/23/2026 01:15:12 AM: INFO: ========== CLOSING SCENARIO: 3. Positive - Change Passenger Count ==========
+05/23/2026 01:15:15 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 01:15:15 AM: INFO: ========== STARTING SCENARIO: 4. Positive - Filter flights by Non-Stop ==========
+05/23/2026 01:15:31 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 01:15:34 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 01:15:35 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 01:15:37 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 01:15:37 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 01:15:38 AM: INFO: Clicked on element: ('id', 'fromCity')
+05/23/2026 01:15:39 AM: INFO: Entered text 'Delhi' into ('xpath', "//input[@placeholder='From']")
+05/23/2026 01:15:41 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 01:15:41 AM: INFO: STEP PASSED: I enter "Delhi" as the source city
+05/23/2026 01:15:52 AM: INFO: Clicked on element: ('id', 'toCity')
+05/23/2026 01:15:52 AM: INFO: Entered text 'Mumbai' into ('xpath', "//input[@placeholder='To']")
+05/23/2026 01:15:54 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 01:15:54 AM: INFO: STEP PASSED: I enter "Mumbai" as the destination city
+05/23/2026 01:15:58 AM: INFO: STEP PASSED: I click on the Search button
+05/23/2026 01:15:58 AM: INFO: Clicked on element: ('xpath', "//p[contains(text(), 'Non Stop')]")
+05/23/2026 01:16:00 AM: INFO: STEP PASSED: I apply the "Non-Stop" filter
+05/23/2026 01:16:00 AM: INFO: STEP PASSED: only non-stop flights should be displayed
+05/23/2026 01:16:00 AM: INFO: ========== CLOSING SCENARIO: 4. Positive - Filter flights by Non-Stop ==========
+05/23/2026 01:16:03 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 01:16:03 AM: INFO: ========== STARTING SCENARIO: 5. Negative - Search with same origin and destination ==========
+05/23/2026 01:16:15 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 01:16:18 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 01:16:19 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 01:16:21 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 01:16:21 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 01:16:22 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='oneWayTrip']")
+05/23/2026 01:16:22 AM: INFO: STEP PASSED: I select "One Way" trip
+05/23/2026 01:16:22 AM: INFO: Clicked on element: ('id', 'fromCity')
+05/23/2026 01:16:23 AM: INFO: Entered text 'Delhi' into ('xpath', "//input[@placeholder='From']")
+05/23/2026 01:16:25 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 01:16:25 AM: INFO: STEP PASSED: I enter "Delhi" as the source city
+05/23/2026 01:16:36 AM: INFO: Clicked on element: ('id', 'toCity')
+05/23/2026 01:16:36 AM: INFO: Entered text 'Delhi' into ('xpath', "//input[@placeholder='To']")
+05/23/2026 01:16:38 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 01:16:38 AM: INFO: STEP PASSED: I enter "Delhi" as the destination city
+05/23/2026 01:16:38 AM: INFO: STEP PASSED: I should see an error message indicating same cities are not allowed
+05/23/2026 01:16:38 AM: INFO: ========== CLOSING SCENARIO: 5. Negative - Search with same origin and destination ==========
+05/23/2026 01:16:41 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 01:16:41 AM: INFO: ========== STARTING SCENARIO: 6. Negative - Search without destination ==========
+05/23/2026 01:16:58 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 01:17:01 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 01:17:02 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 01:17:03 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 01:17:03 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 01:17:04 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='oneWayTrip']")
+05/23/2026 01:17:04 AM: INFO: STEP PASSED: I select "One Way" trip
+05/23/2026 01:17:04 AM: INFO: Clicked on element: ('id', 'toCity')
+05/23/2026 01:17:05 AM: INFO: STEP PASSED: I clear the destination city
+05/23/2026 01:17:09 AM: INFO: STEP PASSED: I click on the Search button
+05/23/2026 01:17:19 AM: ERROR: STEP FAILED: a validation error should prompt me to enter a destination - CAPTURING SCREENSHOT
+05/23/2026 01:17:19 AM: INFO: ========== CLOSING SCENARIO: 6. Negative - Search without destination ==========
+05/23/2026 01:17:22 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 01:17:22 AM: INFO: ========== STARTING SCENARIO: 7. E2E - Complete flight search and proceed to booking ==========
+05/23/2026 01:17:34 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 01:17:36 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 01:17:37 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 01:17:39 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 01:17:39 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 01:17:40 AM: INFO: Clicked on element: ('id', 'fromCity')
+05/23/2026 01:17:41 AM: INFO: Entered text 'Delhi' into ('xpath', "//input[@placeholder='From']")
+05/23/2026 01:17:43 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 01:17:43 AM: INFO: STEP PASSED: I enter "Delhi" as the source city
+05/23/2026 01:17:55 AM: INFO: Clicked on element: ('id', 'toCity')
+05/23/2026 01:17:55 AM: INFO: Entered text 'Mumbai' into ('xpath', "//input[@placeholder='To']")
+05/23/2026 01:17:57 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 01:17:57 AM: INFO: STEP PASSED: I enter "Mumbai" as the destination city
+05/23/2026 01:18:00 AM: INFO: STEP PASSED: I click on the Search button
+05/23/2026 01:18:44 AM: ERROR: STEP FAILED: I select the first available flight - CAPTURING SCREENSHOT
+05/23/2026 01:18:45 AM: INFO: ========== CLOSING SCENARIO: 7. E2E - Complete flight search and proceed to booking ==========
+05/23/2026 01:18:47 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 01:51:54 AM: INFO: ========== STARTING SCENARIO: 6. Negative - Select more infants than adults ==========
+05/23/2026 01:52:00 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 01:52:02 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 01:52:03 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 01:52:05 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 01:52:05 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 01:52:09 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 01:52:19 AM: ERROR: Failed to click ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 01:52:19 AM: INFO: No promotional popup appeared.
+05/23/2026 01:52:19 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 01:52:21 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 01:52:21 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 01:52:22 AM: INFO: Clicked on element: ('xpath', "//label[@for='travellers']")
+05/23/2026 01:52:22 AM: INFO: STEP PASSED: I open the Traveller and Class modal
+05/23/2026 01:52:22 AM: INFO: STEP PASSED: I select 1 Adult
+05/23/2026 01:52:22 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='adults-1']")
+05/23/2026 01:52:22 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='infants-2']")
+05/23/2026 01:52:24 AM: INFO: STEP PASSED: I select 2 Infants
+05/23/2026 01:52:24 AM: INFO: STEP PASSED: I should see an error message regarding infant restrictions
+05/23/2026 01:52:24 AM: INFO: ========== CLOSING SCENARIO: 6. Negative - Select more infants than adults ==========
+05/23/2026 01:52:27 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 01:53:06 AM: INFO: ========== STARTING SCENARIO: 7. E2E - Complete flight search and proceed to booking ==========
+05/23/2026 01:53:12 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 01:53:14 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 01:53:15 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 01:53:17 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 01:53:17 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 01:53:18 AM: INFO: Clicked on element: ('id', 'fromCity')
+05/23/2026 01:53:19 AM: INFO: Entered text 'Delhi' into ('xpath', "//input[@placeholder='From']")
+05/23/2026 01:53:21 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 01:53:21 AM: INFO: STEP PASSED: I enter "Delhi" as the source city
+05/23/2026 01:53:32 AM: INFO: Clicked on element: ('id', 'toCity')
+05/23/2026 01:53:32 AM: INFO: Entered text 'Mumbai' into ('xpath', "//input[@placeholder='To']")
+05/23/2026 01:53:34 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 01:53:34 AM: INFO: STEP PASSED: I enter "Mumbai" as the destination city
+05/23/2026 01:53:38 AM: INFO: STEP PASSED: I click on the Search button
+05/23/2026 01:53:55 AM: INFO: STEP PASSED: I select the first available flight
+05/23/2026 01:53:55 AM: INFO: STEP PASSED: I click on Book Now
+05/23/2026 01:53:56 AM: INFO: STEP PASSED: I should be navigated to the booking review page
+05/23/2026 01:53:56 AM: INFO: ========== CLOSING SCENARIO: 7. E2E - Complete flight search and proceed to booking ==========
+05/23/2026 01:53:59 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 01:54:29 AM: INFO: ========== STARTING SCENARIO: 1. Positive - Valid One-Way Flight Search ==========
+05/23/2026 01:54:42 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 01:54:44 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 01:54:45 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 01:54:47 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 01:54:47 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 01:54:47 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='oneWayTrip']")
+05/23/2026 01:54:47 AM: INFO: STEP PASSED: I select "One Way" trip
+05/23/2026 01:54:48 AM: INFO: Clicked on element: ('id', 'fromCity')
+05/23/2026 01:54:49 AM: INFO: Entered text 'Delhi' into ('xpath', "//input[@placeholder='From']")
+05/23/2026 01:54:51 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 01:54:51 AM: INFO: STEP PASSED: I enter "Delhi" as the source city
+05/23/2026 01:55:02 AM: INFO: Clicked on element: ('id', 'toCity')
+05/23/2026 01:55:02 AM: INFO: Entered text 'Mumbai' into ('xpath', "//input[@placeholder='To']")
+05/23/2026 01:55:04 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 01:55:04 AM: INFO: STEP PASSED: I enter "Mumbai" as the destination city
+05/23/2026 01:55:07 AM: INFO: STEP PASSED: I click on the Search button
+05/23/2026 01:55:07 AM: INFO: STEP PASSED: I should see the flight search results page
+05/23/2026 01:55:07 AM: INFO: ========== CLOSING SCENARIO: 1. Positive - Valid One-Way Flight Search ==========
+05/23/2026 01:55:10 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 01:55:10 AM: INFO: ========== STARTING SCENARIO: 2. Positive - Valid Round-Trip Flight Search ==========
+05/23/2026 01:55:27 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 01:55:29 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 01:55:30 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 01:55:31 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 01:55:31 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 01:55:32 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='roundTrip']")
+05/23/2026 01:55:32 AM: INFO: STEP PASSED: I select "Round Trip"
+05/23/2026 01:55:32 AM: INFO: Clicked on element: ('id', 'fromCity')
+05/23/2026 01:55:33 AM: INFO: Entered text 'Delhi' into ('xpath', "//input[@placeholder='From']")
+05/23/2026 01:55:36 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 01:55:36 AM: INFO: STEP PASSED: I enter "Delhi" as the source city
+05/23/2026 01:55:47 AM: INFO: Clicked on element: ('id', 'toCity')
+05/23/2026 01:55:47 AM: INFO: Entered text 'Bangalore' into ('xpath', "//input[@placeholder='To']")
+05/23/2026 01:55:49 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 01:55:49 AM: INFO: STEP PASSED: I enter "Bangalore" as the destination city
+05/23/2026 01:55:54 AM: INFO: STEP PASSED: I click on the Search button
+05/23/2026 01:55:54 AM: INFO: STEP PASSED: I should see the flight search results page
+05/23/2026 01:55:54 AM: INFO: ========== CLOSING SCENARIO: 2. Positive - Valid Round-Trip Flight Search ==========
+05/23/2026 01:55:56 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 01:55:56 AM: INFO: ========== STARTING SCENARIO: 3. Positive - Change Passenger Count ==========
+05/23/2026 01:56:09 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 01:56:11 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 01:56:12 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 01:56:14 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 01:56:14 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 01:56:14 AM: INFO: Clicked on element: ('xpath', "//label[@for='travellers']")
+05/23/2026 01:56:14 AM: INFO: STEP PASSED: I open the Traveller and Class modal
+05/23/2026 01:56:15 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='adults-2']")
+05/23/2026 01:56:15 AM: INFO: STEP PASSED: I select 2 Adults
+05/23/2026 01:56:15 AM: INFO: Clicked on element: ('xpath', "//button[@data-cy='travellerApplyBtn']")
+05/23/2026 01:56:15 AM: INFO: STEP PASSED: I click Apply
+05/23/2026 01:56:15 AM: INFO: STEP PASSED: the passenger count should update to "2"
+05/23/2026 01:56:15 AM: INFO: ========== CLOSING SCENARIO: 3. Positive - Change Passenger Count ==========
+05/23/2026 01:56:17 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 01:56:17 AM: INFO: ========== STARTING SCENARIO: 4. Positive - Filter flights by Non-Stop ==========
+05/23/2026 01:56:34 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 01:56:37 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 01:56:38 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 01:56:39 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 01:56:39 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 01:56:40 AM: INFO: Clicked on element: ('id', 'fromCity')
+05/23/2026 01:56:41 AM: INFO: Entered text 'Delhi' into ('xpath', "//input[@placeholder='From']")
+05/23/2026 01:56:43 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 01:56:43 AM: INFO: STEP PASSED: I enter "Delhi" as the source city
+05/23/2026 01:56:55 AM: INFO: Clicked on element: ('id', 'toCity')
+05/23/2026 01:56:55 AM: INFO: Entered text 'Mumbai' into ('xpath', "//input[@placeholder='To']")
+05/23/2026 01:56:57 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 01:56:57 AM: INFO: STEP PASSED: I enter "Mumbai" as the destination city
+05/23/2026 01:57:00 AM: INFO: STEP PASSED: I click on the Search button
+05/23/2026 01:57:00 AM: ERROR: STEP FAILED: I apply the "Non-Stop" filter - CAPTURING SCREENSHOT
+05/23/2026 01:57:00 AM: INFO: ========== CLOSING SCENARIO: 4. Positive - Filter flights by Non-Stop ==========
+05/23/2026 01:57:02 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 01:57:02 AM: INFO: ========== STARTING SCENARIO: 5. Negative - Search with same origin and destination ==========
+05/23/2026 01:57:15 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 01:57:17 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 01:57:18 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 01:57:20 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 01:57:20 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 01:57:21 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='oneWayTrip']")
+05/23/2026 01:57:21 AM: INFO: STEP PASSED: I select "One Way" trip
+05/23/2026 01:57:21 AM: INFO: Clicked on element: ('id', 'fromCity')
+05/23/2026 01:57:22 AM: INFO: Entered text 'Delhi' into ('xpath', "//input[@placeholder='From']")
+05/23/2026 01:57:24 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 01:57:24 AM: INFO: STEP PASSED: I enter "Delhi" as the source city
+05/23/2026 01:57:35 AM: INFO: Clicked on element: ('id', 'toCity')
+05/23/2026 01:57:35 AM: INFO: Entered text 'Delhi' into ('xpath', "//input[@placeholder='To']")
+05/23/2026 01:57:37 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 01:57:37 AM: INFO: STEP PASSED: I enter "Delhi" as the destination city
+05/23/2026 01:57:37 AM: INFO: STEP PASSED: I should see an error message indicating same cities are not allowed
+05/23/2026 01:57:37 AM: INFO: ========== CLOSING SCENARIO: 5. Negative - Search with same origin and destination ==========
+05/23/2026 01:57:40 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 01:57:40 AM: INFO: ========== STARTING SCENARIO: 6. Negative - Select more infants than adults ==========
+05/23/2026 01:57:57 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 01:57:59 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 01:58:00 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 01:58:02 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 01:58:02 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 01:58:10 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 01:58:31 AM: ERROR: Failed to click ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 01:58:31 AM: INFO: No promotional popup appeared.
+05/23/2026 01:58:31 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 01:58:32 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 01:58:32 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 01:58:33 AM: INFO: Clicked on element: ('xpath', "//label[@for='travellers']")
+05/23/2026 01:58:33 AM: INFO: STEP PASSED: I open the Traveller and Class modal
+05/23/2026 01:58:33 AM: INFO: STEP PASSED: I select 1 Adult
+05/23/2026 01:58:33 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='adults-1']")
+05/23/2026 01:58:34 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='infants-2']")
+05/23/2026 01:58:36 AM: INFO: STEP PASSED: I select 2 Infants
+05/23/2026 01:58:36 AM: INFO: STEP PASSED: I should see an error message regarding infant restrictions
+05/23/2026 01:58:36 AM: INFO: ========== CLOSING SCENARIO: 6. Negative - Select more infants than adults ==========
+05/23/2026 01:58:38 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 01:58:38 AM: INFO: ========== STARTING SCENARIO: 7. E2E - Complete flight search and proceed to booking ==========
+05/23/2026 01:58:50 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 01:58:53 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 01:58:54 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 01:58:56 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 01:58:56 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 01:58:56 AM: INFO: Clicked on element: ('id', 'fromCity')
+05/23/2026 01:58:58 AM: INFO: Entered text 'Delhi' into ('xpath', "//input[@placeholder='From']")
+05/23/2026 01:59:00 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 01:59:00 AM: INFO: STEP PASSED: I enter "Delhi" as the source city
+05/23/2026 01:59:11 AM: INFO: Clicked on element: ('id', 'toCity')
+05/23/2026 01:59:11 AM: INFO: Entered text 'Mumbai' into ('xpath', "//input[@placeholder='To']")
+05/23/2026 01:59:13 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 01:59:13 AM: INFO: STEP PASSED: I enter "Mumbai" as the destination city
+05/23/2026 01:59:16 AM: INFO: STEP PASSED: I click on the Search button
+05/23/2026 01:59:44 AM: INFO: STEP PASSED: I select the first available flight
+05/23/2026 01:59:44 AM: INFO: STEP PASSED: I click on Book Now
+05/23/2026 01:59:46 AM: INFO: STEP PASSED: I should be navigated to the booking review page
+05/23/2026 01:59:46 AM: INFO: ========== CLOSING SCENARIO: 7. E2E - Complete flight search and proceed to booking ==========
+05/23/2026 01:59:48 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 02:06:35 AM: INFO: ========== STARTING SCENARIO: 4. Positive - Filter flights by Non-Stop ==========
+05/23/2026 02:06:41 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 02:06:43 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 02:06:44 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 02:06:46 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 02:06:46 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 02:06:47 AM: INFO: Clicked on element: ('id', 'fromCity')
+05/23/2026 02:06:48 AM: INFO: Entered text 'Delhi' into ('xpath', "//input[@placeholder='From']")
+05/23/2026 02:06:49 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 02:06:49 AM: INFO: STEP PASSED: I enter "Delhi" as the source city
+05/23/2026 02:06:59 AM: INFO: Clicked on element: ('id', 'toCity')
+05/23/2026 02:06:59 AM: INFO: Entered text 'Mumbai' into ('xpath', "//input[@placeholder='To']")
+05/23/2026 02:07:00 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 02:07:00 AM: INFO: STEP PASSED: I enter "Mumbai" as the destination city
+05/23/2026 02:07:05 AM: INFO: STEP PASSED: I click on the Search button
+05/23/2026 02:07:05 AM: ERROR: STEP FAILED: I apply the "Non-Stop" filter - CAPTURING SCREENSHOT
+05/23/2026 02:07:05 AM: INFO: ========== CLOSING SCENARIO: 4. Positive - Filter flights by Non-Stop ==========
+05/23/2026 02:07:07 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 02:13:22 AM: INFO: ========== STARTING SCENARIO: 4. Positive - Filter flights by Non-Stop ==========
+05/23/2026 02:13:28 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 02:13:31 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 02:13:32 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 02:13:33 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 02:13:33 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 02:13:34 AM: INFO: Clicked on element: ('id', 'fromCity')
+05/23/2026 02:13:35 AM: INFO: Entered text 'Delhi' into ('xpath', "//input[@placeholder='From']")
+05/23/2026 02:13:36 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 02:13:36 AM: INFO: STEP PASSED: I enter "Delhi" as the source city
+05/23/2026 02:13:47 AM: INFO: Clicked on element: ('id', 'toCity')
+05/23/2026 02:13:47 AM: INFO: Entered text 'Mumbai' into ('xpath', "//input[@placeholder='To']")
+05/23/2026 02:13:48 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 02:13:48 AM: INFO: STEP PASSED: I enter "Mumbai" as the destination city
+05/23/2026 02:13:52 AM: INFO: STEP PASSED: I click on the Search button
+05/23/2026 02:13:55 AM: INFO: STEP PASSED: I apply the "Non-Stop" filter
+05/23/2026 02:13:55 AM: INFO: STEP PASSED: only non-stop flights should be displayed
+05/23/2026 02:13:55 AM: INFO: ========== CLOSING SCENARIO: 4. Positive - Filter flights by Non-Stop ==========
+05/23/2026 02:13:58 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 02:19:09 AM: INFO: ========== STARTING SCENARIO: 4. Positive - Filter flights by Non-Stop ==========
+05/23/2026 02:19:15 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 02:19:17 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 02:19:18 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 02:19:20 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 02:19:20 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 02:19:21 AM: INFO: Clicked on element: ('id', 'fromCity')
+05/23/2026 02:19:21 AM: INFO: Entered text 'Delhi' into ('xpath', "//input[@placeholder='From']")
+05/23/2026 02:19:22 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 02:19:22 AM: INFO: STEP PASSED: I enter "Delhi" as the source city
+05/23/2026 02:19:33 AM: INFO: Clicked on element: ('id', 'toCity')
+05/23/2026 02:19:33 AM: INFO: Entered text 'Mumbai' into ('xpath', "//input[@placeholder='To']")
+05/23/2026 02:19:34 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 02:19:34 AM: INFO: STEP PASSED: I enter "Mumbai" as the destination city
+05/23/2026 02:19:38 AM: INFO: STEP PASSED: I click on the Search button
+05/23/2026 02:19:42 AM: INFO: STEP PASSED: I apply the "Non-Stop" filter
+05/23/2026 02:19:42 AM: INFO: STEP PASSED: only non-stop flights should be displayed
+05/23/2026 02:19:42 AM: INFO: ========== CLOSING SCENARIO: 4. Positive - Filter flights by Non-Stop ==========
+05/23/2026 02:19:44 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 02:20:18 AM: INFO: ========== STARTING SCENARIO: 4. Positive - Filter flights by Non-Stop ==========
+05/23/2026 02:20:24 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 02:20:26 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 02:20:27 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 02:20:29 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 02:20:29 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 02:20:30 AM: INFO: Clicked on element: ('id', 'fromCity')
+05/23/2026 02:20:30 AM: INFO: Entered text 'Delhi' into ('xpath', "//input[@placeholder='From']")
+05/23/2026 02:20:31 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 02:20:31 AM: INFO: STEP PASSED: I enter "Delhi" as the source city
+05/23/2026 02:20:41 AM: INFO: Clicked on element: ('id', 'toCity')
+05/23/2026 02:20:41 AM: INFO: Entered text 'Mumbai' into ('xpath', "//input[@placeholder='To']")
+05/23/2026 02:20:42 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 02:20:42 AM: INFO: STEP PASSED: I enter "Mumbai" as the destination city
+05/23/2026 02:20:47 AM: INFO: STEP PASSED: I click on the Search button
+05/23/2026 02:20:50 AM: INFO: STEP PASSED: I apply the "Non-Stop" filter
+05/23/2026 02:20:50 AM: INFO: STEP PASSED: only non-stop flights should be displayed
+05/23/2026 02:20:50 AM: INFO: ========== CLOSING SCENARIO: 4. Positive - Filter flights by Non-Stop ==========
+05/23/2026 02:20:52 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 02:22:14 AM: INFO: ========== STARTING SCENARIO: 4. Positive - Filter flights by Non-Stop ==========
+05/23/2026 02:22:21 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 02:22:23 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 02:22:24 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 02:22:26 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 02:22:26 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 02:22:27 AM: INFO: Clicked on element: ('id', 'fromCity')
+05/23/2026 02:22:27 AM: INFO: Entered text 'Delhi' into ('xpath', "//input[@placeholder='From']")
+05/23/2026 02:22:28 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 02:22:28 AM: INFO: STEP PASSED: I enter "Delhi" as the source city
+05/23/2026 02:22:38 AM: INFO: Clicked on element: ('id', 'toCity')
+05/23/2026 02:22:38 AM: INFO: Entered text 'Mumbai' into ('xpath', "//input[@placeholder='To']")
+05/23/2026 02:22:38 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 02:22:38 AM: INFO: STEP PASSED: I enter "Mumbai" as the destination city
+05/23/2026 02:22:43 AM: INFO: STEP PASSED: I click on the Search button
+05/23/2026 02:22:46 AM: INFO: STEP PASSED: I apply the "Non-Stop" filter
+05/23/2026 02:22:46 AM: INFO: STEP PASSED: only non-stop flights should be displayed
+05/23/2026 02:22:46 AM: INFO: ========== CLOSING SCENARIO: 4. Positive - Filter flights by Non-Stop ==========
+05/23/2026 02:22:48 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 02:31:52 AM: INFO: ========== STARTING SCENARIO: 7. E2E - Complete flight search and proceed to booking ==========
+05/23/2026 02:31:58 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 02:32:01 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 02:32:02 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 02:32:03 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 02:32:03 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 02:32:04 AM: INFO: Clicked on element: ('id', 'fromCity')
+05/23/2026 02:32:04 AM: INFO: Entered text 'Delhi' into ('xpath', "//input[@placeholder='From']")
+05/23/2026 02:32:05 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 02:32:05 AM: INFO: STEP PASSED: I enter "Delhi" as the source city
+05/23/2026 02:32:15 AM: INFO: Clicked on element: ('id', 'toCity')
+05/23/2026 02:32:15 AM: INFO: Entered text 'Mumbai' into ('xpath', "//input[@placeholder='To']")
+05/23/2026 02:32:16 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 02:32:16 AM: INFO: STEP PASSED: I enter "Mumbai" as the destination city
+05/23/2026 02:32:21 AM: INFO: STEP PASSED: I click on the Search button
+05/23/2026 02:32:38 AM: INFO: STEP PASSED: I select the first available flight
+05/23/2026 02:32:38 AM: INFO: STEP PASSED: I click on Book Now
+05/23/2026 02:32:39 AM: INFO: STEP PASSED: I should be navigated to the booking review page
+05/23/2026 02:32:39 AM: INFO: ========== CLOSING SCENARIO: 7. E2E - Complete flight search and proceed to booking ==========
+05/23/2026 02:32:42 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 02:44:54 AM: INFO: ========== STARTING SCENARIO: 7. E2E - Complete flight booking flow up to payment ==========
+05/23/2026 02:45:00 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 02:45:02 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 02:45:03 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 02:45:05 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 02:45:05 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 02:45:09 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 02:45:19 AM: ERROR: Failed to click ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 02:45:19 AM: INFO: No promotional popup appeared.
+05/23/2026 02:45:19 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 02:45:21 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 02:45:21 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 02:45:22 AM: INFO: Clicked on element: ('id', 'fromCity')
+05/23/2026 02:45:22 AM: INFO: Entered text 'Delhi' into ('xpath', "//input[@placeholder='From']")
+05/23/2026 02:45:23 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 02:45:23 AM: INFO: STEP PASSED: I enter "Delhi" as the source city
+05/23/2026 02:45:33 AM: INFO: Clicked on element: ('id', 'toCity')
+05/23/2026 02:45:33 AM: INFO: Entered text 'Mumbai' into ('xpath', "//input[@placeholder='To']")
+05/23/2026 02:45:34 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 02:45:34 AM: INFO: STEP PASSED: I enter "Mumbai" as the destination city
+05/23/2026 02:45:38 AM: INFO: STEP PASSED: I click on the Search button
+05/23/2026 02:45:55 AM: INFO: STEP PASSED: I select the first available flight
+05/23/2026 02:45:55 AM: INFO: STEP PASSED: I click on Book Now
+05/23/2026 02:45:58 AM: INFO: STEP PASSED: I switch to the booking review tab
+05/23/2026 02:46:14 AM: ERROR: STEP FAILED: I decline trip insurance - CAPTURING SCREENSHOT
+05/23/2026 02:46:14 AM: INFO: ========== CLOSING SCENARIO: 7. E2E - Complete flight booking flow up to payment ==========
+05/23/2026 02:46:17 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 02:53:25 AM: INFO: ========== STARTING SCENARIO: 7. E2E - Complete flight booking flow up to payment ==========
+05/23/2026 02:53:32 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 02:53:34 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 02:53:35 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 02:53:37 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 02:53:37 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 02:53:41 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 02:53:51 AM: ERROR: Failed to click ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 02:53:51 AM: INFO: No promotional popup appeared.
+05/23/2026 02:53:51 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 02:53:53 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 02:53:53 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 02:53:53 AM: INFO: Clicked on element: ('id', 'fromCity')
+05/23/2026 02:53:54 AM: INFO: Entered text 'Delhi' into ('xpath', "//input[@placeholder='From']")
+05/23/2026 02:53:55 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 02:53:55 AM: INFO: STEP PASSED: I enter "Delhi" as the source city
+05/23/2026 02:54:05 AM: INFO: Clicked on element: ('id', 'toCity')
+05/23/2026 02:54:05 AM: INFO: Entered text 'Mumbai' into ('xpath', "//input[@placeholder='To']")
+05/23/2026 02:54:05 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 02:54:05 AM: INFO: STEP PASSED: I enter "Mumbai" as the destination city
+05/23/2026 02:54:10 AM: INFO: STEP PASSED: I click on the Search button
+05/23/2026 02:54:27 AM: INFO: STEP PASSED: I select the first available flight
+05/23/2026 02:54:27 AM: INFO: STEP PASSED: I click on Book Now
+05/23/2026 02:54:30 AM: INFO: STEP PASSED: I switch to the booking review tab
+05/23/2026 02:55:07 AM: ERROR: STEP FAILED: I decline trip insurance - CAPTURING SCREENSHOT
+05/23/2026 02:55:07 AM: INFO: ========== CLOSING SCENARIO: 7. E2E - Complete flight booking flow up to payment ==========
+05/23/2026 02:55:10 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 02:55:51 AM: INFO: ========== STARTING SCENARIO: 7. E2E - Complete flight booking flow up to payment ==========
+05/23/2026 02:55:57 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 02:56:00 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 02:56:01 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 02:56:02 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 02:56:02 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 02:56:07 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 02:56:17 AM: ERROR: Failed to click ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 02:56:17 AM: INFO: No promotional popup appeared.
+05/23/2026 02:56:17 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 02:56:18 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 02:56:18 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 02:56:19 AM: INFO: Clicked on element: ('id', 'fromCity')
+05/23/2026 02:56:20 AM: INFO: Entered text 'Delhi' into ('xpath', "//input[@placeholder='From']")
+05/23/2026 02:56:20 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 02:56:20 AM: INFO: STEP PASSED: I enter "Delhi" as the source city
+05/23/2026 02:56:30 AM: INFO: Clicked on element: ('id', 'toCity')
+05/23/2026 02:56:30 AM: INFO: Entered text 'Mumbai' into ('xpath', "//input[@placeholder='To']")
+05/23/2026 02:56:31 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 02:56:31 AM: INFO: STEP PASSED: I enter "Mumbai" as the destination city
+05/23/2026 02:56:35 AM: INFO: STEP PASSED: I click on the Search button
+05/23/2026 02:56:54 AM: INFO: STEP PASSED: I select the first available flight
+05/23/2026 02:56:54 AM: INFO: STEP PASSED: I click on Book Now
+05/23/2026 02:56:57 AM: INFO: STEP PASSED: I switch to the booking review tab
+05/23/2026 02:57:34 AM: ERROR: STEP FAILED: I decline trip insurance - CAPTURING SCREENSHOT
+05/23/2026 02:57:34 AM: INFO: ========== CLOSING SCENARIO: 7. E2E - Complete flight booking flow up to payment ==========
+05/23/2026 02:57:37 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/23/2026 03:23:36 AM: INFO: ========== STARTING SCENARIO: 7. E2E - Complete flight booking flow up to payment ==========
+05/23/2026 03:23:43 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 03:23:45 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 03:23:46 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 03:23:47 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 03:23:47 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 03:23:52 AM: INFO: STEP PASSED: I navigate to the MakeMyTrip homepage
+05/23/2026 03:24:02 AM: ERROR: Failed to click ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 03:24:02 AM: INFO: No promotional popup appeared.
+05/23/2026 03:24:02 AM: INFO: STEP PASSED: I close any promotional popups
+05/23/2026 03:24:03 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 03:24:03 AM: INFO: STEP PASSED: I navigate to the Flights section
+05/23/2026 03:24:04 AM: INFO: Clicked on element: ('id', 'fromCity')
+05/23/2026 03:24:05 AM: INFO: Entered text 'Delhi' into ('xpath', "//input[@placeholder='From']")
+05/23/2026 03:24:05 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 03:24:05 AM: INFO: STEP PASSED: I enter "Delhi" as the source city
+05/23/2026 03:24:15 AM: INFO: Clicked on element: ('id', 'toCity')
+05/23/2026 03:24:15 AM: INFO: Entered text 'Mumbai' into ('xpath', "//input[@placeholder='To']")
+05/23/2026 03:24:16 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 03:24:16 AM: INFO: STEP PASSED: I enter "Mumbai" as the destination city
+05/23/2026 03:24:21 AM: INFO: STEP PASSED: I click on the Search button
+05/23/2026 03:24:40 AM: INFO: STEP PASSED: I select the first available flight
+05/23/2026 03:24:40 AM: INFO: STEP PASSED: I click on Book Now
+05/23/2026 03:24:43 AM: INFO: STEP PASSED: I switch to the booking review tab
+05/23/2026 03:25:33 AM: INFO: STEP PASSED: I decline trip insurance
+05/23/2026 03:25:58 AM: INFO: Entered text 'Shivam' into ('xpath', "//input[@placeholder='First & Middle Name']")
+05/23/2026 03:25:58 AM: INFO: Entered text 'Maurya' into ('xpath', "//input[@placeholder='Last Name']")
+05/23/2026 03:25:58 AM: INFO: STEP PASSED: I enter adult passenger details "Shivam" "Maurya"
+05/23/2026 03:25:58 AM: INFO: Entered text '9876543216' into ('xpath', "//input[@placeholder='Mobile No']")
+05/23/2026 03:25:58 AM: INFO: Entered text 'testbdd@gmail.com' into ('xpath', "//input[@placeholder='Email']")
+05/23/2026 03:25:58 AM: INFO: STEP PASSED: I enter contact details "9876543216" "testbdd@gmail.com"
+05/23/2026 03:26:24 AM: INFO: STEP PASSED: I click continue and skip all add-ons
+05/23/2026 03:26:34 AM: ERROR: STEP FAILED: I should reach the final payment page - CAPTURING SCREENSHOT
+05/23/2026 03:26:34 AM: INFO: ========== CLOSING SCENARIO: 7. E2E - Complete flight booking flow up to payment ==========
+05/23/2026 03:26:37 AM: INFO: BROWSER CLOSED SUCCESSFULLY

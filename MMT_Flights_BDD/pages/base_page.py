@@ -1,37 +1,42 @@
+import time
+
+from selenium.common import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import (
-    TimeoutException,
-    NoSuchElementException,
-    StaleElementReferenceException,
-    ElementClickInterceptedException
-)
+from utils.logger import LogGen
 
 class BasePage:
     def __init__(self, driver):
         self.driver = driver
-        # We tell the wait to automatically ignore elements that go "stale" during DOM refreshes
-        self.wait = WebDriverWait(
-            self.driver,
-            15,
-            ignored_exceptions=[StaleElementReferenceException]
-        )
+        self.wait = WebDriverWait(self.driver, 15)
+        self.logger = LogGen.loggen()
 
     def click_element(self, locator):
-        """Waits for an element to be clickable and clicks it, with a JS fallback."""
         try:
             element = self.wait.until(EC.element_to_be_clickable(locator))
             element.click()
-        except ElementClickInterceptedException:
-            # Fallback: If an ad or loading overlay blocks the click, force it via JavaScript
-            element = self.wait.until(EC.presence_of_element_located(locator))
-            self.driver.execute_script("arguments[0].click();", element)
+            self.logger.info(f"Clicked on element: {locator}")
+        except Exception as e:
+            self.logger.error(f"Failed to click {locator}")
+            raise e
 
     def enter_text(self, locator, text):
-        """Waits for an element to be visible, clears it, and sends text."""
-        element = self.wait.until(EC.visibility_of_element_located(locator))
-        element.clear()
-        element.send_keys(text)
+        try:
+            element = self.wait.until(EC.visibility_of_element_located(locator))
+            element.clear()
+            element.send_keys(text)
+            self.logger.info(f"Entered text '{text}' into {locator}")
+        except Exception as e:
+            self.logger.error(f"Failed to enter text in {locator}")
+            raise e
+
+    def get_text(self, locator):
+        try:
+            element = self.wait.until(EC.visibility_of_element_located(locator))
+            return element.text
+        except Exception as e:
+            self.logger.error(f"Failed to get text from {locator}")
+            raise e
 
     def is_element_visible(self, locator):
         """Returns True if visible within the timeout, otherwise False."""
@@ -41,7 +46,14 @@ class BasePage:
         except TimeoutException:
             return False
 
-    def get_text(self, locator):
-        """Retrieves text from a visible element."""
-        element = self.wait.until(EC.visibility_of_element_located(locator))
-        return element.text
+    def click_element_js(self, locator):
+        """Forces a click using JavaScript to bypass overlapping UI elements."""
+        element = self.wait.until(EC.presence_of_element_located(locator))
+        self.driver.execute_script("arguments[0].click();", element)
+
+    def scroll_to_element(self, locator):
+        """Scrolls the page until the element is in the center of the viewport."""
+
+        element = self.wait.until(EC.presence_of_element_located(locator))
+        self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", element)
+        time.sleep(1)

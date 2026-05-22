@@ -1,56 +1,77 @@
 from pages.base_page import BasePage
-from locators.flight_locators import HomePageLocators
+from locators.flight_locators import FlightLocators
 import time
 
-
 class HomePage(BasePage):
-    def navigate_to(self, url):
-        self.driver.get(url)
-
-    def close_popups(self):
-        # MMT has aggressive popups. We use a try-except block here.
+    def close_promotional_popup(self):
         try:
-            self.click_element(HomePageLocators.POPUP_CLOSE)
+            self.click_element(FlightLocators.POPUP_CLOSE_BTN)
+            time.sleep(1)
         except:
-            pass  # No popup appeared
+            self.logger.info("No promotional popup appeared.")
+
+    def click_flights_section(self):
+        self.click_element(FlightLocators.FLIGHTS_MENU_ICON)
+
+    def select_trip_type(self, trip_type):
+        if trip_type == "One Way":
+            self.click_element(FlightLocators.ONE_WAY_RADIO)
+        elif trip_type == "Round Trip":
+            self.click_element(FlightLocators.ROUND_TRIP_RADIO)
+
+    def enter_source_city(self, city):
+        self.click_element(FlightLocators.FROM_CITY_INPUT)
+        time.sleep(0.5)
+        self.enter_text(FlightLocators.FROM_CITY_DROPDOWN_INPUT, city)
+
+        self.click_element(FlightLocators.FIRST_SUGGESTION)
+
+    def enter_destination_city(self, city):
 
         try:
-            # Handle Webklipper ad iframe
-            iframe = self.driver.find_element(*HomePageLocators.AD_IFRAME)
-            self.driver.switch_to.frame(iframe)
-            self.click_element(HomePageLocators.AD_CLOSE)
-            self.driver.switch_to.default_content()
+            # If the dropdown input is NOT visible, click the To City box to open it
+            element = self.driver.find_element(*FlightLocators.TO_CITY_DROPDOWN_INPUT)
+            if not element.is_displayed():
+                self.click_element(FlightLocators.TO_CITY_INPUT)
         except:
-            self.driver.switch_to.default_content()
+            self.click_element(FlightLocators.TO_CITY_INPUT)
 
-    def select_trip_type(self, type):
-        if type.lower() == "round trip":
-            self.click_element(HomePageLocators.ROUND_TRIP_RADIO)
-        else:
-            self.click_element(HomePageLocators.ONE_WAY_RADIO)
+        self.enter_text(FlightLocators.TO_CITY_DROPDOWN_INPUT, city)
+        time.sleep(0.5) 
+        self.click_element(FlightLocators.FIRST_SUGGESTION)
 
-    def enter_source(self, city):
-        self.click_element(HomePageLocators.FROM_CITY_INPUT_CLICK)
-        self.enter_text(HomePageLocators.FROM_CITY_INPUT_FIELD, city)
-        time.sleep(1)  # Wait for dropdown population
-        self.click_element(HomePageLocators.FIRST_CITY_SUGGESTION)
 
-    def enter_destination(self, city):
-        self.click_element(HomePageLocators.TO_CITY_INPUT_CLICK)
-        self.enter_text(HomePageLocators.TO_CITY_INPUT_FIELD, city)
-        time.sleep(1)
-        self.click_element(HomePageLocators.FIRST_CITY_SUGGESTION)
+    def clear_destination_city(self):
+        self.click_element(FlightLocators.TO_CITY_INPUT)
+        time.sleep(1) # Just click it to keep it blank
 
-    def select_tomorrow_date(self):
-        self.click_element(HomePageLocators.DEPARTURE_DATE)
 
     def click_search(self):
-        self.click_element(HomePageLocators.SEARCH_BTN)
+        time.sleep(1)
+        # Use the new JS click to bypass the destination dropdown blocking the button
+        self.click_element_js(FlightLocators.SEARCH_BUTTON)
 
-    def check_same_city_error(self):
-        return self.is_element_visible(HomePageLocators.SAME_CITY_ERROR)
+    def open_traveller_modal(self):
+        self.click_element(FlightLocators.TRAVELLERS_INPUT)
 
-    def update_passengers(self):
-        self.click_element(HomePageLocators.TRAVELLER_BOX)
-        self.click_element(HomePageLocators.ADULTS_2)
-        self.click_element(HomePageLocators.APPLY_BTN)
+    def select_two_adults(self):
+        self.click_element(FlightLocators.ADULT_2_OPTION)
+
+    def click_apply_travellers(self):
+        self.click_element(FlightLocators.APPLY_BTN)
+
+    def get_traveller_count(self):
+        # Grab text from the whole container instead of the specific child span
+        return self.get_text(FlightLocators.TRAVELLERS_INPUT)
+
+    def get_same_city_error(self):
+        return self.get_text(FlightLocators.SAME_CITY_ERROR)
+
+    def select_invalid_infant_count(self):
+        """Attempts to select 1 Adult and 2 Infants to trigger a validation error"""
+        self.click_element(FlightLocators.ADULTS_1)
+        self.click_element(FlightLocators.INFANTS_2)
+        time.sleep(2)  # Brief pause to allow the error text to render in the DOM
+
+    def is_infant_error_displayed(self):
+        return self.is_element_visible(FlightLocators.INFANT_ERROR)

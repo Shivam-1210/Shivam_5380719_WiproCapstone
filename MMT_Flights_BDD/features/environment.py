@@ -1,25 +1,83 @@
-import configparser
-import undetected_chromedriver as uc
 import os
+import shutil
+import allure
+
+from seleniumbase import Driver
+
+from utils.logger import LogGen
+from utils.screenshot_util import ScreenshotUtil
+from utils.config_reader import ConfigReader
+
+logger = LogGen.loggen()
+
+
+def before_all(context):
+    # Clean up old results before starting
+    if os.path.exists("reports/allure-results"):
+        shutil.rmtree("reports/allure-results")
+    os.makedirs("reports/allure-results", exist_ok=True)
 
 
 def before_scenario(context, scenario):
-    config = configparser.ConfigParser()
-    config_path = os.path.join(os.path.dirname(__file__), '..', 'config', 'config.ini')
-    config.read(config_path)
+    logger.info(f"========== STARTING SCENARIO: {scenario.name} ==========")
 
-    context.base_url = config.get('Environment', 'base_url')
+    # Initialize SeleniumBase in Undetected Chromedriver (UC) Mode
+    context.driver = Driver(uc=True, headless=False)
 
-    # Setup Undetected ChromeDriver
-    options = uc.ChromeOptions()
-    options.add_argument("--start-maximized")
-    options.add_argument("--disable-notifications")
+    context.driver.maximize_window()
+    context.driver.implicitly_wait(ConfigReader.get_implicit_wait())
 
-    # Initialize the undetected driver
-    context.driver = uc.Chrome(options=options)
-    context.driver.implicitly_wait(config.getint('Environment', 'implicit_wait'))
+
+def after_step(context, step):
+    try:
+        if step.status == "failed":
+            logger.error(f"STEP FAILED: {step.name} - CAPTURING SCREENSHOT")
+
+            # Capture the screenshot using your utility
+            path = ScreenshotUtil.capture_screenshot(
+                context.driver,
+                f"FAIL_{step.name[:20]}"
+            )
+
+            # Attach to Allure Report
+            allure.attach.file(
+                path,
+                name=step.name,
+                attachment_type=allure.attachment_type.PNG
+            )
+
+        elif step.status == "passed":
+            logger.info(f"STEP PASSED: {step.name}")
+
+    except Exception as e:
+        logger.error(f"SCREENSHOT FAILED: {str(e)}")
 
 
 def after_scenario(context, scenario):
+    logger.info(f"========== CLOSING SCENARIO: {scenario.name} ==========")
+
     if hasattr(context, 'driver'):
-        context.driver.quit()
+        try:
+            # Attach the automation log to the Allure report for deep debugging
+            if os.path.exists("logs/automation.log"):
+                with open("logs/automation.log", "r") as log_file:
+                    allure.attach(
+                        log_file.read(),
+                        name="Execution Logs",
+                        attachment_type=allure.attachment_type.TEXT
+                    )
+
+            context.driver.quit()
+            logger.info("BROWSER CLOSED SUCCESSFULLY")
+
+        except Exception as e:
+            logger.error(f"ERROR CLOSING BROWSER: {str(e)}")
+
+
+def after_all(context):
+    print("\n[INFO] Tests finished. Generating Allure Report")
+
+    # Build the HTML report into the allure-report folder
+    os.system("allure generate reports/allure-results -o reports/allure-report --clean")
+
+    print("[INFO] Allure report successfully saved in the 'reports/allure-report' folder.")
