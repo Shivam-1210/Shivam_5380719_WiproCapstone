@@ -1,0 +1,5 @@
+[32mINFO    [0m MMT_Flights:conftest.py:17 ========== STARTING TEST ==========
+[32mINFO    [0m MMT_Flights:conftest.py:23 OPENING MAKEMYTRIP WEBSITE
+[32mINFO    [0m MMT_Flights:conftest.py:27 CURRENT URL: https://www.makemytrip.com/
+[32mINFO    [0m MMT_Flights:conftest.py:31 ========== CLOSING TEST ==========
+[32mINFO    [0m MMT_Flights:conftest.py:35 BROWSER CLOSED SUCCESSFULLY

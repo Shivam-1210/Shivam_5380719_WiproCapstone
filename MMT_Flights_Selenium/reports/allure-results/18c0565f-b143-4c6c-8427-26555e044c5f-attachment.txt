@@ -1,0 +1,41 @@
+[32mINFO    [0m MMT_Flights:conftest.py:17 ========== STARTING TEST ==========
+[32mINFO    [0m MMT_Flights:conftest.py:23 OPENING MAKEMYTRIP WEBSITE
+[32mINFO    [0m MMT_Flights:conftest.py:27 CURRENT URL: https://www.makemytrip.com/
+[32mINFO    [0m MMT_Flights:test_e2e_booking.py:27 STARTING E2E FLIGHT BOOKING FLOW
+[32mINFO    [0m MMT_Flights:base_page.py:12 BasePage initialized
+[32mINFO    [0m MMT_Flights:base_page.py:12 BasePage initialized
+[32mINFO    [0m MMT_Flights:home_page.py:276 Opening website: https://www.makemytrip.com
+[32mINFO    [0m MMT_Flights:home_page.py:333 Selected From City: Delhi
+[32mINFO    [0m MMT_Flights:home_page.py:333 Selected To City: Mumbai
+[32mINFO    [0m MMT_Flights:home_page.py:364 SELECTING DATE: Fri Jun 19 2026
+[32mINFO    [0m MMT_Flights:home_page.py:371 DEPARTURE DATE Fri Jun 19 2026 SELECTED
+[32mINFO    [0m MMT_Flights:home_page.py:378 CLICKING SEARCH BUTTON
+[32mINFO    [0m MMT_Flights:home_page.py:385 SEARCH BUTTON CLICKED SUCCESSFULLY
+[32mINFO    [0m MMT_Flights:flight_search_page.py:174 Successfully clicked: Non-Stop Filter
+[32mINFO    [0m MMT_Flights:test_e2e_booking.py:56 Switching driver focus to the newly opened Booking Tab...
+[32mINFO    [0m MMT_Flights:test_e2e_booking.py:62 Switched successfully. Current URL: https://www.makemytrip.com/flight/reviewDetails/?itineraryId=ac15990b56d647f458c1a6da22e797800a76def3&cur=INR&ccde=IN&crId=5f2d49af-97f4-4a48-b4d6-b4d5085a57a1&rKey=RKEY%3A9bf409b0-91d0-4964-b78e-f1b1f2145b65%3A0_0&userCurrency=INR&xflt=eyJjIjoiRSIsInAiOiJBLTFfQy0wX0ktMCIsInQiOiIiLCJzIjoiREVMLUJPTS0yMDI2MDYxOSIsIkl0aW5lcmFyeUlkIjoiREVMLUJPTS0xOS8wNi8yMDI2IiwiVHJpcFR5cGUiOiJPIiwiUGF4VHlwZSI6IkEtMV9DLTBfSS0wIiwiSW50bCI6ZmFsc2UsIkNhYmluQ2xhc3MiOiJFIiwiQ2NkZSI6ImluIiwiUGZ0IjoiIiwiUGFmcyI6IiIsIkZvcndhcmRGbG93UmVxdWlyZWQiOnRydWUsIkNtcElkIjoiIn0%3D
+[32mINFO    [0m MMT_Flights:booking_page.py:127 Verifying if the Booking Review page is loaded...
+[32mINFO    [0m MMT_Flights:booking_page.py:130 Booking page loaded successfully.
+[31m[1mERROR   [0m MMT_Flights:booking_page.py:158 Failed to enter first name: Message: 
+Stacktrace:
+	uc_driver!GetHandleVerifier [0x7ff776e67de5+14895]
+	uc_driver!GetHandleVerifier [0x7ff776e67e50+14900]
+	uc_driver!(No symbol) [0x7ff776bcd5ad]
+	uc_driver!(No symbol) [0x7ff776c27822]
+	uc_driver!(No symbol) [0x7ff776c27b2c]
+	uc_driver!(No symbol) [0x7ff776c77d17]
+	uc_driver!(No symbol) [0x7ff776c7486f]
+	uc_driver!(No symbol) [0x7ff776c19df8]
+	uc_driver!(No symbol) [0x7ff776c1ace3]
+	uc_driver!GetHandleVerifier [0x7ff77717cc49+3296f9]
+	uc_driver!GetHandleVerifier [0x7ff777177375+323e25]
+	uc_driver!GetHandleVerifier [0x7ff77719bc82+348732]
+	uc_driver!GetHandleVerifier [0x7ff776e86045+32af5]
+	uc_driver!GetHandleVerifier [0x7ff776e8ecec+3b79c]
+	uc_driver!GetHandleVerifier [0x7ff776e71bc4+1e674]
+	uc_driver!GetHandleVerifier [0x7ff776e71d54+1e804]
+	uc_driver!GetHandleVerifier [0x7ff776e560e7+2b97]
+	KERNEL32!BaseThreadInitThunk [0x7ff97b24e957+17]
+	ntdll!RtlUserThreadStart [0x7ff97cd4427c+2c]
+[32mINFO    [0m MMT_Flights:conftest.py:31 ========== CLOSING TEST ==========
+[32mINFO    [0m MMT_Flights:conftest.py:35 BROWSER CLOSED SUCCESSFULLY

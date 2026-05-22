@@ -1,47 +1,133 @@
-2026-05-22 12:00:16,701 - MMT_Flights - INFO - Reading Excel: C:\wipro_training_work\python_coding\Capstone_Project\MMT_Flights_Selenium\test_data/passenger_data.xlsx | Sheet: BookingData
-2026-05-22 12:00:16,906 - MMT_Flights - INFO - Reading Excel: C:\wipro_training_work\python_coding\Capstone_Project\MMT_Flights_Selenium\test_data/passenger_data.xlsx | Sheet: PassengerData
-2026-05-22 12:00:16,917 - MMT_Flights - INFO - ========== STARTING TEST ==========
-2026-05-22 12:00:20,287 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
-2026-05-22 12:00:28,690 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
-2026-05-22 12:00:28,693 - MMT_Flights - INFO - STARTING E2E FLIGHT BOOKING FLOW
-2026-05-22 12:00:28,694 - MMT_Flights - INFO - BasePage initialized
-2026-05-22 12:00:28,694 - MMT_Flights - INFO - BasePage initialized
-2026-05-22 12:00:28,700 - MMT_Flights - INFO - Opening website: https://www.makemytrip.com
-2026-05-22 12:00:51,922 - MMT_Flights - INFO - Selected From City: Delhi
-2026-05-22 12:00:55,178 - MMT_Flights - INFO - Selected To City: Mumbai
-2026-05-22 12:00:56,179 - MMT_Flights - INFO - SELECTING DATE: Fri Jun 19 2026
-2026-05-22 12:00:57,217 - MMT_Flights - INFO - DEPARTURE DATE Fri Jun 19 2026 SELECTED
-2026-05-22 12:00:57,218 - MMT_Flights - INFO - CLICKING SEARCH BUTTON
-2026-05-22 12:01:02,615 - MMT_Flights - INFO - SEARCH BUTTON CLICKED SUCCESSFULLY
-2026-05-22 12:01:08,718 - MMT_Flights - INFO - Successfully clicked: Non-Stop Filter
-2026-05-22 12:01:13,884 - MMT_Flights - INFO - Switching driver focus to the newly opened Booking Tab...
-2026-05-22 12:01:13,908 - MMT_Flights - INFO - Switched successfully. Current URL: https://www.makemytrip.com/flight/reviewDetails/?itineraryId=fb44f01aa4a834e09d269c1922bc3e5fd4650d39&cur=INR&ccde=IN&crId=283f2157-4c7c-42f3-80c5-cfdf7f9014e1&rKey=RKEY%3A23bbec7e-7171-4c44-9d89-646e35774366%3A0_0&userCurrency=INR&xflt=eyJjIjoiRSIsInAiOiJBLTFfQy0wX0ktMCIsInQiOiIiLCJzIjoiREVMLUJPTS0yMDI2MDYxOSIsIkl0aW5lcmFyeUlkIjoiREVMLUJPTS0xOS8wNi8yMDI2IiwiVHJpcFR5cGUiOiJPIiwiUGF4VHlwZSI6IkEtMV9DLTBfSS0wIiwiSW50bCI6ZmFsc2UsIkNhYmluQ2xhc3MiOiJFIiwiQ2NkZSI6ImluIiwiUGZ0IjoiIiwiUGFmcyI6IiIsIkZvcndhcmRGbG93UmVxdWlyZWQiOnRydWUsIkNtcElkIjoiIn0%3D
-2026-05-22 12:01:13,909 - MMT_Flights - INFO - Verifying if the Booking Review page is loaded...
-2026-05-22 12:01:13,927 - MMT_Flights - INFO - Booking page loaded successfully.
-2026-05-22 12:01:37,577 - MMT_Flights - ERROR - Failed to enter first name: Message: 
-Stacktrace:
-	uc_driver!GetHandleVerifier [0x7ff75a1b7de5+14895]
-	uc_driver!GetHandleVerifier [0x7ff75a1b7e50+14900]
-	uc_driver!(No symbol) [0x7ff759f1d5ad]
-	uc_driver!(No symbol) [0x7ff759f77822]
-	uc_driver!(No symbol) [0x7ff759f77b2c]
-	uc_driver!(No symbol) [0x7ff759fc7d17]
-	uc_driver!(No symbol) [0x7ff759fc486f]
-	uc_driver!(No symbol) [0x7ff759f69df8]
-	uc_driver!(No symbol) [0x7ff759f6ace3]
-	uc_driver!GetHandleVerifier [0x7ff75a4ccc49+3296f9]
-	uc_driver!GetHandleVerifier [0x7ff75a4c7375+323e25]
-	uc_driver!GetHandleVerifier [0x7ff75a4ebc82+348732]
-	uc_driver!GetHandleVerifier [0x7ff75a1d6045+32af5]
-	uc_driver!GetHandleVerifier [0x7ff75a1decec+3b79c]
-	uc_driver!GetHandleVerifier [0x7ff75a1c1bc4+1e674]
-	uc_driver!GetHandleVerifier [0x7ff75a1c1d54+1e804]
-	uc_driver!GetHandleVerifier [0x7ff75a1a60e7+2b97]
-	KERNEL32!BaseThreadInitThunk [0x7ff97b24e957+17]
-	ntdll!RtlUserThreadStart [0x7ff97cd4427c+2c]
-
-2026-05-22 12:01:37,905 - MMT_Flights - INFO - Contact details populated successfully.
-2026-05-22 12:01:37,905 - MMT_Flights - INFO - E2E FLIGHT BOOKING FLOW COMPLETED UP TO FINAL CONFIRMATION STEP
-2026-05-22 12:01:37,906 - MMT_Flights - INFO - TEST PASSED - CAPTURING SCREENSHOT
-2026-05-22 12:01:38,036 - MMT_Flights - INFO - ========== CLOSING TEST ==========
-2026-05-22 12:01:40,649 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY
+2026-05-22 14:07:10,509 - MMT_Flights - INFO - Reading Excel: C:\wipro_training_work\python_coding\Capstone_Project\MMT_Flights_Selenium\test_data/passenger_data.xlsx | Sheet: BookingData
+2026-05-22 14:07:10,714 - MMT_Flights - INFO - Reading Excel: C:\wipro_training_work\python_coding\Capstone_Project\MMT_Flights_Selenium\test_data/passenger_data.xlsx | Sheet: PassengerData
+2026-05-22 14:07:10,726 - MMT_Flights - INFO - Reading Excel: C:\wipro_training_work\python_coding\Capstone_Project\MMT_Flights_Selenium\test_data/passenger_data.xlsx | Sheet: PositiveFlights
+2026-05-22 14:07:10,737 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-22 14:07:14,590 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-22 14:07:23,380 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-22 14:07:23,381 - MMT_Flights - INFO - STARTING E2E FLIGHT BOOKING FLOW
+2026-05-22 14:07:23,382 - MMT_Flights - INFO - BasePage initialized
+2026-05-22 14:07:23,382 - MMT_Flights - INFO - BasePage initialized
+2026-05-22 14:07:23,383 - MMT_Flights - INFO - Opening website: https://www.makemytrip.com
+2026-05-22 14:07:46,723 - MMT_Flights - INFO - Selected From City: Delhi
+2026-05-22 14:07:49,931 - MMT_Flights - INFO - Selected To City: Mumbai
+2026-05-22 14:07:50,933 - MMT_Flights - INFO - SELECTING DATE: Fri Jun 19 2026
+2026-05-22 14:07:51,971 - MMT_Flights - INFO - DEPARTURE DATE Fri Jun 19 2026 SELECTED
+2026-05-22 14:07:51,971 - MMT_Flights - INFO - CLICKING SEARCH BUTTON
+2026-05-22 14:08:27,192 - MMT_Flights - INFO - SEARCH BUTTON CLICKED SUCCESSFULLY
+2026-05-22 14:08:33,299 - MMT_Flights - INFO - Successfully clicked: Non-Stop Filter
+2026-05-22 14:08:38,486 - MMT_Flights - INFO - Switching driver focus to the newly opened Booking Tab...
+2026-05-22 14:08:38,511 - MMT_Flights - INFO - Verifying if the Booking Review page is loaded...
+2026-05-22 14:08:39,867 - MMT_Flights - INFO - Booking page loaded successfully.
+2026-05-22 14:08:40,119 - MMT_Flights - INFO - Clicked '+ ADD NEW ADULT' button.
+2026-05-22 14:08:40,288 - MMT_Flights - INFO - Entered First Name: Vats
+2026-05-22 14:08:41,514 - MMT_Flights - INFO - Entered Email: vats123@gmail.com
+2026-05-22 14:08:42,640 - MMT_Flights - WARNING - Standard Mobile entry failed, attempting JS fallback...
+2026-05-22 14:08:42,645 - MMT_Flights - INFO - Entered Mobile via JS fallback.
+2026-05-22 14:08:42,660 - MMT_Flights - INFO - Contact details populated successfully.
+2026-05-22 14:08:42,660 - MMT_Flights - INFO - E2E FLIGHT BOOKING FLOW COMPLETED SUCCESSFULLY
+2026-05-22 14:08:42,661 - MMT_Flights - INFO - TEST PASSED - CAPTURING SCREENSHOT
+2026-05-22 14:08:42,781 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-22 14:08:45,427 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY
+2026-05-22 14:08:45,430 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-22 14:08:48,609 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-22 14:08:57,279 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-22 14:08:57,281 - MMT_Flights - INFO - --- Starting Negative Test: Mumbai to Mumbai ---
+2026-05-22 14:09:20,771 - MMT_Flights - INFO - Selected From City: Mumbai
+2026-05-22 14:09:23,963 - MMT_Flights - INFO - Selected To City: Mumbai
+2026-05-22 14:09:29,077 - MMT_Flights - INFO - Captured UI Text: From & To airports cannot be the same
+2026-05-22 14:09:29,077 - MMT_Flights - INFO - ========== TEST PASSED ==========
+2026-05-22 14:09:29,078 - MMT_Flights - INFO - TEST PASSED - CAPTURING SCREENSHOT
+2026-05-22 14:09:29,227 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-22 14:09:31,721 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY
+2026-05-22 14:09:31,724 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-22 14:09:34,939 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-22 14:09:43,694 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-22 14:09:43,695 - MMT_Flights - INFO - --- Starting Negative Test: Delhi to Bangalore ---
+2026-05-22 14:10:07,673 - MMT_Flights - INFO - Selected From City: Delhi
+2026-05-22 14:10:10,896 - MMT_Flights - INFO - Selected To City: Bangalore
+2026-05-22 14:10:16,003 - MMT_Flights - INFO - Captured UI Text: Number of infants cannot be more than adults
+2026-05-22 14:10:16,003 - MMT_Flights - INFO - ========== TEST PASSED ==========
+2026-05-22 14:10:16,003 - MMT_Flights - INFO - TEST PASSED - CAPTURING SCREENSHOT
+2026-05-22 14:10:16,145 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-22 14:10:18,607 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY
+2026-05-22 14:10:18,610 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-22 14:10:21,704 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-22 14:10:30,744 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-22 14:10:30,745 - MMT_Flights - INFO - BasePage initialized
+2026-05-22 14:10:30,746 - MMT_Flights - INFO - Opening website: https://www.makemytrip.com
+2026-05-22 14:10:51,821 - MMT_Flights - INFO - Testing Scenario: non_stop for New Delhi to Mumbai
+2026-05-22 14:10:54,105 - MMT_Flights - INFO - Selected From City: New Delhi
+2026-05-22 14:10:57,360 - MMT_Flights - INFO - Selected To City: Mumbai
+2026-05-22 14:10:58,361 - MMT_Flights - INFO - Formatted date for locator: Fri Jun 19 2026
+2026-05-22 14:10:58,362 - MMT_Flights - INFO - SELECTING DATE: Fri Jun 19 2026
+2026-05-22 14:10:59,405 - MMT_Flights - INFO - DEPARTURE DATE Fri Jun 19 2026 SELECTED
+2026-05-22 14:10:59,405 - MMT_Flights - INFO - CLICKING SEARCH BUTTON
+2026-05-22 14:11:04,508 - MMT_Flights - INFO - SEARCH BUTTON CLICKED SUCCESSFULLY
+2026-05-22 14:11:09,519 - MMT_Flights - INFO - Applying filter: non_stop
+2026-05-22 14:11:10,614 - MMT_Flights - INFO - Successfully clicked: Non-Stop Filter
+2026-05-22 14:11:14,626 - MMT_Flights - INFO - Found 2 flight cards visible.
+2026-05-22 14:11:14,626 - MMT_Flights - INFO - SUCCESS: Scenario non_stop for New Delhi to Mumbai passed.
+2026-05-22 14:11:14,627 - MMT_Flights - INFO - TEST PASSED - CAPTURING SCREENSHOT
+2026-05-22 14:11:14,760 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-22 14:11:17,332 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY
+2026-05-22 14:11:17,336 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-22 14:11:20,526 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-22 14:11:28,940 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-22 14:11:28,941 - MMT_Flights - INFO - BasePage initialized
+2026-05-22 14:11:28,941 - MMT_Flights - INFO - Opening website: https://www.makemytrip.com
+2026-05-22 14:11:50,112 - MMT_Flights - INFO - Testing Scenario: cheapest for Mumbai to Bengaluru
+2026-05-22 14:11:52,397 - MMT_Flights - INFO - Selected From City: Mumbai
+2026-05-22 14:11:55,590 - MMT_Flights - INFO - Selected To City: Bengaluru
+2026-05-22 14:11:56,592 - MMT_Flights - INFO - Formatted date for locator: Mon Jun 22 2026
+2026-05-22 14:11:56,592 - MMT_Flights - INFO - SELECTING DATE: Mon Jun 22 2026
+2026-05-22 14:11:57,644 - MMT_Flights - INFO - DEPARTURE DATE Mon Jun 22 2026 SELECTED
+2026-05-22 14:11:57,644 - MMT_Flights - INFO - CLICKING SEARCH BUTTON
+2026-05-22 14:12:03,094 - MMT_Flights - INFO - SEARCH BUTTON CLICKED SUCCESSFULLY
+2026-05-22 14:12:08,105 - MMT_Flights - INFO - Applying filter: cheapest
+2026-05-22 14:12:08,105 - MMT_Flights - INFO - Attempting to sort by cheapest...
+2026-05-22 14:12:09,143 - MMT_Flights - INFO - Successfully clicked: Cheapest Tab
+2026-05-22 14:12:13,152 - MMT_Flights - INFO - Found 3 flight cards visible.
+2026-05-22 14:12:13,153 - MMT_Flights - INFO - SUCCESS: Scenario cheapest for Mumbai to Bengaluru passed.
+2026-05-22 14:12:13,153 - MMT_Flights - INFO - TEST PASSED - CAPTURING SCREENSHOT
+2026-05-22 14:12:13,275 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-22 14:12:15,843 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY
+2026-05-22 14:12:15,846 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-22 14:12:19,050 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-22 14:12:27,649 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-22 14:12:27,650 - MMT_Flights - INFO - BasePage initialized
+2026-05-22 14:12:27,651 - MMT_Flights - INFO - Opening website: https://www.makemytrip.com
+2026-05-22 14:12:49,384 - MMT_Flights - INFO - Testing Scenario: Air India for Bengaluru to Hyderabad
+2026-05-22 14:12:51,672 - MMT_Flights - INFO - Selected From City: Bengaluru
+2026-05-22 14:12:54,860 - MMT_Flights - INFO - Selected To City: Hyderabad
+2026-05-22 14:12:55,862 - MMT_Flights - INFO - Formatted date for locator: Thu Jun 25 2026
+2026-05-22 14:12:55,862 - MMT_Flights - INFO - SELECTING DATE: Thu Jun 25 2026
+2026-05-22 14:12:56,900 - MMT_Flights - INFO - DEPARTURE DATE Thu Jun 25 2026 SELECTED
+2026-05-22 14:12:56,901 - MMT_Flights - INFO - CLICKING SEARCH BUTTON
+2026-05-22 14:13:02,227 - MMT_Flights - INFO - SEARCH BUTTON CLICKED SUCCESSFULLY
+2026-05-22 14:13:07,242 - MMT_Flights - INFO - Applying airline filter for: Air India
+2026-05-22 14:13:08,353 - MMT_Flights - INFO - Successfully clicked 'Air India' filter.
+2026-05-22 14:13:12,367 - MMT_Flights - INFO - Found 2 flight cards visible.
+2026-05-22 14:13:12,367 - MMT_Flights - INFO - SUCCESS: Scenario Air India for Bengaluru to Hyderabad passed.
+2026-05-22 14:13:12,368 - MMT_Flights - INFO - TEST PASSED - CAPTURING SCREENSHOT
+2026-05-22 14:13:12,477 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-22 14:13:15,060 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY
+2026-05-22 14:13:15,063 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-22 14:13:18,253 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-22 14:13:26,927 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-22 14:13:26,928 - MMT_Flights - INFO - BasePage initialized
+2026-05-22 14:13:26,928 - MMT_Flights - INFO - Opening website: https://www.makemytrip.com
+2026-05-22 14:13:48,667 - MMT_Flights - INFO - Testing Scenario: morning for Hyderabad to Chennai
+2026-05-22 14:13:50,926 - MMT_Flights - INFO - Selected From City: Hyderabad
+2026-05-22 14:13:54,143 - MMT_Flights - INFO - Selected To City: Chennai
+2026-05-22 14:13:55,144 - MMT_Flights - INFO - Formatted date for locator: Sun Jun 28 2026
+2026-05-22 14:13:55,146 - MMT_Flights - INFO - SELECTING DATE: Sun Jun 28 2026
+2026-05-22 14:13:56,183 - MMT_Flights - INFO - DEPARTURE DATE Sun Jun 28 2026 SELECTED
+2026-05-22 14:13:56,183 - MMT_Flights - INFO - CLICKING SEARCH BUTTON
+2026-05-22 14:14:01,403 - MMT_Flights - INFO - SEARCH BUTTON CLICKED SUCCESSFULLY
+2026-05-22 14:14:06,414 - MMT_Flights - INFO - Applying filter: morning
+2026-05-22 14:14:07,496 - MMT_Flights - INFO - Successfully clicked: Morning Departure Filter
+2026-05-22 14:14:11,505 - MMT_Flights - INFO - Found 2 flight cards visible.
+2026-05-22 14:14:11,505 - MMT_Flights - INFO - SUCCESS: Scenario morning for Hyderabad to Chennai passed.
+2026-05-22 14:14:11,506 - MMT_Flights - INFO - TEST PASSED - CAPTURING SCREENSHOT
+2026-05-22 14:14:11,629 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-22 14:14:14,256 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY

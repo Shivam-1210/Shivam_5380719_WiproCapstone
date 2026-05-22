@@ -1,0 +1,23 @@
+[32mINFO    [0m MMT_Flights:conftest.py:17 ========== STARTING TEST ==========
+[32mINFO    [0m MMT_Flights:conftest.py:23 OPENING MAKEMYTRIP WEBSITE
+[32mINFO    [0m MMT_Flights:conftest.py:27 CURRENT URL: https://www.makemytrip.com/
+[32mINFO    [0m MMT_Flights:test_e2e_booking.py:110 STARTING E2E FLIGHT BOOKING FLOW
+[32mINFO    [0m MMT_Flights:base_page.py:12 BasePage initialized
+[32mINFO    [0m MMT_Flights:base_page.py:12 BasePage initialized
+[32mINFO    [0m MMT_Flights:home_page.py:276 Opening website: https://www.makemytrip.com
+[32mINFO    [0m MMT_Flights:home_page.py:333 Selected From City: Delhi
+[32mINFO    [0m MMT_Flights:home_page.py:333 Selected To City: Mumbai
+[32mINFO    [0m MMT_Flights:home_page.py:364 SELECTING DATE: Fri Jun 19 2026
+[32mINFO    [0m MMT_Flights:home_page.py:371 DEPARTURE DATE Fri Jun 19 2026 SELECTED
+[32mINFO    [0m MMT_Flights:home_page.py:378 CLICKING SEARCH BUTTON
+[32mINFO    [0m MMT_Flights:home_page.py:385 SEARCH BUTTON CLICKED SUCCESSFULLY
+[32mINFO    [0m MMT_Flights:flight_search_page.py:174 Successfully clicked: Non-Stop Filter
+[32mINFO    [0m MMT_Flights:test_e2e_booking.py:130 Switching driver focus to the newly opened Booking Tab...
+[32mINFO    [0m MMT_Flights:booking_page.py:129 Verifying if the Booking Review page is loaded...
+[32mINFO    [0m MMT_Flights:booking_page.py:132 Booking page loaded successfully.
+[32mINFO    [0m MMT_Flights:booking_page.py:145 Clicked '+ ADD NEW ADULT' button.
+[32mINFO    [0m MMT_Flights:booking_page.py:158 Entered First Name: Vats
+[32mINFO    [0m MMT_Flights:booking_page.py:181 Entered Email: vats123@gmail.com
+[31m[1mERROR   [0m MMT_Flights:booking_page.py:194 Failed to enter mobile number: Message:
+[32mINFO    [0m MMT_Flights:conftest.py:31 ========== CLOSING TEST ==========
+[32mINFO    [0m MMT_Flights:conftest.py:35 BROWSER CLOSED SUCCESSFULLY
