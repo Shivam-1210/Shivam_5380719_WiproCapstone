@@ -1,0 +1,71 @@
+Feature: MakeMyTrip Flight Search and Booking Module # features/flights_search.feature:1
+
+  Feature: MakeMyTrip Flight Search and Booking Module  # features/flights_search.feature:1
+
+  Scenario: 1. Positive - Valid One-Way Flight Search  # features/flights_search.feature:9
+    Given I navigate to the MakeMyTrip homepage        # None
+    And I close any promotional popups                 # None
+    When I select "One Way" trip                       # None
+    And I enter "Delhi" as the source city             # None
+    And I enter "Mumbai" as the destination city       # None
+    And I select tomorrow's date for departure         # None
+    And I click on the Search button                   # None
+    Then I should see the flight search results page   # None
+
+  Scenario: 2. Positive - Valid Round-Trip Flight Search  # features/flights_search.feature:17
+    Given I navigate to the MakeMyTrip homepage           # None
+    And I close any promotional popups                    # None
+    When I select "Round Trip"                            # None
+    And I enter "Delhi" as the source city                # None
+    And I enter "Bangalore" as the destination city       # None
+    And I select tomorrow's date for departure            # None
+    And I select a return date 5 days from now            # None
+    And I click on the Search button                      # None
+    Then I should see the flight search results page      # None
+
+  Scenario: 3. Positive - Change Passenger Count  # features/flights_search.feature:26
+    Given I navigate to the MakeMyTrip homepage   # None
+    And I close any promotional popups            # None
+    When I select "One Way" trip                  # None
+    And I open the Traveller and Class modal      # None
+    And I select 2 Adults                         # None
+    And I click Apply                             # None
+    Then the passenger count should update to 2   # None
+
+  Scenario: 4. Positive - Filter flights by Non-Stop  # features/flights_search.feature:33
+    Given I navigate to the MakeMyTrip homepage       # None
+    And I close any promotional popups                # None
+    When I enter "Delhi" as the source city           # None
+    And I enter "Mumbai" as the destination city      # None
+    And I select tomorrow's date for departure        # None
+    And I click on the Search button                  # None
+    And I apply the "Non-Stop" filter                 # None
+    Then only non-stop flights should be displayed    # None
+
+  Scenario: 5. Negative - Search with same origin and destination             # features/flights_search.feature:43
+    Given I navigate to the MakeMyTrip homepage                               # None
+    And I close any promotional popups                                        # None
+    When I select "One Way" trip                                              # None
+    And I enter "Delhi" as the source city                                    # None
+    And I enter "Delhi" as the destination city                               # None
+    Then I should see an error message indicating same cities are not allowed # None
+
+  Scenario: 6. Negative - Search without destination                # features/flights_search.feature:49
+    Given I navigate to the MakeMyTrip homepage                     # None
+    And I close any promotional popups                              # None
+    When I select "One Way" trip                                    # None
+    And I clear the destination city                                # None
+    And I click on the Search button                                # None
+    Then a validation error should prompt me to enter a destination # None
+
+  Scenario: 7. E2E - Complete flight search and proceed to booking  # features/flights_search.feature:57
+    Given I navigate to the MakeMyTrip homepage                     # None
+    And I close any promotional popups                              # None
+    When I enter "Delhi" as the source city                         # None
+    And I enter "Mumbai" as the destination city                    # None
+    And I select tomorrow's date for departure                      # None
+    And I click on the Search button                                # None
+    And I select the first available flight                         # None
+    And I click on Book Now                                         # None
+    Then I should be navigated to the booking review page           # None
+

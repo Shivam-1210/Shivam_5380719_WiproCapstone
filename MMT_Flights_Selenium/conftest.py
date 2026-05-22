@@ -1,7 +1,9 @@
 import os
 import pytest
 import allure
+import subprocess
 import time
+from datetime import datetime
 
 from seleniumbase import Driver
 from utils.logger import LogGen
@@ -65,27 +67,49 @@ def pytest_runtest_makereport(item):
     except Exception as e:
         logger.error(f"SCREENSHOT FAILED: {str(e)}")
 
-    import os
-    import subprocess
 
-    def pytest_unconfigure(config):
-        print("\n------- TESTS COMPLETE! GENERATING PERMANENT ALLURE REPORT --------")
-
-        # Path to your raw data
-        results_dir = os.path.join("reports", "allure-results")
-        # Path to where you want the beautiful dashboard saved
-        report_dir = os.path.join("reports", "allure-report")
-
-        try:
-            # -o tells Allure to use a specific Output directory
-            # --clean removes the old report before building the new one
-            command = f'allure generate "{results_dir}" -o "{report_dir}" --clean'
-
-            # We use subprocess.run so the terminal waits until the report is 100% ready
-            subprocess.run(command, shell=True, check=True)
-
-            print(f"SUCCESS: Report generated in: {report_dir}")
-        except Exception as e:
-            print(f"ERROR: Could not generate Allure report: {e}")
+#--------------------------------------------------------
+    #
+    # @pytest.hookimpl(hookwrapper=True)
+    # def pytest_runtest_makereport(item, call):
+    #     outcome = yield
+    #     report = outcome.get_result()
+    #     if report.when == "call" and report.failed:
+    #         # Get the driver instance
+    #         driver = item.funcargs.get("driver")
+    #         if driver:
+    #             # FIX: Ensure os is used correctly here
+    #             screenshot_dir = os.path.join("reports", "screenshots")
+    #             if not os.path.exists(screenshot_dir):
+    #                 os.makedirs(screenshot_dir)
+    #             file_name = f"screenshot_{datetime.now().strftime('%Y%m%d_%H%M%S')}.png"
+    #             driver.save_screenshot(os.path.join(screenshot_dir, file_name))
 
 
+def pytest_unconfigure(config):
+    print("\n------- TESTS COMPLETE! GENERATING PERMANENT ALLURE REPORT --------")
+
+    # 1. Get the absolute path to your project root (where conftest.py lives)
+    project_root = os.path.dirname(os.path.abspath(__file__))
+
+    # 2. Build absolute paths to the directories
+    results_dir = os.path.join(project_root, "reports", "allure-results")
+    report_dir = os.path.join(project_root, "reports", "allure-report")
+
+    print(f"Reading raw data from: {results_dir}")
+    print(f"Building report inside: {report_dir}")
+
+    try:
+        # 3. Use a list format for subprocess which is much safer for Windows paths
+        command = ["allure", "generate", results_dir, "-o", report_dir, "--clean"]
+
+        # Run the command and wait for it to finish
+        subprocess.run(command, shell=True, check=True)
+
+        print(f"✅ SUCCESS: Report successfully generated!")
+        print("-------------------------------------------------------------------\n")
+
+    except subprocess.CalledProcessError as e:
+        print(f"❌ ERROR: Allure generation failed with exit code {e.returncode}")
+    except Exception as e:
+        print(f"❌ ERROR: Could not generate Allure report: {e}")

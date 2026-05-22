@@ -1,6 +1,0 @@
-2026-05-21 02:59:56,613 - MMT_Flights - INFO - Reading Excel: C:\wipro_training_work\python_coding\Capstone_Project\MMT_Flights_Selenium\test_data/passenger_data.xlsx | Sheet: PositiveFlights
-2026-05-21 02:59:56,771 - MMT_Flights - INFO - ========== STARTING TEST ==========
-2026-05-21 02:59:59,960 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
-2026-05-21 03:00:08,292 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
-2026-05-21 03:00:08,295 - MMT_Flights - INFO - ========== CLOSING TEST ==========
-2026-05-21 03:00:10,779 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY

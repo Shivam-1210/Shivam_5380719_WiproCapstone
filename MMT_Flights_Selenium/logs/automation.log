@@ -1,0 +1,47 @@
+2026-05-22 12:00:16,701 - MMT_Flights - INFO - Reading Excel: C:\wipro_training_work\python_coding\Capstone_Project\MMT_Flights_Selenium\test_data/passenger_data.xlsx | Sheet: BookingData
+2026-05-22 12:00:16,906 - MMT_Flights - INFO - Reading Excel: C:\wipro_training_work\python_coding\Capstone_Project\MMT_Flights_Selenium\test_data/passenger_data.xlsx | Sheet: PassengerData
+2026-05-22 12:00:16,917 - MMT_Flights - INFO - ========== STARTING TEST ==========
+2026-05-22 12:00:20,287 - MMT_Flights - INFO - OPENING MAKEMYTRIP WEBSITE
+2026-05-22 12:00:28,690 - MMT_Flights - INFO - CURRENT URL: https://www.makemytrip.com/
+2026-05-22 12:00:28,693 - MMT_Flights - INFO - STARTING E2E FLIGHT BOOKING FLOW
+2026-05-22 12:00:28,694 - MMT_Flights - INFO - BasePage initialized
+2026-05-22 12:00:28,694 - MMT_Flights - INFO - BasePage initialized
+2026-05-22 12:00:28,700 - MMT_Flights - INFO - Opening website: https://www.makemytrip.com
+2026-05-22 12:00:51,922 - MMT_Flights - INFO - Selected From City: Delhi
+2026-05-22 12:00:55,178 - MMT_Flights - INFO - Selected To City: Mumbai
+2026-05-22 12:00:56,179 - MMT_Flights - INFO - SELECTING DATE: Fri Jun 19 2026
+2026-05-22 12:00:57,217 - MMT_Flights - INFO - DEPARTURE DATE Fri Jun 19 2026 SELECTED
+2026-05-22 12:00:57,218 - MMT_Flights - INFO - CLICKING SEARCH BUTTON
+2026-05-22 12:01:02,615 - MMT_Flights - INFO - SEARCH BUTTON CLICKED SUCCESSFULLY
+2026-05-22 12:01:08,718 - MMT_Flights - INFO - Successfully clicked: Non-Stop Filter
+2026-05-22 12:01:13,884 - MMT_Flights - INFO - Switching driver focus to the newly opened Booking Tab...
+2026-05-22 12:01:13,908 - MMT_Flights - INFO - Switched successfully. Current URL: https://www.makemytrip.com/flight/reviewDetails/?itineraryId=fb44f01aa4a834e09d269c1922bc3e5fd4650d39&cur=INR&ccde=IN&crId=283f2157-4c7c-42f3-80c5-cfdf7f9014e1&rKey=RKEY%3A23bbec7e-7171-4c44-9d89-646e35774366%3A0_0&userCurrency=INR&xflt=eyJjIjoiRSIsInAiOiJBLTFfQy0wX0ktMCIsInQiOiIiLCJzIjoiREVMLUJPTS0yMDI2MDYxOSIsIkl0aW5lcmFyeUlkIjoiREVMLUJPTS0xOS8wNi8yMDI2IiwiVHJpcFR5cGUiOiJPIiwiUGF4VHlwZSI6IkEtMV9DLTBfSS0wIiwiSW50bCI6ZmFsc2UsIkNhYmluQ2xhc3MiOiJFIiwiQ2NkZSI6ImluIiwiUGZ0IjoiIiwiUGFmcyI6IiIsIkZvcndhcmRGbG93UmVxdWlyZWQiOnRydWUsIkNtcElkIjoiIn0%3D
+2026-05-22 12:01:13,909 - MMT_Flights - INFO - Verifying if the Booking Review page is loaded...
+2026-05-22 12:01:13,927 - MMT_Flights - INFO - Booking page loaded successfully.
+2026-05-22 12:01:37,577 - MMT_Flights - ERROR - Failed to enter first name: Message: 
+Stacktrace:
+	uc_driver!GetHandleVerifier [0x7ff75a1b7de5+14895]
+	uc_driver!GetHandleVerifier [0x7ff75a1b7e50+14900]
+	uc_driver!(No symbol) [0x7ff759f1d5ad]
+	uc_driver!(No symbol) [0x7ff759f77822]
+	uc_driver!(No symbol) [0x7ff759f77b2c]
+	uc_driver!(No symbol) [0x7ff759fc7d17]
+	uc_driver!(No symbol) [0x7ff759fc486f]
+	uc_driver!(No symbol) [0x7ff759f69df8]
+	uc_driver!(No symbol) [0x7ff759f6ace3]
+	uc_driver!GetHandleVerifier [0x7ff75a4ccc49+3296f9]
+	uc_driver!GetHandleVerifier [0x7ff75a4c7375+323e25]
+	uc_driver!GetHandleVerifier [0x7ff75a4ebc82+348732]
+	uc_driver!GetHandleVerifier [0x7ff75a1d6045+32af5]
+	uc_driver!GetHandleVerifier [0x7ff75a1decec+3b79c]
+	uc_driver!GetHandleVerifier [0x7ff75a1c1bc4+1e674]
+	uc_driver!GetHandleVerifier [0x7ff75a1c1d54+1e804]
+	uc_driver!GetHandleVerifier [0x7ff75a1a60e7+2b97]
+	KERNEL32!BaseThreadInitThunk [0x7ff97b24e957+17]
+	ntdll!RtlUserThreadStart [0x7ff97cd4427c+2c]
+
+2026-05-22 12:01:37,905 - MMT_Flights - INFO - Contact details populated successfully.
+2026-05-22 12:01:37,905 - MMT_Flights - INFO - E2E FLIGHT BOOKING FLOW COMPLETED UP TO FINAL CONFIRMATION STEP
+2026-05-22 12:01:37,906 - MMT_Flights - INFO - TEST PASSED - CAPTURING SCREENSHOT
+2026-05-22 12:01:38,036 - MMT_Flights - INFO - ========== CLOSING TEST ==========
+2026-05-22 12:01:40,649 - MMT_Flights - INFO - BROWSER CLOSED SUCCESSFULLY

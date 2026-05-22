@@ -1,0 +1,5 @@
+selenium
+behave
+pytest
+webdriver-manager
+allure-behave
