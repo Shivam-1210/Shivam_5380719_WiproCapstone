@@ -19,7 +19,6 @@ def before_all(context):
     os.makedirs("reports/allure-results", exist_ok=True)
 
 
-
 def before_scenario(context, scenario):
     logger.info(f"========== STARTING SCENARIO: {scenario.name} ==========")
 

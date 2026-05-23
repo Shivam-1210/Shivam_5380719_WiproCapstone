@@ -1,0 +1,76 @@
+05/23/2026 11:56:40 PM: INFO: ========== STARTING SCENARIO: 7. E2E - Complete flight booking flow up to payment ==========
+05/23/2026 11:56:54 PM: INFO: Closing promotional popup
+05/23/2026 11:56:56 PM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 11:56:59 PM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 11:57:00 PM: INFO: Clicked on element: ('xpath', "//li[@data-cy='oneWayTrip']")
+05/23/2026 11:57:01 PM: INFO: Entering source city: Delhi
+05/23/2026 11:57:02 PM: ERROR: Failed to click ('id', 'fromCity')
+05/23/2026 11:57:02 PM: INFO: Clicked on element: ('id', 'fromCity')
+05/23/2026 11:57:02 PM: INFO: Entering destination city: Mumbai
+05/23/2026 11:57:12 PM: INFO: Clicked on element: ('id', 'toCity')
+05/23/2026 11:57:12 PM: INFO: Entered text 'Mumbai' into ('xpath', "//input[@placeholder='To']")
+05/23/2026 11:57:13 PM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 11:57:13 PM: INFO: Clicking search button
+05/23/2026 11:57:14 PM: INFO: Clicking ('xpath', "//a[contains(text(), 'Search')]")
+05/23/2026 11:57:56 PM: INFO: Select first flight and book
+05/23/2026 11:58:01 PM: INFO: Checking visibility of ('xpath', "//button[contains(text(), 'OKAY, GOT IT!')]")
+05/23/2026 11:58:22 PM: ERROR: Timed out while checking visibility of ('xpath', "//button[contains(text(), 'OKAY, GOT IT!')]")
+05/23/2026 11:58:28 PM: INFO: Switched to new tab: https://www.makemytrip.com/flight/search?itinerary=DEL-BOM-24%2F05%2F2026&tripType=O&paxType=A-1_C-0_I-0&intl=false&cabinClass=E&lang=eng
+05/23/2026 11:58:28 PM: INFO: Declined insurance page:
+05/23/2026 11:58:30 PM: INFO: Switched to review page: https://www.makemytrip.com/flight/reviewDetails/?itineraryId=2d94fe7a1db23cdbfec9ec39683c161892a3ab10&cur=INR&ccde=IN&crId=4911ed07-dbea-4d1b-80b8-cb074f964aa6&rKey=RKEY%3Adccf0533-f97e-48de-a29f-88f7c97e5390%3A0_0&userCurrency=INR&xflt=eyJjIjoiRSIsInAiOiJBLTFfQy0wX0ktMCIsInQiOiIiLCJzIjoiREVMLUJPTS0yMDI2MDUyNCIsIkl0aW5lcmFyeUlkIjoiREVMLUJPTS0yNC8wNS8yMDI2IiwiVHJpcFR5cGUiOiJPIiwiUGF4VHlwZSI6IkEtMV9DLTBfSS0wIiwiSW50bCI6ZmFsc2UsIkNhYmluQ2xhc3MiOiJFIiwiQ2NkZSI6ImluIiwiUGZ0IjoiIiwiUGFmcyI6IiIsIkZvcndhcmRGbG93UmVxdWlyZWQiOnRydWUsIkNtcElkIjoiIn0%3D
+05/23/2026 11:58:32 PM: INFO: Checking visibility of ('xpath', "//span[contains(@class, 'overlayCrossIcon')] | //span[contains(@class, 'close')]")
+05/23/2026 11:58:52 PM: ERROR: Timed out while checking visibility of ('xpath', "//span[contains(@class, 'overlayCrossIcon')] | //span[contains(@class, 'close')]")
+05/23/2026 11:58:52 PM: INFO: Checking visibility of ('xpath', "//button[contains(text(), 'Yes, Please') or contains(text(), 'proceed without')]")
+05/23/2026 11:59:13 PM: ERROR: Timed out while checking visibility of ('xpath', "//button[contains(text(), 'Yes, Please') or contains(text(), 'proceed without')]")
+05/23/2026 11:59:13 PM: INFO: Handle review page: https://www.makemytrip.com/flight/reviewDetails/?itineraryId=2d94fe7a1db23cdbfec9ec39683c161892a3ab10&cur=INR&ccde=IN&crId=4911ed07-dbea-4d1b-80b8-cb074f964aa6&rKey=RKEY%3Adccf0533-f97e-48de-a29f-88f7c97e5390%3A0_0&userCurrency=INR&xflt=eyJjIjoiRSIsInAiOiJBLTFfQy0wX0ktMCIsInQiOiIiLCJzIjoiREVMLUJPTS0yMDI2MDUyNCIsIkl0aW5lcmFyeUlkIjoiREVMLUJPTS0yNC8wNS8yMDI2IiwiVHJpcFR5cGUiOiJPIiwiUGF4VHlwZSI6IkEtMV9DLTBfSS0wIiwiSW50bCI6ZmFsc2UsIkNhYmluQ2xhc3MiOiJFIiwiQ2NkZSI6ImluIiwiUGZ0IjoiIiwiUGFmcyI6IiIsIkZvcndhcmRGbG93UmVxdWlyZWQiOnRydWUsIkNtcElkIjoiIn0%3D
+05/23/2026 11:59:13 PM: INFO: Scrolling ('xpath', "//label[contains(., 'without trip secure') or contains(., 'not opted')]")
+05/23/2026 11:59:13 PM: INFO: Scrolled ('xpath', "//label[contains(., 'without trip secure') or contains(., 'not opted')]")
+05/23/2026 11:59:14 PM: INFO: Handle insurance page
+05/23/2026 11:59:14 PM: INFO: Clicking ('xpath', "//label[contains(., 'without trip secure') or contains(., 'not opted')]")
+05/23/2026 11:59:14 PM: INFO: Switched to review page: https://www.makemytrip.com/flight/reviewDetails/?itineraryId=2d94fe7a1db23cdbfec9ec39683c161892a3ab10&cur=INR&ccde=IN&crId=4911ed07-dbea-4d1b-80b8-cb074f964aa6&rKey=RKEY%3Adccf0533-f97e-48de-a29f-88f7c97e5390%3A0_0&userCurrency=INR&xflt=eyJjIjoiRSIsInAiOiJBLTFfQy0wX0ktMCIsInQiOiIiLCJzIjoiREVMLUJPTS0yMDI2MDUyNCIsIkl0aW5lcmFyeUlkIjoiREVMLUJPTS0yNC8wNS8yMDI2IiwiVHJpcFR5cGUiOiJPIiwiUGF4VHlwZSI6IkEtMV9DLTBfSS0wIiwiSW50bCI6ZmFsc2UsIkNhYmluQ2xhc3MiOiJFIiwiQ2NkZSI6ImluIiwiUGZ0IjoiIiwiUGFmcyI6IiIsIkZvcndhcmRGbG93UmVxdWlyZWQiOnRydWUsIkNtcElkIjoiIn0%3D
+05/23/2026 11:59:16 PM: INFO: Checking visibility of ('xpath', "//span[contains(@class, 'overlayCrossIcon')] | //span[contains(@class, 'close')]")
+05/23/2026 11:59:37 PM: ERROR: Timed out while checking visibility of ('xpath', "//span[contains(@class, 'overlayCrossIcon')] | //span[contains(@class, 'close')]")
+05/23/2026 11:59:37 PM: INFO: Checking visibility of ('xpath', "//button[contains(text(), 'Yes, Please') or contains(text(), 'proceed without')]")
+05/23/2026 11:59:57 PM: ERROR: Timed out while checking visibility of ('xpath', "//button[contains(text(), 'Yes, Please') or contains(text(), 'proceed without')]")
+05/23/2026 11:59:57 PM: INFO: Entering passenger details page
+05/23/2026 11:59:57 PM: INFO: Switched to review page: https://www.makemytrip.com/flight/reviewDetails/?itineraryId=2d94fe7a1db23cdbfec9ec39683c161892a3ab10&cur=INR&ccde=IN&crId=4911ed07-dbea-4d1b-80b8-cb074f964aa6&rKey=RKEY%3Adccf0533-f97e-48de-a29f-88f7c97e5390%3A0_0&userCurrency=INR&xflt=eyJjIjoiRSIsInAiOiJBLTFfQy0wX0ktMCIsInQiOiIiLCJzIjoiREVMLUJPTS0yMDI2MDUyNCIsIkl0aW5lcmFyeUlkIjoiREVMLUJPTS0yNC8wNS8yMDI2IiwiVHJpcFR5cGUiOiJPIiwiUGF4VHlwZSI6IkEtMV9DLTBfSS0wIiwiSW50bCI6ZmFsc2UsIkNhYmluQ2xhc3MiOiJFIiwiQ2NkZSI6ImluIiwiUGZ0IjoiIiwiUGFmcyI6IiIsIkZvcndhcmRGbG93UmVxdWlyZWQiOnRydWUsIkNtcElkIjoiIn0%3D
+05/23/2026 11:59:59 PM: INFO: Checking visibility of ('xpath', "//span[contains(@class, 'overlayCrossIcon')] | //span[contains(@class, 'close')]")
+05/24/2026 12:00:20 AM: ERROR: Timed out while checking visibility of ('xpath', "//span[contains(@class, 'overlayCrossIcon')] | //span[contains(@class, 'close')]")
+05/24/2026 12:00:20 AM: INFO: Checking visibility of ('xpath', "//button[contains(text(), 'Yes, Please') or contains(text(), 'proceed without')]")
+05/24/2026 12:00:40 AM: ERROR: Timed out while checking visibility of ('xpath', "//button[contains(text(), 'Yes, Please') or contains(text(), 'proceed without')]")
+05/24/2026 12:00:40 AM: INFO: Scroll to enter passenger details page
+05/24/2026 12:00:40 AM: INFO: Scrolling ('xpath', "//button[contains(., '+ ADD NEW ADULT')]")
+05/24/2026 12:00:40 AM: INFO: Scrolled ('xpath', "//button[contains(., '+ ADD NEW ADULT')]")
+05/24/2026 12:00:41 AM: INFO: Clicking ('xpath', "//button[contains(., '+ ADD NEW ADULT')]")
+05/24/2026 12:00:42 AM: INFO: Entering passenger details
+05/24/2026 12:00:42 AM: INFO: Clicking ('xpath', "//label[@tabindex='0' and contains(., 'MALE')]")
+05/24/2026 12:00:43 AM: INFO: Entered text 'Shivam' into ('xpath', "//input[@placeholder='First & Middle Name']")
+05/24/2026 12:00:43 AM: INFO: Entered text 'Maurya' into ('xpath', "//input[@placeholder='Last Name']")
+05/24/2026 12:00:43 AM: INFO: Entering contact details page: https://www.makemytrip.com/flight/reviewDetails/?itineraryId=2d94fe7a1db23cdbfec9ec39683c161892a3ab10&cur=INR&ccde=IN&crId=4911ed07-dbea-4d1b-80b8-cb074f964aa6&rKey=RKEY%3Adccf0533-f97e-48de-a29f-88f7c97e5390%3A0_0&userCurrency=INR&xflt=eyJjIjoiRSIsInAiOiJBLTFfQy0wX0ktMCIsInQiOiIiLCJzIjoiREVMLUJPTS0yMDI2MDUyNCIsIkl0aW5lcmFyeUlkIjoiREVMLUJPTS0yNC8wNS8yMDI2IiwiVHJpcFR5cGUiOiJPIiwiUGF4VHlwZSI6IkEtMV9DLTBfSS0wIiwiSW50bCI6ZmFsc2UsIkNhYmluQ2xhc3MiOiJFIiwiQ2NkZSI6ImluIiwiUGZ0IjoiIiwiUGFmcyI6IiIsIkZvcndhcmRGbG93UmVxdWlyZWQiOnRydWUsIkNtcElkIjoiIn0%3D
+05/24/2026 12:00:43 AM: INFO: Scrolling ('xpath', "//input[@placeholder='Mobile No']")
+05/24/2026 12:00:43 AM: INFO: Scrolled ('xpath', "//input[@placeholder='Mobile No']")
+05/24/2026 12:00:44 AM: INFO: Entering mobile number: 9780695371
+05/24/2026 12:00:44 AM: INFO: Entered text '9780695371' into ('xpath', "//input[@placeholder='Mobile No']")
+05/24/2026 12:00:44 AM: INFO: Entering email address: testbdd@gmail.com
+05/24/2026 12:00:48 AM: INFO: Submitting details page
+05/24/2026 12:00:50 AM: INFO: Scrolling ('xpath', "//button[contains(text(), 'Continue')]")
+05/24/2026 12:00:50 AM: INFO: Scrolled ('xpath', "//button[contains(text(), 'Continue')]")
+05/24/2026 12:00:51 AM: INFO: Clicking continue button
+05/24/2026 12:00:51 AM: INFO: Clicking ('xpath', "//button[contains(text(), 'Continue')]")
+05/24/2026 12:00:54 AM: INFO: Details submitted
+05/24/2026 12:00:54 AM: INFO: ========== CLOSING SCENARIO: 7. E2E - Complete flight booking flow up to payment ==========
+05/24/2026 12:00:57 AM: INFO: BROWSER CLOSED SUCCESSFULLY
+05/24/2026 12:00:57 AM: INFO: ========== STARTING SCENARIO: 5. Negative - Search with same origin and destination ==========
+05/24/2026 12:01:12 AM: INFO: Closing promotional popup
+05/24/2026 12:01:14 AM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/24/2026 12:01:17 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/24/2026 12:01:18 AM: INFO: Clicked on element: ('xpath', "//li[@data-cy='oneWayTrip']")
+05/24/2026 12:01:18 AM: INFO: Entering source city: Delhi
+05/24/2026 12:01:19 AM: INFO: Clicked on element: ('id', 'fromCity')
+05/24/2026 12:01:20 AM: INFO: Entering destination city: Delhi
+05/24/2026 12:01:30 AM: INFO: Clicked on element: ('id', 'toCity')
+05/24/2026 12:01:30 AM: INFO: Entered text 'Delhi' into ('xpath', "//input[@placeholder='To']")
+05/24/2026 12:01:31 AM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/24/2026 12:01:31 AM: INFO: Getting same city error
+05/24/2026 12:01:31 AM: INFO: Getting text from ('xpath', "//span[@data-cy='sameCityError']")
+05/24/2026 12:01:31 AM: INFO: ========== CLOSING SCENARIO: 5. Negative - Search with same origin and destination ==========
