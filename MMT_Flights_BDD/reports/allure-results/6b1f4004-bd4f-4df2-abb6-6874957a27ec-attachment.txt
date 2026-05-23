@@ -1,0 +1,11 @@
+05/23/2026 09:16:08 PM: INFO: Closing promotional popup
+05/23/2026 09:16:10 PM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 09:16:13 PM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 09:16:13 PM: INFO: Opening traveller modal
+05/23/2026 09:16:14 PM: INFO: Clicked on element: ('xpath', "//label[@for='travellers']")
+05/23/2026 09:16:14 PM: INFO: Selecting invalid infant count
+05/23/2026 09:16:14 PM: INFO: Clicked on element: ('xpath', "//li[@data-cy='adults-1']")
+05/23/2026 09:16:15 PM: INFO: Clicked on element: ('xpath', "//li[@data-cy='infants-2']")
+05/23/2026 09:16:17 PM: INFO: Infant error displayed
+05/23/2026 09:16:17 PM: INFO: Checking visibility of ('xpath', "//p[contains(text(), 'infant') or contains(text(), 'Infant')]")
+05/23/2026 09:16:17 PM: INFO: ========== CLOSING SCENARIO: 6. Negative - Select more infants than adults ==========

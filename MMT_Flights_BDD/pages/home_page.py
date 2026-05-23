@@ -1,9 +1,11 @@
 from pages.base_page import BasePage
 from locators.flight_locators import FlightLocators
 import time
+from selenium.common.exceptions import StaleElementReferenceException
 
 class HomePage(BasePage):
     def close_promotional_popup(self):
+        self.logger.info(f"Closing promotional popup")
         try:
             self.click_element(FlightLocators.POPUP_CLOSE_BTN)
             time.sleep(1)
@@ -20,13 +22,27 @@ class HomePage(BasePage):
             self.click_element(FlightLocators.ROUND_TRIP_RADIO)
 
     def enter_source_city(self, city):
-        self.click_element(FlightLocators.FROM_CITY_INPUT)
-        time.sleep(0.5)
-        self.enter_text(FlightLocators.FROM_CITY_DROPDOWN_INPUT, city)
+        self.logger.info(f"Entering source city: {city}")
 
-        self.click_element(FlightLocators.FIRST_SUGGESTION)
+
+        # 1. Wait for the 'Round Trip' or 'One Way' DOM re-render to finish
+        time.sleep(1)
+
+        # 2. Try to click the input field, retry if it goes stale
+        for attempt in range(3):
+            try:
+                self.click_element(FlightLocators.FROM_CITY_INPUT)
+                break  # Click succeeded, break the loop!
+            except StaleElementReferenceException:
+                time.sleep(0.5)  # Wait half a second and try again
+
+        # 3. Keep whatever text entry logic you already have here!
+        # (For example:)
+        # self.enter_text(FlightLocators.FROM_CITY_INPUT_FIELD, city)
+        # self.click_element(FlightLocators.FIRST_CITY_SUGGESTION)
 
     def enter_destination_city(self, city):
+        self.logger.info(f"Entering destination city: {city}")
 
         try:
             # If the dropdown input is NOT visible, click the To City box to open it
@@ -37,41 +53,50 @@ class HomePage(BasePage):
             self.click_element(FlightLocators.TO_CITY_INPUT)
 
         self.enter_text(FlightLocators.TO_CITY_DROPDOWN_INPUT, city)
-        time.sleep(0.5) 
+        time.sleep(0.5)
         self.click_element(FlightLocators.FIRST_SUGGESTION)
 
 
     def clear_destination_city(self):
+        self.logger.info(f"Clearing destination city")
         self.click_element(FlightLocators.TO_CITY_INPUT)
         time.sleep(1) # Just click it to keep it blank
 
 
     def click_search(self):
+        self.logger.info(f"Clicking search button")
         time.sleep(1)
         # Use the new JS click to bypass the destination dropdown blocking the button
         self.click_element_js(FlightLocators.SEARCH_BUTTON)
 
     def open_traveller_modal(self):
+        self.logger.info(f"Opening traveller modal")
         self.click_element(FlightLocators.TRAVELLERS_INPUT)
 
     def select_two_adults(self):
+        self.logger.info(f"Selecting two adults")
         self.click_element(FlightLocators.ADULT_2_OPTION)
 
     def click_apply_travellers(self):
+        self.logger.info(f"Clicking apply travellers")
         self.click_element(FlightLocators.APPLY_BTN)
 
     def get_traveller_count(self):
+        self.logger.info(f"Getting traveller count")
         # Grab text from the whole container instead of the specific child span
         return self.get_text(FlightLocators.TRAVELLERS_INPUT)
 
     def get_same_city_error(self):
+        self.logger.info(f"Getting same city error")
         return self.get_text(FlightLocators.SAME_CITY_ERROR)
 
     def select_invalid_infant_count(self):
-        """Attempts to select 1 Adult and 2 Infants to trigger a validation error"""
+        self.logger.info(f"Selecting invalid infant count")
+
         self.click_element(FlightLocators.ADULTS_1)
         self.click_element(FlightLocators.INFANTS_2)
         time.sleep(2)  # Brief pause to allow the error text to render in the DOM
 
     def is_infant_error_displayed(self):
+        self.logger.info(f"Infant error displayed")
         return self.is_element_visible(FlightLocators.INFANT_ERROR)

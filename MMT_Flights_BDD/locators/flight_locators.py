@@ -81,3 +81,13 @@ class BookingLocators:
     LOGIN_MODAL_CLOSE = (By.XPATH, "//span[contains(@class, 'overlayCrossIcon')] | //span[contains(@class, 'close')]")
     CONFIRM_NO_INSURANCE_BTN = (By.XPATH,
                                  "//button[contains(text(), 'Yes, Please') or contains(text(), 'proceed without')]")
+
+    # Updated to target the clickable label next to the checkbox
+    BILLING_CHECKBOX = (By.XPATH, "//label[contains(., 'Confirm and save billing details')]")
+
+    # Matches the button in your second screenshot
+    CONFIRM_AND_CONTINUE_MODAL_BTN = (By.XPATH, "//button[contains(., 'Confirm & continue')]")
+
+    # Matches the 'Continue' button on the Add-ons/Seat page (often at the very bottom)
+    SEAT_PAGE_CONTINUE_BTN = (By.XPATH,
+                              "//button[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'continue') or contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'skip')]")

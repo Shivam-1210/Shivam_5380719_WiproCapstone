@@ -1,0 +1,8 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","67197","4. Positive - Filter flights by Non-Stop","","2026-05-23","passed","2026-05-23","","","",""
+"","29964","6. Negative - Select more infants than adults","","2026-05-23","passed","2026-05-23","","","",""
+"","40083","1. Positive - Valid One-Way Flight Search","","2026-05-23","passed","2026-05-23","","","",""
+"","27481","3. Positive - Change Passenger Count","","2026-05-23","passed","2026-05-23","","","",""
+"","39790","2. Positive - Valid Round-Trip Flight Search","","2026-05-23","passed","2026-05-23","","","",""
+"","217354","7. E2E - Complete flight booking flow up to payment","","2026-05-23","passed","2026-05-23","","","",""
+"","35356","5. Negative - Search with same origin and destination","","2026-05-23","passed","2026-05-23","","","",""

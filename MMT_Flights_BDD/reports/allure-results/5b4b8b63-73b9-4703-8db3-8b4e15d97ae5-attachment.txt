@@ -1,0 +1,15 @@
+05/23/2026 09:18:46 PM: INFO: Closing promotional popup
+05/23/2026 09:18:46 PM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 09:18:49 PM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 09:18:49 PM: INFO: Entering source city: Delhi
+05/23/2026 09:18:50 PM: ERROR: Failed to click ('id', 'fromCity')
+05/23/2026 09:18:51 PM: INFO: Clicked on element: ('id', 'fromCity')
+05/23/2026 09:18:51 PM: INFO: Entering destination city: Mumbai
+05/23/2026 09:19:01 PM: INFO: Clicked on element: ('id', 'toCity')
+05/23/2026 09:19:01 PM: INFO: Entered text 'Mumbai' into ('xpath', "//input[@placeholder='To']")
+05/23/2026 09:19:02 PM: INFO: Clicked on element: ('xpath', "//ul[@role='listbox']/li[1]")
+05/23/2026 09:19:02 PM: INFO: Clicking search button
+05/23/2026 09:19:03 PM: INFO: Clicking ('xpath', "//a[contains(text(), 'Search')]")
+05/23/2026 09:19:07 PM: INFO: Applying non-stop filter
+05/23/2026 09:19:11 PM: INFO: Clicking ('xpath', "//p[contains(text(), 'Non Stop') or contains(text(), 'Non stop')]")
+05/23/2026 09:19:11 PM: INFO: ========== CLOSING SCENARIO: 4. Positive - Filter flights by Non-Stop ==========

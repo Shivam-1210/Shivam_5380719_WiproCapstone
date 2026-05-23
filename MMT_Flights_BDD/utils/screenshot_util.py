@@ -1,10 +1,10 @@
 import os
 from datetime import datetime
 
-
 class ScreenshotUtil:
     @staticmethod
     def capture_screenshot(driver, name):
+
         # Keeps screenshots organized inside the reports folder
         screenshot_dir = os.path.join(os.path.dirname(__file__), '..', 'reports', 'screenshots')
         os.makedirs(screenshot_dir, exist_ok=True)

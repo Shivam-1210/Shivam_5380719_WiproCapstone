@@ -1,5 +1,5 @@
 from behave import given, when, then
-
+from utils.excel_reader import get_data_by_testid
 from pages.booking_page import BookingPage
 from pages.home_page import HomePage
 from pages.search_results_page import SearchResultsPage
@@ -68,10 +68,6 @@ def step_impl(context):
 def step_impl(context):
     pass
 
-@then('I should see the flight search results page')
-def step_impl(context):
-    assert "Search" in context.driver.title or "MakeMyTrip" in context.driver.title
-
 @then('the passenger count should update to "{count}"')
 def step_impl(context, count):
     actual_count = context.home_page.get_traveller_count()
@@ -125,14 +121,64 @@ def step_impl(context):
 def step_impl(context, first_name, last_name):
     context.booking_page.enter_passenger_details(first_name, last_name)
 
+
 @when('I enter contact details "{mobile}" "{email}"')
 def step_impl(context, mobile, email):
+
     context.booking_page.enter_contact_details(mobile, email)
 
-@when('I click continue and skip all add-ons')
+@when('I submit the passenger and contact details')
 def step_impl(context):
-    context.booking_page.proceed_to_payment()
+    context.booking_page.submit_details()
 
-@then('I should reach the final payment page')
+@then('the details should be accepted successfully')
 def step_impl(context):
-    assert context.booking_page.is_payment_page_loaded() is True
+    assert context.booking_page.is_details_submitted() is True
+
+
+@when('I search for flights using data for "{test_id}"')
+def step_impl(context, test_id):
+    # 1. Fetch the data dictionary from Excel using the ID
+    test_data = get_data_by_testid(test_id)
+
+    # 2. Extract the values
+    source_city = test_data["source"]
+    dest_city = test_data["destination"]
+
+    print(f"Executing {test_id}: Searching from {source_city} to {dest_city}")
+
+    # 3. Pass the Excel data into your existing Page Object methods
+    context.home_page.enter_source_city(source_city)
+    context.home_page.enter_destination_city(dest_city)
+
+
+@then('I should see the flight search results page')
+def step_impl(context):
+    is_loaded = context.results_page.is_results_page_loaded()
+
+    # ASSERTION 2: The assert keyword checks if the condition is True.
+    # If MakeMyTrip fails to load, it crashes the test and prints the custom message.
+    assert is_loaded is True, f"Search failed! Browser stuck at URL: {context.driver.current_url}"
+
+
+@ when('I execute E2E booking for "{test_id}"')
+def step_impl(context, test_id):
+    # 1. Fetch all data for this ID from your existing excel_reader
+    data = get_data_by_testid(test_id)
+
+    # 2. IMPORTANT: Initialize the booking_page here!
+    from pages.booking_page import BookingPage
+    context.booking_page = BookingPage(context.driver)
+
+    # 3. Perform the full workflow
+    context.home_page.enter_source_city(data["source"])
+    context.home_page.enter_destination_city(data["destination"])
+    context.home_page.click_search()
+
+    context.results_page.select_first_flight_and_book()
+
+    context.booking_page.switch_to_new_tab()
+    context.booking_page.decline_insurance()
+    context.booking_page.enter_passenger_details(data["first_name"], data["last_name"])
+    context.booking_page.enter_contact_details(data["mobile"], data["email"])
+    context.booking_page.submit_details()

@@ -1,0 +1,12 @@
+05/23/2026 09:17:57 PM: INFO: Closing promotional popup
+05/23/2026 09:17:59 PM: INFO: Clicked on element: ('xpath', "//span[@data-cy='closeModal']")
+05/23/2026 09:18:02 PM: INFO: Clicked on element: ('xpath', "//li[@data-cy='menu_Flights']")
+05/23/2026 09:18:02 PM: INFO: Opening traveller modal
+05/23/2026 09:18:03 PM: INFO: Clicked on element: ('xpath', "//label[@for='travellers']")
+05/23/2026 09:18:04 PM: INFO: Selecting two adults
+05/23/2026 09:18:04 PM: INFO: Clicked on element: ('xpath', "//li[@data-cy='adults-2']")
+05/23/2026 09:18:04 PM: INFO: Clicking apply travellers
+05/23/2026 09:18:04 PM: INFO: Clicked on element: ('xpath', "//button[@data-cy='travellerApplyBtn']")
+05/23/2026 09:18:04 PM: INFO: Getting traveller count
+05/23/2026 09:18:04 PM: INFO: Getting text from ('xpath', "//label[@for='travellers']")
+05/23/2026 09:18:04 PM: INFO: ========== CLOSING SCENARIO: 3. Positive - Change Passenger Count ==========

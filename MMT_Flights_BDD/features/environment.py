@@ -1,6 +1,7 @@
 import os
 import shutil
 import allure
+from allure_commons.types import AttachmentType
 
 from seleniumbase import Driver
 
@@ -18,6 +19,7 @@ def before_all(context):
     os.makedirs("reports/allure-results", exist_ok=True)
 
 
+
 def before_scenario(context, scenario):
     logger.info(f"========== STARTING SCENARIO: {scenario.name} ==========")
 
@@ -29,28 +31,17 @@ def before_scenario(context, scenario):
 
 
 def after_step(context, step):
+    # Take a screenshot for EVERY step
+    # We use a try-except block to prevent the test from crashing if the driver is already closed
     try:
-        if step.status == "failed":
-            logger.error(f"STEP FAILED: {step.name} - CAPTURING SCREENSHOT")
-
-            # Capture the screenshot using your utility
-            path = ScreenshotUtil.capture_screenshot(
-                context.driver,
-                f"FAIL_{step.name[:20]}"
-            )
-
-            # Attach to Allure Report
-            allure.attach.file(
-                path,
-                name=step.name,
-                attachment_type=allure.attachment_type.PNG
-            )
-
-        elif step.status == "passed":
-            logger.info(f"STEP PASSED: {step.name}")
-
+        screenshot = context.driver.get_screenshot_as_png()
+        allure.attach(
+            screenshot,
+            name=f"{step.name} (Status: {step.status})",
+            attachment_type=AttachmentType.PNG
+        )
     except Exception as e:
-        logger.error(f"SCREENSHOT FAILED: {str(e)}")
+        print(f"Could not capture screenshot for step {step.name}: {e}")
 
 
 def after_scenario(context, scenario):

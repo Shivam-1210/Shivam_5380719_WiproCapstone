@@ -11,12 +11,13 @@ class LogGen:
 
         log_path = os.path.join(log_dir, 'automation.log')
 
-        # 'force=True' is used to override any existing logging configurations
         logging.basicConfig(
             filename=log_path,
+            filemode='w',
             format='%(asctime)s: %(levelname)s: %(message)s',
             datefmt='%m/%d/%Y %I:%M:%S %p',
             level=logging.INFO,
             force=True
         )
+
         return logging.getLogger()
